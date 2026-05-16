@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEREMI del Trabajo y Previsión Social — Región de O'Higgins</title>
+<meta name="description" content="Portal institucional de la Secretaría Regional Ministerial del Trabajo y Previsión Social, Región del Libertador General Bernardo O'Higgins. Indicadores comunales, inversión regional y estadísticas laborales.">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo">
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores Comunales</a>
+        <a href="inversion.html" class="nav-link">Inversión Regional</a>
+        <a href="institucional.html" class="nav-link">Institucional</a>
+        <a href="#contacto" class="nav-link nav-cta">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">Portal de Datos · Mercado del Trabajo</span>
+      <h1>Observatorio Laboral de la Región de O'Higgins</h1>
+      <p class="lead">Información cualitativa y cuantitativa sobre empleo, inversión y desarrollo productivo en las 33 comunas de la Región del Libertador General Bernardo O'Higgins.</p>
+      <div class="hero-actions">
+        <a href="comunas.html" class="btn btn-primary">Explorar comunas</a>
+        <a href="inversion.html" class="btn btn-secondary">Ver inversión regional</a>
+      </div>
+    </div>
+    <div class="hero-stats" id="hero-stats">
+      <div class="stat-card"><span class="stat-num" data-counter="31">0</span><span class="stat-label">Comunas analizadas</span></div>
+      <div class="stat-card"><span class="stat-num" data-counter="30401">0</span><span class="stat-label">Proyectos de inversión</span></div>
+      <div class="stat-card"><span class="stat-num">1994<small>–25</small></span><span class="stat-label">Cobertura histórica</span></div>
+      <div class="stat-card"><span class="stat-num">US$<span data-counter="7000">0</span><small>M</small></span><span class="stat-label">Inversión 2026 (cartera)</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light" id="dashboard">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Visión general</span>
+      <h2>Indicadores clave del mercado laboral</h2>
+      <p class="section-desc">Síntesis de los principales indicadores socioeconómicos de la región, agregados desde las 31 fichas comunales del Observatorio Laboral.</p>
+    </header>
+
+    <div class="kpi-grid" id="kpi-grid">
+      <div class="kpi"><div class="kpi-icon" style="background:#0F3F8C">👥</div><div class="kpi-content"><span class="kpi-label">Población regional</span><span class="kpi-value" id="kpi-poblacion">—</span><span class="kpi-foot">Censo 2024</span></div></div>
+      <div class="kpi"><div class="kpi-icon" style="background:#2E7D32">💼</div><div class="kpi-content"><span class="kpi-label">Ocupados</span><span class="kpi-value" id="kpi-ocupados">—</span><span class="kpi-foot">ENE 2024</span></div></div>
+      <div class="kpi"><div class="kpi-icon" style="background:#C0192B">📊</div><div class="kpi-content"><span class="kpi-label">Empresas activas</span><span class="kpi-value" id="kpi-empresas">—</span><span class="kpi-foot">SII 2024</span></div></div>
+      <div class="kpi"><div class="kpi-icon" style="background:#F57C00">📋</div><div class="kpi-content"><span class="kpi-label">Vacantes BNE</span><span class="kpi-value" id="kpi-vacantes">—</span><span class="kpi-foot">BNE 2025</span></div></div>
+    </div>
+
+    <div class="charts-grid">
+      <div class="chart-card chart-large">
+        <h3>Inversión histórica por sector (1994 – 2025)</h3>
+        <p class="chart-sub">Proyectos públicos registrados en el Sistema Nacional de Inversiones</p>
+        <div class="chart-wrap"><canvas id="chart-sectores"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <h3>Tipología de iniciativas</h3>
+        <p class="chart-sub">Distribución del portafolio histórico</p>
+        <div class="chart-wrap"><canvas id="chart-tipologia"></canvas></div>
+      </div>
+
+      <div class="chart-card chart-large">
+        <h3>Evolución anual de proyectos</h3>
+        <p class="chart-sub">Cantidad de iniciativas postuladas por año</p>
+        <div class="chart-wrap"><canvas id="chart-anios"></canvas></div>
+      </div>
+
+      <div class="chart-card">
+        <h3>Fuente de financiamiento</h3>
+        <p class="chart-sub">Distribución por origen de fondos</p>
+        <div class="chart-wrap"><canvas id="chart-fuente"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Información cualitativa</span>
+      <h2>Misión, líneas de acción y servicios</h2>
+      <p class="section-desc">La SEREMI del Trabajo y Previsión Social de O'Higgins articula la política laboral del Estado en el territorio regional.</p>
+    </header>
+
+    <div class="pillars">
+      <article class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>Empleo digno y formal</h3>
+        <p>Promovemos la formalización del trabajo, el cumplimiento de la legislación laboral y la protección de derechos fundamentales en los lugares de trabajo. Articulamos con SENCE, Dirección del Trabajo e IPS.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>Capacitación e inserción</h3>
+        <p>Coordinamos programas de capacitación, intermediación laboral (OMIL) y becas laborales orientadas a sectores estratégicos como agroindustria, minería y servicios.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>Diálogo social</h3>
+        <p>Espacio tripartito permanente con trabajadores, empleadores y Estado para construir consensos sobre las transformaciones del trabajo en la región.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">04</div>
+        <h3>Inversión y empleo</h3>
+        <p>Monitoreamos la cartera de inversión 2025-2029, proyectando demanda de empleo profesional, técnico y no calificado por comuna y sector económico.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Cartera 2026</span>
+      <h2>Proyectos de inversión privada en seguimiento</h2>
+      <p class="section-desc">Empleo proyectado por la cartera 2026 de proyectos privados en construcción y operación.</p>
+    </header>
+
+    <div class="charts-grid">
+      <div class="chart-card chart-large">
+        <h3>Inversión 2026 por comuna (MUSD)</h3>
+        <p class="chart-sub">Monto comprometido en la cartera de proyectos</p>
+        <div class="chart-wrap"><canvas id="chart-inv26-comuna"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Empleo proyectado por nivel</h3>
+        <p class="chart-sub">Suma de la fase de construcción</p>
+        <div class="chart-wrap"><canvas id="chart-inv26-empleo"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-inner">
+    <div>
+      <h2>Explora todos los datos del Observatorio</h2>
+      <p>Profundiza en cada una de las 31 fichas comunales, revisa la cartera completa de proyectos y descarga los datos abiertos.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="comunas.html" class="btn btn-primary">Indicadores Comunales</a>
+      <a href="inversion.html" class="btn btn-secondary">Inversión Regional</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="contacto">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="inversion.html">Inversión Regional</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios relacionados</h4>
+      <ul>
+        <li><a href="https://www.dt.gob.cl" target="_blank" rel="noopener">Dirección del Trabajo</a></li>
+        <li><a href="https://www.sence.gob.cl" target="_blank" rel="noopener">SENCE</a></li>
+        <li><a href="https://www.ips.gob.cl" target="_blank" rel="noopener">Instituto de Previsión Social</a></li>
+        <li><a href="https://www.bne.cl" target="_blank" rel="noopener">Bolsa Nacional de Empleo</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Fuentes de datos</h4>
+      <ul class="footer-sources">
+        <li>CENSO 2024 — INE</li>
+        <li>Encuesta Nacional de Empleo (ENE)</li>
+        <li>Servicio de Impuestos Internos (SII)</li>
+        <li>Bolsa Nacional de Empleo (BNE)</li>
+        <li>Corporación Bienes de Capital (CBC)</li>
+        <li>Banco Integrado de Proyectos (BIP)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

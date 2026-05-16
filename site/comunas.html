@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indicadores Comunales — SEREMI del Trabajo O'Higgins</title>
+<meta name="description" content="Indicadores socioeconómicos y laborales de las 31 comunas de la Región del Libertador General Bernardo O'Higgins.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link active">Indicadores Comunales</a>
+        <a href="inversion.html" class="nav-link">Inversión Regional</a>
+        <a href="institucional.html" class="nav-link">Institucional</a>
+        <a href="index.html#contacto" class="nav-link nav-cta">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Indicadores Comunales</nav>
+    <span class="eyebrow">Observatorio Laboral</span>
+    <h1>Indicadores Comunales</h1>
+    <p class="lead">Explora los 32 indicadores socioeconómicos y laborales de las 31 comunas de la Región de O'Higgins. Datos del Censo 2024, ENE, SII, BNE y CBC.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+
+    <div class="tabs">
+      <button class="tab active" data-tab="detalle">Ficha comunal</button>
+      <button class="tab" data-tab="comparar">Comparar comunas</button>
+      <button class="tab" data-tab="ranking">Ranking regional</button>
+    </div>
+
+    <!-- TAB: FICHA -->
+    <div class="tab-content active" id="tab-detalle">
+      <div class="controls-bar">
+        <div class="control-group">
+          <label for="comuna-select">Seleccionar comuna</label>
+          <select id="comuna-select"></select>
+        </div>
+        <div class="control-group">
+          <label>Total comunas</label>
+          <input type="text" value="31" readonly>
+        </div>
+        <div class="control-group">
+          <label>Última actualización</label>
+          <input type="text" value="Mayo 2026" readonly>
+        </div>
+      </div>
+
+      <div class="comuna-detail" id="comuna-detail">
+        <div class="loading-overlay"><div class="loader"></div>Cargando datos...</div>
+      </div>
+    </div>
+
+    <!-- TAB: COMPARAR -->
+    <div class="tab-content" id="tab-comparar">
+      <div class="controls-bar">
+        <div class="control-group" style="grid-column: 1 / -1;">
+          <label>Seleccionar indicador a comparar entre todas las comunas</label>
+          <select id="indicator-select"></select>
+        </div>
+      </div>
+      <div class="chart-card">
+        <h3 id="comparar-titulo">Comparación entre comunas</h3>
+        <p class="chart-sub" id="comparar-sub">—</p>
+        <div class="chart-wrap" style="height: 500px;"><canvas id="chart-comparar"></canvas></div>
+      </div>
+    </div>
+
+    <!-- TAB: RANKING -->
+    <div class="tab-content" id="tab-ranking">
+      <div class="charts-grid comparison-section">
+        <div class="chart-card chart-large">
+          <h3>Top 10 comunas por población</h3>
+          <p class="chart-sub">Censo 2024</p>
+          <div class="chart-wrap" style="height: 400px;"><canvas id="chart-rank-poblacion"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Distribución por género</h3>
+          <p class="chart-sub">Total regional</p>
+          <div class="chart-wrap"><canvas id="chart-genero"></canvas></div>
+        </div>
+        <div class="chart-card chart-large">
+          <h3>Top 10 comunas por total de empresas</h3>
+          <p class="chart-sub">SII 2024</p>
+          <div class="chart-wrap" style="height: 400px;"><canvas id="chart-rank-empresas"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Top 5 vacantes BNE</h3>
+          <p class="chart-sub">Bolsa Nacional de Empleo 2025</p>
+          <div class="chart-wrap"><canvas id="chart-rank-vacantes"></canvas></div>
+        </div>
+      </div>
+
+      <div style="margin-top: 2rem;" class="data-table-wrap">
+        <h3 style="margin-bottom: 1rem;">Resumen comparativo de comunas</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Comuna</th>
+              <th class="num">Población</th>
+              <th class="num">PET</th>
+              <th class="num">Ocupados</th>
+              <th class="num">Empresas</th>
+              <th class="num">Vacantes</th>
+              <th class="num">Inv. 2025-29 (MUSD)</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-resumen"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="inversion.html">Inversión Regional</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios relacionados</h4>
+      <ul>
+        <li><a href="https://www.dt.gob.cl" target="_blank" rel="noopener">Dirección del Trabajo</a></li>
+        <li><a href="https://www.sence.gob.cl" target="_blank" rel="noopener">SENCE</a></li>
+        <li><a href="https://www.ips.gob.cl" target="_blank" rel="noopener">IPS</a></li>
+        <li><a href="https://www.bne.cl" target="_blank" rel="noopener">Bolsa Nacional de Empleo</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Fuentes</h4>
+      <ul class="footer-sources">
+        <li>CENSO 2024 — INE</li>
+        <li>ENE — Encuesta Nacional de Empleo</li>
+        <li>SII — Servicio de Impuestos Internos</li>
+        <li>BNE — Bolsa Nacional de Empleo</li>
+        <li>CBC — Corporación Bienes de Capital</li>
+        <li>BIP — Banco Integrado de Proyectos</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/comunas.js"></script>
+</body>
+</html>

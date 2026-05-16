@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inversión Regional — SEREMI del Trabajo O'Higgins</title>
+<meta name="description" content="Inversión pública y privada en la Región de O'Higgins: análisis histórico 1994-2025 y cartera de proyectos 2026.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores Comunales</a>
+        <a href="inversion.html" class="nav-link active">Inversión Regional</a>
+        <a href="institucional.html" class="nav-link">Institucional</a>
+        <a href="index.html#contacto" class="nav-link nav-cta">Contacto</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Inversión Regional</nav>
+    <span class="eyebrow">Sistema Nacional de Inversiones · CBC</span>
+    <h1>Inversión Regional O'Higgins</h1>
+    <p class="lead">Análisis de 30.401 iniciativas de inversión pública registradas entre 1994 y 2025, más la cartera de proyectos privados 2026 en seguimiento por la SEREMI.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+
+    <div class="tabs">
+      <button class="tab active" data-tab="historica">Inversión histórica (1994-2025)</button>
+      <button class="tab" data-tab="cartera">Cartera 2026 (Privada)</button>
+    </div>
+
+    <!-- TAB: HISTORICA -->
+    <div class="tab-content active" id="tab-historica">
+      <div class="kpi-grid" id="kpi-hist"></div>
+
+      <div class="charts-grid">
+        <div class="chart-card chart-large">
+          <h3>Evolución de iniciativas (1994 - 2025)</h3>
+          <p class="chart-sub">Cantidad de proyectos postulados anualmente</p>
+          <div class="chart-wrap"><canvas id="ch-anios"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Etapa actual</h3>
+          <p class="chart-sub">Estado del ciclo del proyecto</p>
+          <div class="chart-wrap"><canvas id="ch-etapa"></canvas></div>
+        </div>
+
+        <div class="chart-card chart-large">
+          <h3>Inversión histórica por sector</h3>
+          <p class="chart-sub">Costo total acumulado por sector (M$)</p>
+          <div class="chart-wrap"><canvas id="ch-sec-costo"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Calificación técnica</h3>
+          <p class="chart-sub">Distribución por estado RATE</p>
+          <div class="chart-wrap"><canvas id="ch-rate"></canvas></div>
+        </div>
+
+        <div class="chart-card chart-large">
+          <h3>Top 15 instituciones formuladoras</h3>
+          <p class="chart-sub">Organismos con mayor número de iniciativas</p>
+          <div class="chart-wrap" style="height: 420px;"><canvas id="ch-inst"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Fuente de financiamiento</h3>
+          <p class="chart-sub">Origen de los fondos</p>
+          <div class="chart-wrap"><canvas id="ch-fuente"></canvas></div>
+        </div>
+
+        <div class="chart-card chart-large">
+          <h3>Top 20 sub-sectores</h3>
+          <p class="chart-sub">Áreas temáticas más recurrentes</p>
+          <div class="chart-wrap" style="height: 480px;"><canvas id="ch-subsec"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Tipo de iniciativa</h3>
+          <p class="chart-sub">Proyectos, programas y estudios básicos</p>
+          <div class="chart-wrap"><canvas id="ch-tip"></canvas></div>
+        </div>
+      </div>
+
+      <div style="margin-top: 2.5rem;" class="data-table-wrap">
+        <h3 style="margin-bottom: 1rem;">Resumen por sector</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Sector</th>
+              <th class="num">Cantidad de iniciativas</th>
+              <th class="num">Inversión total (M$)</th>
+              <th class="num">Promedio por iniciativa (M$)</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-sectores"></tbody>
+        </table>
+      </div>
+
+      <div style="margin-top: 2rem;" class="data-table-wrap">
+        <h3 style="margin-bottom: 1rem;">Inversión por comuna (detección automática en descripciones)</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Comuna</th>
+              <th class="num">Cantidad de iniciativas</th>
+              <th class="num">Inversión total (M$)</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-comunas-hist"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- TAB: CARTERA 2026 -->
+    <div class="tab-content" id="tab-cartera">
+      <div class="kpi-grid" id="kpi-2026"></div>
+
+      <div class="charts-grid">
+        <div class="chart-card chart-large">
+          <h3>Inversión 2026 por sector económico</h3>
+          <p class="chart-sub">Monto en MUSD comprometido por sector</p>
+          <div class="chart-wrap"><canvas id="ch26-sec"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Etapas de la cartera</h3>
+          <p class="chart-sub">Construcción, terminado, ingeniería</p>
+          <div class="chart-wrap"><canvas id="ch26-etapa"></canvas></div>
+        </div>
+
+        <div class="chart-card chart-large">
+          <h3>Empleo proyectado por sector</h3>
+          <p class="chart-sub">Suma de empleos profesionales, técnicos y no calificados</p>
+          <div class="chart-wrap"><canvas id="ch26-empleo"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>Composición del empleo</h3>
+          <p class="chart-sub">Distribución por nivel de calificación</p>
+          <div class="chart-wrap"><canvas id="ch26-comp"></canvas></div>
+        </div>
+      </div>
+
+      <div style="margin-top: 2.5rem;" class="data-table-wrap">
+        <h3 style="margin-bottom: 1rem;">Cartera completa 2026</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Comuna</th>
+              <th>Sector</th>
+              <th>Tipología</th>
+              <th>Etapa</th>
+              <th class="num">Cant.</th>
+              <th class="num">Inv. (MUSD)</th>
+              <th class="num">Empleo op.</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-cartera"></tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="inversion.html">Inversión Regional</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="https://www.dt.gob.cl" target="_blank" rel="noopener">Dirección del Trabajo</a></li>
+        <li><a href="https://www.sence.gob.cl" target="_blank" rel="noopener">SENCE</a></li>
+        <li><a href="https://www.ips.gob.cl" target="_blank" rel="noopener">IPS</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Fuentes</h4>
+      <ul class="footer-sources">
+        <li>BIP — Banco Integrado de Proyectos</li>
+        <li>CBC — Corporación Bienes de Capital</li>
+        <li>MIDESO — Min. Desarrollo Social</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/inversion.js"></script>
+</body>
+</html>

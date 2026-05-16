@@ -1,0 +1,5148 @@
+[
+  {
+    "comuna": "Chépica",
+    "archivo": "Che╠upica-Ficha-Comunal-103.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "15.668",
+        "fuente": "CENSO 2024",
+        "numero": 15668.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "7.737",
+        "fuente": "CENSO 2024",
+        "numero": 7737.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "7.931",
+        "fuente": "CENSO 2024",
+        "numero": 7931.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,185",
+        "fuente": "CENSO 2024",
+        "numero": 0.185
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "808.496",
+        "fuente": "MIDESO 2024",
+        "numero": 808496.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,9",
+        "fuente": "MIDESO 2024",
+        "numero": 7.9
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "633.395",
+        "fuente": "MIDESO 2024",
+        "numero": 633395.0
+      },
+      "% Ocupados Formales": {
+        "valor": "30,9",
+        "fuente": "MIDESO 2024",
+        "numero": 30.9
+      },
+      "Total de empresas": {
+        "valor": "1.585",
+        "fuente": "SII 2024",
+        "numero": 1585.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "6.527",
+        "fuente": "SII 2024",
+        "numero": 6527.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.007",
+        "fuente": "SII 2024",
+        "numero": 1007.0
+      },
+      "Cantidad de avisos": {
+        "valor": "15",
+        "fuente": "BNE 2025",
+        "numero": 15.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "53",
+        "fuente": "BNE 2025",
+        "numero": 53.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Personal de emergencia / Brigadista",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "22",
+        "fuente": "BNE 2025",
+        "numero": 22.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Tecnicos (as) en enfermeria",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "11",
+        "fuente": "BNE 2025",
+        "numero": 11.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Administrativos (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "4",
+        "fuente": "BNE 2025",
+        "numero": 4.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Chimbarongo",
+    "archivo": "Chimbarongo-Ficha-Comunal-104.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "37.258",
+        "fuente": "CENSO 2024",
+        "numero": 37258.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "18.467",
+        "fuente": "CENSO 2024",
+        "numero": 18467.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "18.791",
+        "fuente": "CENSO 2024",
+        "numero": 18791.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,152",
+        "fuente": "CENSO 2024",
+        "numero": 0.152
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "13.392*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "26.632*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "14.364*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "847.952",
+        "fuente": "MIDESO 2024",
+        "numero": 847952.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "6,6",
+        "fuente": "MIDESO 2024",
+        "numero": 6.6
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "680.666",
+        "fuente": "MIDESO 2024",
+        "numero": 680666.0
+      },
+      "% Ocupados Formales": {
+        "valor": "35,6",
+        "fuente": "MIDESO 2024",
+        "numero": 35.6
+      },
+      "Total de empresas": {
+        "valor": "3.267",
+        "fuente": "SII 2024",
+        "numero": 3267.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "12.845",
+        "fuente": "SII 2024",
+        "numero": 12845.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "2.161",
+        "fuente": "SII 2024",
+        "numero": 2161.0
+      },
+      "Cantidad de avisos": {
+        "valor": "49",
+        "fuente": "BNE 2025",
+        "numero": 49.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "2.248",
+        "fuente": "BNE 2025",
+        "numero": 2248.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "1.297",
+        "fuente": "BNE 2025",
+        "numero": 1297.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "480",
+        "fuente": "BNE 2025",
+        "numero": 480.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Inspectores (as) de seguridad y/o calidad",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "150",
+        "fuente": "BNE 2025",
+        "numero": 150.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Codegua",
+    "archivo": "Codegua-Ficha-Comunal-80.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "13.955",
+        "fuente": "CENSO 2024",
+        "numero": 13955.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "6.885",
+        "fuente": "CENSO 2024",
+        "numero": 6885.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "7.070",
+        "fuente": "CENSO 2024",
+        "numero": 7070.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,144",
+        "fuente": "CENSO 2024",
+        "numero": 0.144
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.027.779",
+        "fuente": "MIDESO 2024",
+        "numero": 1027779.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "5,2",
+        "fuente": "MIDESO 2024",
+        "numero": 5.2
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "801.754",
+        "fuente": "MIDESO 2024",
+        "numero": 801754.0
+      },
+      "% Ocupados Formales": {
+        "valor": "38,9",
+        "fuente": "MIDESO 2024",
+        "numero": 38.9
+      },
+      "Total de empresas": {
+        "valor": "895",
+        "fuente": "SII 2024",
+        "numero": 895.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "4.562",
+        "fuente": "SII 2024",
+        "numero": 4562.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.507",
+        "fuente": "SII 2024",
+        "numero": 1507.0
+      },
+      "Cantidad de avisos": {
+        "valor": "9",
+        "fuente": "BNE 2025",
+        "numero": 9.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "1.017",
+        "fuente": "BNE 2025",
+        "numero": 1017.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "500",
+        "fuente": "BNE 2025",
+        "numero": 500.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores (as)/ Operarios (as) /\nmantenedores (as) / reguladores (as) de\ngruas y maquinaria",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "500",
+        "fuente": "BNE 2025",
+        "numero": 500.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de Seguridad / Guardia\nsin curso OS10",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "10",
+        "fuente": "BNE 2025",
+        "numero": 10.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Coinco",
+    "archivo": "Coinco-Ficha-Comunal-81.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "7.916",
+        "fuente": "CENSO 2024",
+        "numero": 7916.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "3.906",
+        "fuente": "CENSO 2024",
+        "numero": 3906.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "4.010",
+        "fuente": "CENSO 2024",
+        "numero": 4010.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,183",
+        "fuente": "CENSO 2024",
+        "numero": 0.183
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.112.700",
+        "fuente": "MIDESO 2024",
+        "numero": 1112700.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "5,5",
+        "fuente": "MIDESO 2024",
+        "numero": 5.5
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "848.750",
+        "fuente": "MIDESO 2024",
+        "numero": 848750.0
+      },
+      "% Ocupados Formales": {
+        "valor": "30,0",
+        "fuente": "MIDESO 2024",
+        "numero": 30.0
+      },
+      "Total de empresas": {
+        "valor": "591",
+        "fuente": "SII 2024",
+        "numero": 591.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "1.823",
+        "fuente": "SII 2024",
+        "numero": 1823.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "502",
+        "fuente": "SII 2024",
+        "numero": 502.0
+      },
+      "Cantidad de avisos": {
+        "valor": "9",
+        "fuente": "BNE 2025",
+        "numero": 9.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "117",
+        "fuente": "BNE 2025",
+        "numero": 117.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "100",
+        "fuente": "BNE 2025",
+        "numero": 100.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores (as) Mecanicos de\nmaquinarias industrial",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "7",
+        "fuente": "BNE 2025",
+        "numero": 7.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Operadores de grúas de aparatos\nelevadores y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "4",
+        "fuente": "BNE 2025",
+        "numero": 4.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Coltauco",
+    "archivo": "Coltauco-Ficha-Comunal-82.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "21.373",
+        "fuente": "CENSO 2024",
+        "numero": 21373.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "10.653",
+        "fuente": "CENSO 2024",
+        "numero": 10653.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "10.720",
+        "fuente": "CENSO 2024",
+        "numero": 10720.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,161",
+        "fuente": "CENSO 2024",
+        "numero": 0.161
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "969.591",
+        "fuente": "MIDESO 2024",
+        "numero": 969591.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "5,1",
+        "fuente": "MIDESO 2024",
+        "numero": 5.1
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "784.078",
+        "fuente": "MIDESO 2024",
+        "numero": 784078.0
+      },
+      "% Ocupados Formales": {
+        "valor": "35,6",
+        "fuente": "MIDESO 2024",
+        "numero": 35.6
+      },
+      "Total de empresas": {
+        "valor": "1.454",
+        "fuente": "SII 2024",
+        "numero": 1454.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "13.247",
+        "fuente": "SII 2024",
+        "numero": 13247.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.054",
+        "fuente": "SII 2024",
+        "numero": 1054.0
+      },
+      "Cantidad de avisos": {
+        "valor": "18",
+        "fuente": "BNE 2025",
+        "numero": 18.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "671",
+        "fuente": "BNE 2025",
+        "numero": 671.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Agricultores y agricultoras, trabajadores y\ntrabajadoras calificadas de cultivos\nextensivos",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "466",
+        "fuente": "BNE 2025",
+        "numero": 466.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Agricultores (as)/ trabajadores (as) de\nhuertas, plantaciones, invernaderos,\nviveros y jardines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "62",
+        "fuente": "BNE 2025",
+        "numero": 62.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "60",
+        "fuente": "BNE 2025",
+        "numero": 60.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Doñihue",
+    "archivo": "Don╠aihue-Ficha-Comunal-83.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "21.925",
+        "fuente": "CENSO 2024",
+        "numero": 21925.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "10.706",
+        "fuente": "CENSO 2024",
+        "numero": 10706.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "11.219",
+        "fuente": "CENSO 2024",
+        "numero": 11219.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,151",
+        "fuente": "CENSO 2024",
+        "numero": 0.151
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.076.718",
+        "fuente": "MIDESO 2024",
+        "numero": 1076718.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "4,3",
+        "fuente": "MIDESO 2024",
+        "numero": 4.3
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "876.890",
+        "fuente": "MIDESO 2024",
+        "numero": 876890.0
+      },
+      "% Ocupados Formales": {
+        "valor": "36,9",
+        "fuente": "MIDESO 2024",
+        "numero": 36.9
+      },
+      "Total de empresas": {
+        "valor": "1.463",
+        "fuente": "SII 2024",
+        "numero": 1463.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "11.809",
+        "fuente": "SII 2024",
+        "numero": 11809.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.475",
+        "fuente": "SII 2024",
+        "numero": 1475.0
+      },
+      "Cantidad de avisos": {
+        "valor": "27",
+        "fuente": "BNE 2025",
+        "numero": 27.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "83",
+        "fuente": "BNE 2025",
+        "numero": 83.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Administrativos (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "15",
+        "fuente": "BNE 2025",
+        "numero": 15.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Agricultores (as)/ trabajadores (as) de\nhuertas, plantaciones, invernaderos,\nviveros y jardines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "12",
+        "fuente": "BNE 2025",
+        "numero": 12.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Agricultores y trabajadores calificados de\nhuertas, invernaderos, viveros y jardines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "12",
+        "fuente": "BNE 2025",
+        "numero": 12.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Graneros",
+    "archivo": "Graneros-Ficha-Comunal-84.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "35.938",
+        "fuente": "CENSO 2024",
+        "numero": 35938.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "17.613",
+        "fuente": "CENSO 2024",
+        "numero": 17613.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "18.325",
+        "fuente": "CENSO 2024",
+        "numero": 18325.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,122",
+        "fuente": "CENSO 2024",
+        "numero": 0.122
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.037.880",
+        "fuente": "MIDESO 2024",
+        "numero": 1037880.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "4,3",
+        "fuente": "MIDESO 2024",
+        "numero": 4.3
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "804.688",
+        "fuente": "MIDESO 2024",
+        "numero": 804688.0
+      },
+      "% Ocupados Formales": {
+        "valor": "39,5",
+        "fuente": "MIDESO 2024",
+        "numero": 39.5
+      },
+      "Total de empresas": {
+        "valor": "2.142",
+        "fuente": "SII 2024",
+        "numero": 2142.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "13.853",
+        "fuente": "SII 2024",
+        "numero": 13853.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "2.194",
+        "fuente": "SII 2024",
+        "numero": 2194.0
+      },
+      "Cantidad de avisos": {
+        "valor": "65",
+        "fuente": "BNE 2025",
+        "numero": 65.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "334",
+        "fuente": "BNE 2025",
+        "numero": 334.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "113",
+        "fuente": "BNE 2025",
+        "numero": 113.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores agrícolas de subsistencia",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "76",
+        "fuente": "BNE 2025",
+        "numero": 76.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Asesores agrícolas y forestales",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "34",
+        "fuente": "BNE 2025",
+        "numero": 34.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "4",
+        "fuente": "CBC 2025",
+        "numero": 4.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "55",
+        "fuente": "CBC 2025",
+        "numero": 55.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "33",
+        "fuente": "CBC 2025",
+        "numero": 33.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "11",
+        "fuente": "CBC 2025",
+        "numero": 11.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "150",
+        "fuente": "CBC 2025",
+        "numero": 150.0
+      }
+    }
+  },
+  {
+    "comuna": "La Estrella",
+    "archivo": "La-Estrella-Ficha-Comunal-97.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "4.609",
+        "fuente": "CENSO 2024",
+        "numero": 4609.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "2.343",
+        "fuente": "CENSO 2024",
+        "numero": 2343.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "2.266",
+        "fuente": "CENSO 2024",
+        "numero": 2266.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,205",
+        "fuente": "CENSO 2024",
+        "numero": 0.205
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.020.638",
+        "fuente": "MIDESO 2024",
+        "numero": 1020638.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,8",
+        "fuente": "MIDESO 2024",
+        "numero": 7.8
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "778.960",
+        "fuente": "MIDESO 2024",
+        "numero": 778960.0
+      },
+      "% Ocupados Formales": {
+        "valor": "26,3",
+        "fuente": "MIDESO 2024",
+        "numero": 26.3
+      },
+      "Total de empresas": {
+        "valor": "454",
+        "fuente": "SII 2024",
+        "numero": 454.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "616",
+        "fuente": "SII 2024",
+        "numero": 616.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "568",
+        "fuente": "SII 2024",
+        "numero": 568.0
+      },
+      "Cantidad de avisos": {
+        "valor": "90",
+        "fuente": "BNE 2025",
+        "numero": 90.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "271",
+        "fuente": "BNE 2025",
+        "numero": 271.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "115",
+        "fuente": "BNE 2025",
+        "numero": 115.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Auxiliares de aseo / Mantenedores (as) /\nlimpiadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "82",
+        "fuente": "BNE 2025",
+        "numero": 82.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Maestro(a) eléctrico(a)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "25",
+        "fuente": "BNE 2025",
+        "numero": 25.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Las Cabras",
+    "archivo": "Las-Cabras-Ficha-Comunal-85.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "27.554",
+        "fuente": "CENSO 2024",
+        "numero": 27554.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "13.900",
+        "fuente": "CENSO 2024",
+        "numero": 13900.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "13.654",
+        "fuente": "CENSO 2024",
+        "numero": 13654.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,162",
+        "fuente": "CENSO 2024",
+        "numero": 0.162
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "885.716",
+        "fuente": "MIDESO 2024",
+        "numero": 885716.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "8,5",
+        "fuente": "MIDESO 2024",
+        "numero": 8.5
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "685.728",
+        "fuente": "MIDESO 2024",
+        "numero": 685728.0
+      },
+      "% Ocupados Formales": {
+        "valor": "35,9",
+        "fuente": "MIDESO 2024",
+        "numero": 35.9
+      },
+      "Total de empresas": {
+        "valor": "2.369",
+        "fuente": "SII 2024",
+        "numero": 2369.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "15.596",
+        "fuente": "SII 2024",
+        "numero": 15596.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "2.379",
+        "fuente": "SII 2024",
+        "numero": 2379.0
+      },
+      "Cantidad de avisos": {
+        "valor": "12",
+        "fuente": "BNE 2025",
+        "numero": 12.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "51",
+        "fuente": "BNE 2025",
+        "numero": 51.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Operadores de grúas de aparatos\nelevadores y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "30",
+        "fuente": "BNE 2025",
+        "numero": 30.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Reponedores (as) / Mantenedores (as) de\nestanterias y/o vitrinas",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "10",
+        "fuente": "BNE 2025",
+        "numero": 10.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Auxiliares de aseo / Mantenedores (as) /\nlimpiadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "4",
+        "fuente": "BNE 2025",
+        "numero": 4.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Lolol",
+    "archivo": "Lolol-Ficha-Comunal-105.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "7.791",
+        "fuente": "CENSO 2024",
+        "numero": 7791.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "3.926",
+        "fuente": "CENSO 2024",
+        "numero": 3926.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "3.865",
+        "fuente": "CENSO 2024",
+        "numero": 3865.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,193",
+        "fuente": "CENSO 2024",
+        "numero": 0.193
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "776.199",
+        "fuente": "MIDESO 2024",
+        "numero": 776199.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "9,6",
+        "fuente": "MIDESO 2024",
+        "numero": 9.6
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "625.000",
+        "fuente": "MIDESO 2024",
+        "numero": 625000.0
+      },
+      "% Ocupados Formales": {
+        "valor": "27,7",
+        "fuente": "MIDESO 2024",
+        "numero": 27.7
+      },
+      "Total de empresas": {
+        "valor": "864",
+        "fuente": "SII 2024",
+        "numero": 864.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "4.287",
+        "fuente": "SII 2024",
+        "numero": 4287.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "901",
+        "fuente": "SII 2024",
+        "numero": 901.0
+      },
+      "Cantidad de avisos": {
+        "valor": "2",
+        "fuente": "BNE 2025",
+        "numero": 2.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "2",
+        "fuente": "BNE 2025",
+        "numero": 2.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "1",
+        "fuente": "BNE 2025",
+        "numero": 1.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Quimicos (as) farmaceuticos (as) /\nQuimicos (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "1",
+        "fuente": "BNE 2025",
+        "numero": 1.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "NA",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "NA",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Machalí",
+    "archivo": "Machali╠u-Ficha-Comunal-86.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "60.875",
+        "fuente": "CENSO 2024",
+        "numero": 60875.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "29.507",
+        "fuente": "CENSO 2024",
+        "numero": 29507.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "31.368",
+        "fuente": "CENSO 2024",
+        "numero": 31368.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,110",
+        "fuente": "CENSO 2024",
+        "numero": 0.11
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "27.228*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "46.054*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "29.510*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.853.220",
+        "fuente": "MIDESO 2024",
+        "numero": 1853220.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "3,0",
+        "fuente": "MIDESO 2024",
+        "numero": 3.0
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "1.483.570",
+        "fuente": "MIDESO 2024",
+        "numero": 1483570.0
+      },
+      "% Ocupados Formales": {
+        "valor": "41,9",
+        "fuente": "MIDESO 2024",
+        "numero": 41.9
+      },
+      "Total de empresas": {
+        "valor": "3.681",
+        "fuente": "SII 2024",
+        "numero": 3681.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "17.555",
+        "fuente": "SII 2024",
+        "numero": 17555.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "4.849",
+        "fuente": "SII 2024",
+        "numero": 4849.0
+      },
+      "Cantidad de avisos": {
+        "valor": "59",
+        "fuente": "BNE 2025",
+        "numero": 59.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "279",
+        "fuente": "BNE 2025",
+        "numero": 279.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Mecánicos y reparadores de máquinas",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "90",
+        "fuente": "BNE 2025",
+        "numero": 90.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Mensajeros, porteadores y repartidores",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "30",
+        "fuente": "BNE 2025",
+        "numero": 30.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Operadores de instalaciones de\nprocesamiento de minerales y rocas",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "28",
+        "fuente": "BNE 2025",
+        "numero": 28.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "6",
+        "fuente": "CBC 2025",
+        "numero": 6.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "444",
+        "fuente": "CBC 2025",
+        "numero": 444.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "367",
+        "fuente": "CBC 2025",
+        "numero": 367.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "995",
+        "fuente": "CBC 2025",
+        "numero": 995.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "468",
+        "fuente": "CBC 2025",
+        "numero": 468.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "2.730",
+        "fuente": "CBC 2025",
+        "numero": 2730.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "2.881",
+        "fuente": "CBC 2025",
+        "numero": 2881.0
+      }
+    }
+  },
+  {
+    "comuna": "Malloa",
+    "archivo": "Malloa-Ficha-Comunal-87.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "13.882",
+        "fuente": "CENSO 2024",
+        "numero": 13882.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "6.950",
+        "fuente": "CENSO 2024",
+        "numero": 6950.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "6.932",
+        "fuente": "CENSO 2024",
+        "numero": 6932.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,175",
+        "fuente": "CENSO 2024",
+        "numero": 0.175
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "900.422",
+        "fuente": "MIDESO 2024",
+        "numero": 900422.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "6,5",
+        "fuente": "MIDESO 2024",
+        "numero": 6.5
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "703.514",
+        "fuente": "MIDESO 2024",
+        "numero": 703514.0
+      },
+      "% Ocupados Formales": {
+        "valor": "31,4",
+        "fuente": "MIDESO 2024",
+        "numero": 31.4
+      },
+      "Total de empresas": {
+        "valor": "1.130",
+        "fuente": "SII 2024",
+        "numero": 1130.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "3.849",
+        "fuente": "SII 2024",
+        "numero": 3849.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "815",
+        "fuente": "SII 2024",
+        "numero": 815.0
+      },
+      "Cantidad de avisos": {
+        "valor": "57",
+        "fuente": "BNE 2025",
+        "numero": 57.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "292",
+        "fuente": "BNE 2025",
+        "numero": 292.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Técnicos agropecuarios",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "60",
+        "fuente": "BNE 2025",
+        "numero": 60.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores (as) area Control y gestion\nde procesos",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "50",
+        "fuente": "BNE 2025",
+        "numero": 50.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "45",
+        "fuente": "BNE 2025",
+        "numero": 45.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Marchigüe",
+    "archivo": "Marchihue-Ficha-Comunal-99.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "8.715",
+        "fuente": "CENSO 2024",
+        "numero": 8715.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "4.347",
+        "fuente": "CENSO 2024",
+        "numero": 4347.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "4.368",
+        "fuente": "CENSO 2024",
+        "numero": 4368.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,191",
+        "fuente": "CENSO 2024",
+        "numero": 0.191
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "982.186",
+        "fuente": "MIDESO 2024",
+        "numero": 982186.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,7",
+        "fuente": "MIDESO 2024",
+        "numero": 7.7
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "736.174",
+        "fuente": "MIDESO 2024",
+        "numero": 736174.0
+      },
+      "% Ocupados Formales": {
+        "valor": "33,4",
+        "fuente": "MIDESO 2024",
+        "numero": 33.4
+      },
+      "Total de empresas": {
+        "valor": "874",
+        "fuente": "SII 2024",
+        "numero": 874.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "2.814",
+        "fuente": "SII 2024",
+        "numero": 2814.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "994",
+        "fuente": "SII 2024",
+        "numero": 994.0
+      },
+      "Cantidad de avisos": {
+        "valor": "43",
+        "fuente": "BNE 2025",
+        "numero": 43.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "103",
+        "fuente": "BNE 2025",
+        "numero": 103.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Maestros(as) Construccion / General",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "45",
+        "fuente": "BNE 2025",
+        "numero": 45.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "29",
+        "fuente": "BNE 2025",
+        "numero": 29.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de Seguridad / Guardia\ncon curso OS10",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "10",
+        "fuente": "BNE 2025",
+        "numero": 10.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "3",
+        "fuente": "CBC 2025",
+        "numero": 3.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "179",
+        "fuente": "CBC 2025",
+        "numero": 179.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "73",
+        "fuente": "CBC 2025",
+        "numero": 73.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "120",
+        "fuente": "CBC 2025",
+        "numero": 120.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "42",
+        "fuente": "CBC 2025",
+        "numero": 42.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "12",
+        "fuente": "CBC 2025",
+        "numero": 12.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "407",
+        "fuente": "CBC 2025",
+        "numero": 407.0
+      }
+    }
+  },
+  {
+    "comuna": "Mostazal",
+    "archivo": "Mostazal-Ficha-Comunal-88.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "27.394",
+        "fuente": "CENSO 2024",
+        "numero": 27394.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "13.521",
+        "fuente": "CENSO 2024",
+        "numero": 13521.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "13.873",
+        "fuente": "CENSO 2024",
+        "numero": 13873.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,145",
+        "fuente": "CENSO 2024",
+        "numero": 0.145
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.003.149",
+        "fuente": "MIDESO 2024",
+        "numero": 1003149.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "4,8",
+        "fuente": "MIDESO 2024",
+        "numero": 4.8
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "764.707",
+        "fuente": "MIDESO 2024",
+        "numero": 764707.0
+      },
+      "% Ocupados Formales": {
+        "valor": "37,7",
+        "fuente": "MIDESO 2024",
+        "numero": 37.7
+      },
+      "Total de empresas": {
+        "valor": "1.735",
+        "fuente": "SII 2024",
+        "numero": 1735.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "16.876",
+        "fuente": "SII 2024",
+        "numero": 16876.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "2.833",
+        "fuente": "SII 2024",
+        "numero": 2833.0
+      },
+      "Cantidad de avisos": {
+        "valor": "150",
+        "fuente": "BNE 2025",
+        "numero": 150.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "820",
+        "fuente": "BNE 2025",
+        "numero": 820.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "106",
+        "fuente": "BNE 2025",
+        "numero": 106.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Agricultores y agricultoras, trabajadores y\ntrabajadoras calificadas de cultivos\nextensivos",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "82",
+        "fuente": "BNE 2025",
+        "numero": 82.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Auxiliares de aseo / Mantenedores (as) /\nlimpiadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "74",
+        "fuente": "BNE 2025",
+        "numero": 74.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "22",
+        "fuente": "CBC 2025",
+        "numero": 22.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "33",
+        "fuente": "CBC 2025",
+        "numero": 33.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "32",
+        "fuente": "CBC 2025",
+        "numero": 32.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "13",
+        "fuente": "CBC 2025",
+        "numero": 13.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "4",
+        "fuente": "CBC 2025",
+        "numero": 4.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "400",
+        "fuente": "CBC 2025",
+        "numero": 400.0
+      }
+    }
+  },
+  {
+    "comuna": "Nancagua",
+    "archivo": "Nancagua-Ficha-Comunal-106.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "18.723",
+        "fuente": "CENSO 2024",
+        "numero": 18723.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "9.222",
+        "fuente": "CENSO 2024",
+        "numero": 9222.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "9.501",
+        "fuente": "CENSO 2024",
+        "numero": 9501.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,152",
+        "fuente": "CENSO 2024",
+        "numero": 0.152
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "888.923",
+        "fuente": "MIDESO 2024",
+        "numero": 888923.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,0",
+        "fuente": "MIDESO 2024",
+        "numero": 7.0
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "695.000",
+        "fuente": "MIDESO 2024",
+        "numero": 695000.0
+      },
+      "% Ocupados Formales": {
+        "valor": "34,8",
+        "fuente": "MIDESO 2024",
+        "numero": 34.8
+      },
+      "Total de empresas": {
+        "valor": "1.558",
+        "fuente": "SII 2024",
+        "numero": 1558.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "4.412",
+        "fuente": "SII 2024",
+        "numero": 4412.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.327",
+        "fuente": "SII 2024",
+        "numero": 1327.0
+      },
+      "Cantidad de avisos": {
+        "valor": "27",
+        "fuente": "BNE 2025",
+        "numero": 27.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "263",
+        "fuente": "BNE 2025",
+        "numero": 263.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "100",
+        "fuente": "BNE 2025",
+        "numero": 100.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "42",
+        "fuente": "BNE 2025",
+        "numero": 42.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Inspectores (as) de seguridad y/o calidad",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "40",
+        "fuente": "BNE 2025",
+        "numero": 40.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Navidad",
+    "archivo": "Navidad-Ficha-Comunal-100.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "8.885",
+        "fuente": "CENSO 2024",
+        "numero": 8885.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "4.521",
+        "fuente": "CENSO 2024",
+        "numero": 4521.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "4.364",
+        "fuente": "CENSO 2024",
+        "numero": 4364.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,221",
+        "fuente": "CENSO 2024",
+        "numero": 0.221
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.083.000",
+        "fuente": "MIDESO 2024",
+        "numero": 1083000.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,3",
+        "fuente": "MIDESO 2024",
+        "numero": 7.3
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "787.393",
+        "fuente": "MIDESO 2024",
+        "numero": 787393.0
+      },
+      "% Ocupados Formales": {
+        "valor": "23,5",
+        "fuente": "MIDESO 2024",
+        "numero": 23.5
+      },
+      "Total de empresas": {
+        "valor": "658",
+        "fuente": "SII 2024",
+        "numero": 658.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "1.637",
+        "fuente": "SII 2024",
+        "numero": 1637.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.092",
+        "fuente": "SII 2024",
+        "numero": 1092.0
+      },
+      "Cantidad de avisos": {
+        "valor": "2",
+        "fuente": "BNE 2025",
+        "numero": 2.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "2",
+        "fuente": "BNE 2025",
+        "numero": 2.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Maestros(as) Construccion / General",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "1",
+        "fuente": "BNE 2025",
+        "numero": 1.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Secretarios administrativos",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "1",
+        "fuente": "BNE 2025",
+        "numero": 1.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "NA",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "NA",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Olivar",
+    "archivo": "Olivar-Ficha-Comunal-89.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "13.901",
+        "fuente": "CENSO 2024",
+        "numero": 13901.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "6.870",
+        "fuente": "CENSO 2024",
+        "numero": 6870.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "7.031",
+        "fuente": "CENSO 2024",
+        "numero": 7031.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,150",
+        "fuente": "CENSO 2024",
+        "numero": 0.15
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.150.755",
+        "fuente": "MIDESO 2024",
+        "numero": 1150755.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "6,1",
+        "fuente": "MIDESO 2024",
+        "numero": 6.1
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "828.385",
+        "fuente": "MIDESO 2024",
+        "numero": 828385.0
+      },
+      "% Ocupados Formales": {
+        "valor": "39,0",
+        "fuente": "MIDESO 2024",
+        "numero": 39.0
+      },
+      "Total de empresas": {
+        "valor": "1.359",
+        "fuente": "SII 2024",
+        "numero": 1359.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "10.280",
+        "fuente": "SII 2024",
+        "numero": 10280.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.562",
+        "fuente": "SII 2024",
+        "numero": 1562.0
+      },
+      "Cantidad de avisos": {
+        "valor": "14",
+        "fuente": "BNE 2025",
+        "numero": 14.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "20",
+        "fuente": "BNE 2025",
+        "numero": 20.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Administrativos (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "3",
+        "fuente": "BNE 2025",
+        "numero": 3.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "3",
+        "fuente": "BNE 2025",
+        "numero": 3.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Operarios y operarias de maquinas de\nmovimiento de tierras y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "2",
+        "fuente": "BNE 2025",
+        "numero": 2.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Palmilla",
+    "archivo": "Palmilla-Ficha-Comunal-107.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "13.060",
+        "fuente": "CENSO 2024",
+        "numero": 13060.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "6.547",
+        "fuente": "CENSO 2024",
+        "numero": 6547.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "6.513",
+        "fuente": "CENSO 2024",
+        "numero": 6513.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,171",
+        "fuente": "CENSO 2024",
+        "numero": 0.171
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "809.798",
+        "fuente": "MIDESO 2024",
+        "numero": 809798.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "8,4",
+        "fuente": "MIDESO 2024",
+        "numero": 8.4
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "659.530",
+        "fuente": "MIDESO 2024",
+        "numero": 659530.0
+      },
+      "% Ocupados Formales": {
+        "valor": "35,9",
+        "fuente": "MIDESO 2024",
+        "numero": 35.9
+      },
+      "Total de empresas": {
+        "valor": "1.392",
+        "fuente": "SII 2024",
+        "numero": 1392.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "5.847",
+        "fuente": "SII 2024",
+        "numero": 5847.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.088",
+        "fuente": "SII 2024",
+        "numero": 1088.0
+      },
+      "Cantidad de avisos": {
+        "valor": "124",
+        "fuente": "BNE 2025",
+        "numero": 124.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "704",
+        "fuente": "BNE 2025",
+        "numero": 704.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "311",
+        "fuente": "BNE 2025",
+        "numero": 311.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "144",
+        "fuente": "BNE 2025",
+        "numero": 144.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "40",
+        "fuente": "BNE 2025",
+        "numero": 40.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "8",
+        "fuente": "CBC 2025",
+        "numero": 8.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "8",
+        "fuente": "CBC 2025",
+        "numero": 8.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "8",
+        "fuente": "CBC 2025",
+        "numero": 8.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "3",
+        "fuente": "CBC 2025",
+        "numero": 3.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "30",
+        "fuente": "CBC 2025",
+        "numero": 30.0
+      }
+    }
+  },
+  {
+    "comuna": "Paredones",
+    "archivo": "Paredones-Ficha-Comunal-101.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "7.228",
+        "fuente": "CENSO 2024",
+        "numero": 7228.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "3.667",
+        "fuente": "CENSO 2024",
+        "numero": 3667.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "3.561",
+        "fuente": "CENSO 2024",
+        "numero": 3561.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,219",
+        "fuente": "CENSO 2024",
+        "numero": 0.219
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "821.331",
+        "fuente": "MIDESO 2024",
+        "numero": 821331.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,2",
+        "fuente": "MIDESO 2024",
+        "numero": 7.2
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "625.000",
+        "fuente": "MIDESO 2024",
+        "numero": 625000.0
+      },
+      "% Ocupados Formales": {
+        "valor": "23,3",
+        "fuente": "MIDESO 2024",
+        "numero": 23.3
+      },
+      "Total de empresas": {
+        "valor": "555",
+        "fuente": "SII 2024",
+        "numero": 555.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "1.389",
+        "fuente": "SII 2024",
+        "numero": 1389.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "644",
+        "fuente": "SII 2024",
+        "numero": 644.0
+      },
+      "Cantidad de avisos": {
+        "valor": "34",
+        "fuente": "BNE 2025",
+        "numero": 34.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "41",
+        "fuente": "BNE 2025",
+        "numero": 41.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Docentes / Profesores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "10",
+        "fuente": "BNE 2025",
+        "numero": 10.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores (as) Obreros",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "5",
+        "fuente": "BNE 2025",
+        "numero": 5.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Instructores de educación física y\nactividades recreativas",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "4",
+        "fuente": "BNE 2025",
+        "numero": 4.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Peralillo",
+    "archivo": "Peralillo-Ficha-Comunal-108.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "12.493",
+        "fuente": "CENSO 2024",
+        "numero": 12493.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "6.211",
+        "fuente": "CENSO 2024",
+        "numero": 6211.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "6.282",
+        "fuente": "CENSO 2024",
+        "numero": 6282.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,172",
+        "fuente": "CENSO 2024",
+        "numero": 0.172
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "897.392",
+        "fuente": "MIDESO 2024",
+        "numero": 897392.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "6,7",
+        "fuente": "MIDESO 2024",
+        "numero": 6.7
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "708.251",
+        "fuente": "MIDESO 2024",
+        "numero": 708251.0
+      },
+      "% Ocupados Formales": {
+        "valor": "35,4",
+        "fuente": "MIDESO 2024",
+        "numero": 35.4
+      },
+      "Total de empresas": {
+        "valor": "1.224",
+        "fuente": "SII 2024",
+        "numero": 1224.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "4.078",
+        "fuente": "SII 2024",
+        "numero": 4078.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.027",
+        "fuente": "SII 2024",
+        "numero": 1027.0
+      },
+      "Cantidad de avisos": {
+        "valor": "42",
+        "fuente": "BNE 2025",
+        "numero": 42.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "89",
+        "fuente": "BNE 2025",
+        "numero": 89.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Agricultores y agricultoras, trabajadores y\ntrabajadoras calificadas de cultivos\nextensivos",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "29",
+        "fuente": "BNE 2025",
+        "numero": 29.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Criadores de ganado y otros animales\ndomésticos, productores de leche y sus\nderivados",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "8",
+        "fuente": "BNE 2025",
+        "numero": 8.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Maestros(as) Construccion / General",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "6",
+        "fuente": "BNE 2025",
+        "numero": 6.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Pichidegua",
+    "archivo": "Pichidegua-Ficha-Comunal-91.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "20.363",
+        "fuente": "CENSO 2024",
+        "numero": 20363.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "10.152",
+        "fuente": "CENSO 2024",
+        "numero": 10152.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "10.211",
+        "fuente": "CENSO 2024",
+        "numero": 10211.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,182",
+        "fuente": "CENSO 2024",
+        "numero": 0.182
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "853.039",
+        "fuente": "MIDESO 2024",
+        "numero": 853039.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "8,9",
+        "fuente": "MIDESO 2024",
+        "numero": 8.9
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "702.212",
+        "fuente": "MIDESO 2024",
+        "numero": 702212.0
+      },
+      "% Ocupados Formales": {
+        "valor": "34,9",
+        "fuente": "MIDESO 2024",
+        "numero": 34.9
+      },
+      "Total de empresas": {
+        "valor": "2.066",
+        "fuente": "SII 2024",
+        "numero": 2066.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "6.530",
+        "fuente": "SII 2024",
+        "numero": 6530.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "1.568",
+        "fuente": "SII 2024",
+        "numero": 1568.0
+      },
+      "Cantidad de avisos": {
+        "valor": "22",
+        "fuente": "BNE 2025",
+        "numero": 22.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "62",
+        "fuente": "BNE 2025",
+        "numero": 62.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Trabajadores (as)/ Operarios (as) /\nmantenedores (as) / reguladores (as) de\nlineas de procesamiento",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "24",
+        "fuente": "BNE 2025",
+        "numero": 24.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "15",
+        "fuente": "BNE 2025",
+        "numero": 15.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Reponedores (as) / Mantenedores (as) de\nestanterias y/o vitrinas",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "10",
+        "fuente": "BNE 2025",
+        "numero": 10.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "4",
+        "fuente": "CBC 2025",
+        "numero": 4.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "5",
+        "fuente": "CBC 2025",
+        "numero": 5.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "5",
+        "fuente": "CBC 2025",
+        "numero": 5.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "2",
+        "fuente": "CBC 2025",
+        "numero": 2.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "70",
+        "fuente": "CBC 2025",
+        "numero": 70.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "20",
+        "fuente": "CBC 2025",
+        "numero": 20.0
+      }
+    }
+  },
+  {
+    "comuna": "Pichilemu",
+    "archivo": "Pichilemu-Ficha-Comunal-96.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "19.847",
+        "fuente": "CENSO 2024",
+        "numero": 19847.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "9.744",
+        "fuente": "CENSO 2024",
+        "numero": 9744.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "10.103",
+        "fuente": "CENSO 2024",
+        "numero": 10103.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,164",
+        "fuente": "CENSO 2024",
+        "numero": 0.164
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.006.336",
+        "fuente": "MIDESO 2024",
+        "numero": 1006336.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,3",
+        "fuente": "MIDESO 2024",
+        "numero": 7.3
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "703.906",
+        "fuente": "MIDESO 2024",
+        "numero": 703906.0
+      },
+      "% Ocupados Formales": {
+        "valor": "26,9",
+        "fuente": "MIDESO 2024",
+        "numero": 26.9
+      },
+      "Total de empresas": {
+        "valor": "2.817",
+        "fuente": "SII 2024",
+        "numero": 2817.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "4.820",
+        "fuente": "SII 2024",
+        "numero": 4820.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "3.650",
+        "fuente": "SII 2024",
+        "numero": 3650.0
+      },
+      "Cantidad de avisos": {
+        "valor": "40",
+        "fuente": "BNE 2025",
+        "numero": 40.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "306",
+        "fuente": "BNE 2025",
+        "numero": 306.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "279",
+        "fuente": "BNE 2025",
+        "numero": 279.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de Seguridad / Guardia\ncon curso OS10",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "7",
+        "fuente": "BNE 2025",
+        "numero": 7.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Enfermeros (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "5",
+        "fuente": "BNE 2025",
+        "numero": 5.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "36",
+        "fuente": "CBC 2025",
+        "numero": 36.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "51",
+        "fuente": "CBC 2025",
+        "numero": 51.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "31",
+        "fuente": "CBC 2025",
+        "numero": 31.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "10",
+        "fuente": "CBC 2025",
+        "numero": 10.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "230",
+        "fuente": "CBC 2025",
+        "numero": 230.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "150",
+        "fuente": "CBC 2025",
+        "numero": 150.0
+      }
+    }
+  },
+  {
+    "comuna": "Placilla",
+    "archivo": "Placilla-Ficha-Comunal-109.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "9.438",
+        "fuente": "CENSO 2024",
+        "numero": 9438.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "4.739",
+        "fuente": "CENSO 2024",
+        "numero": 4739.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "4.699",
+        "fuente": "CENSO 2024",
+        "numero": 4699.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,165",
+        "fuente": "CENSO 2024",
+        "numero": 0.165
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "902.993",
+        "fuente": "MIDESO 2024",
+        "numero": 902993.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "8,6",
+        "fuente": "MIDESO 2024",
+        "numero": 8.6
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "701.107",
+        "fuente": "MIDESO 2024",
+        "numero": 701107.0
+      },
+      "% Ocupados Formales": {
+        "valor": "33,7",
+        "fuente": "MIDESO 2024",
+        "numero": 33.7
+      },
+      "Total de empresas": {
+        "valor": "893",
+        "fuente": "SII 2024",
+        "numero": 893.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "3.159",
+        "fuente": "SII 2024",
+        "numero": 3159.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "795",
+        "fuente": "SII 2024",
+        "numero": 795.0
+      },
+      "Cantidad de avisos": {
+        "valor": "45",
+        "fuente": "BNE 2025",
+        "numero": 45.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "662",
+        "fuente": "BNE 2025",
+        "numero": 662.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "230",
+        "fuente": "BNE 2025",
+        "numero": 230.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "190",
+        "fuente": "BNE 2025",
+        "numero": 190.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "100",
+        "fuente": "BNE 2025",
+        "numero": 100.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Pumanque",
+    "archivo": "Pumanque-Ficha-Comunal-110.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "4.559",
+        "fuente": "CENSO 2024",
+        "numero": 4559.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "2.299",
+        "fuente": "CENSO 2024",
+        "numero": 2299.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "2.260",
+        "fuente": "CENSO 2024",
+        "numero": 2260.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,226",
+        "fuente": "CENSO 2024",
+        "numero": 0.226
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "908.723",
+        "fuente": "MIDESO 2024",
+        "numero": 908723.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "6,4",
+        "fuente": "MIDESO 2024",
+        "numero": 6.4
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "726.455",
+        "fuente": "MIDESO 2024",
+        "numero": 726455.0
+      },
+      "% Ocupados Formales": {
+        "valor": "27,4",
+        "fuente": "MIDESO 2024",
+        "numero": 27.4
+      },
+      "Total de empresas": {
+        "valor": "428",
+        "fuente": "SII 2024",
+        "numero": 428.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "638",
+        "fuente": "SII 2024",
+        "numero": 638.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "419",
+        "fuente": "SII 2024",
+        "numero": 419.0
+      },
+      "Cantidad de avisos": {
+        "valor": "7",
+        "fuente": "BNE 2025",
+        "numero": 7.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "7",
+        "fuente": "BNE 2025",
+        "numero": 7.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Psicologos (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "4",
+        "fuente": "BNE 2025",
+        "numero": 4.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Profesionales del trabajo social",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "2",
+        "fuente": "BNE 2025",
+        "numero": 2.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Administrativos (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "1",
+        "fuente": "BNE 2025",
+        "numero": 1.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Quinta de Tilcoco",
+    "archivo": "Quinta-de-Tilcoco-Ficha-Comunal-92.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "13.558",
+        "fuente": "CENSO 2024",
+        "numero": 13558.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "6.648",
+        "fuente": "CENSO 2024",
+        "numero": 6648.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "6.910",
+        "fuente": "CENSO 2024",
+        "numero": 6910.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,163",
+        "fuente": "CENSO 2024",
+        "numero": 0.163
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "939.818",
+        "fuente": "MIDESO 2024",
+        "numero": 939818.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "6,6",
+        "fuente": "MIDESO 2024",
+        "numero": 6.6
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "741.695",
+        "fuente": "MIDESO 2024",
+        "numero": 741695.0
+      },
+      "% Ocupados Formales": {
+        "valor": "31,8",
+        "fuente": "MIDESO 2024",
+        "numero": 31.8
+      },
+      "Total de empresas": {
+        "valor": "1.160",
+        "fuente": "SII 2024",
+        "numero": 1160.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "3.503",
+        "fuente": "SII 2024",
+        "numero": 3503.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "832",
+        "fuente": "SII 2024",
+        "numero": 832.0
+      },
+      "Cantidad de avisos": {
+        "valor": "42",
+        "fuente": "BNE 2025",
+        "numero": 42.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "226",
+        "fuente": "BNE 2025",
+        "numero": 226.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "132",
+        "fuente": "BNE 2025",
+        "numero": 132.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Limpiadores y asistentes de oficinas,\nhoteles y otros establecimientos",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "15",
+        "fuente": "BNE 2025",
+        "numero": 15.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Operadores de grúas de aparatos\nelevadores y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "15",
+        "fuente": "BNE 2025",
+        "numero": 15.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Rancagua",
+    "archivo": "Rancagua-Ficha-Comunal-79.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "257.744",
+        "fuente": "CENSO 2024",
+        "numero": 257744.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "125.172",
+        "fuente": "CENSO 2024",
+        "numero": 125172.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "132.572",
+        "fuente": "CENSO 2024",
+        "numero": 132572.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,139",
+        "fuente": "CENSO 2024",
+        "numero": 0.139
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "125.246",
+        "fuente": "ENE 2024",
+        "numero": 125246.0
+      },
+      "Cantidad de desocupados": {
+        "valor": "14.300",
+        "fuente": "ENE 2024",
+        "numero": 14300.0
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "223.051",
+        "fuente": "ENE 2024",
+        "numero": 223051.0
+      },
+      "Fuerza de Trabajo": {
+        "valor": "139.547",
+        "fuente": "ENE 2024",
+        "numero": 139547.0
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.244.741",
+        "fuente": "MIDESO 2024",
+        "numero": 1244741.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "4,0",
+        "fuente": "MIDESO 2024",
+        "numero": 4.0
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "935.791",
+        "fuente": "MIDESO 2024",
+        "numero": 935791.0
+      },
+      "% Ocupados Formales": {
+        "valor": "39,8",
+        "fuente": "MIDESO 2024",
+        "numero": 39.8
+      },
+      "Total de empresas": {
+        "valor": "17.807",
+        "fuente": "SII 2024",
+        "numero": 17807.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "123.362",
+        "fuente": "SII 2024",
+        "numero": 123362.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "26.216",
+        "fuente": "SII 2024",
+        "numero": 26216.0
+      },
+      "Cantidad de avisos": {
+        "valor": "868",
+        "fuente": "BNE 2025",
+        "numero": 868.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "2.708",
+        "fuente": "BNE 2025",
+        "numero": 2708.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) / Ejecutivos del area de\nventas y comercialización",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "270",
+        "fuente": "BNE 2025",
+        "numero": 270.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores agrícolas de subsistencia",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "120",
+        "fuente": "BNE 2025",
+        "numero": 120.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "119",
+        "fuente": "BNE 2025",
+        "numero": 119.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "9",
+        "fuente": "CBC 2025",
+        "numero": 9.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "171",
+        "fuente": "CBC 2025",
+        "numero": 171.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "658",
+        "fuente": "CBC 2025",
+        "numero": 658.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "400",
+        "fuente": "CBC 2025",
+        "numero": 400.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "137",
+        "fuente": "CBC 2025",
+        "numero": 137.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "48",
+        "fuente": "CBC 2025",
+        "numero": 48.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "2.053",
+        "fuente": "CBC 2025",
+        "numero": 2053.0
+      }
+    }
+  },
+  {
+    "comuna": "Rengo",
+    "archivo": "Rengo-Ficha-Comunal-93.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "63.620",
+        "fuente": "CENSO 2024",
+        "numero": 63620.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "30.925",
+        "fuente": "CENSO 2024",
+        "numero": 30925.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "32.695",
+        "fuente": "CENSO 2024",
+        "numero": 32695.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,138",
+        "fuente": "CENSO 2024",
+        "numero": 0.138
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "27.911*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "3.721*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "57.301*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "31.632*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "978.243",
+        "fuente": "MIDESO 2024",
+        "numero": 978243.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "4,8",
+        "fuente": "MIDESO 2024",
+        "numero": 4.8
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "754.760",
+        "fuente": "MIDESO 2024",
+        "numero": 754760.0
+      },
+      "% Ocupados Formales": {
+        "valor": "38,0",
+        "fuente": "MIDESO 2024",
+        "numero": 38.0
+      },
+      "Total de empresas": {
+        "valor": "4.439",
+        "fuente": "SII 2024",
+        "numero": 4439.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "26.625",
+        "fuente": "SII 2024",
+        "numero": 26625.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "4.696",
+        "fuente": "SII 2024",
+        "numero": 4696.0
+      },
+      "Cantidad de avisos": {
+        "valor": "82",
+        "fuente": "BNE 2025",
+        "numero": 82.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "719",
+        "fuente": "BNE 2025",
+        "numero": 719.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "205",
+        "fuente": "BNE 2025",
+        "numero": 205.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Trabajadores (as) Control de\nabastecimiento y/o inventarios /\nEtiquetador",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "200",
+        "fuente": "BNE 2025",
+        "numero": 200.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Oficiales y operarios de procesamiento de\nalimentos y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "100",
+        "fuente": "BNE 2025",
+        "numero": 100.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "4",
+        "fuente": "CBC 2025",
+        "numero": 4.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "208",
+        "fuente": "CBC 2025",
+        "numero": 208.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "347",
+        "fuente": "CBC 2025",
+        "numero": 347.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "288",
+        "fuente": "CBC 2025",
+        "numero": 288.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "106",
+        "fuente": "CBC 2025",
+        "numero": 106.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "531",
+        "fuente": "CBC 2025",
+        "numero": 531.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "1.211",
+        "fuente": "CBC 2025",
+        "numero": 1211.0
+      }
+    }
+  },
+  {
+    "comuna": "Requínoa",
+    "archivo": "Requi╠unoa-Ficha-Comunal-94.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "29.508",
+        "fuente": "CENSO 2024",
+        "numero": 29508.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "14.588",
+        "fuente": "CENSO 2024",
+        "numero": 14588.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "14.920",
+        "fuente": "CENSO 2024",
+        "numero": 14920.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,131",
+        "fuente": "CENSO 2024",
+        "numero": 0.131
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.061.981",
+        "fuente": "MIDESO 2024",
+        "numero": 1061981.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "5,4",
+        "fuente": "MIDESO 2024",
+        "numero": 5.4
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "770.961",
+        "fuente": "MIDESO 2024",
+        "numero": 770961.0
+      },
+      "% Ocupados Formales": {
+        "valor": "42,3",
+        "fuente": "MIDESO 2024",
+        "numero": 42.3
+      },
+      "Total de empresas": {
+        "valor": "2.395",
+        "fuente": "SII 2024",
+        "numero": 2395.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "23.650",
+        "fuente": "SII 2024",
+        "numero": 23650.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "3.554",
+        "fuente": "SII 2024",
+        "numero": 3554.0
+      },
+      "Cantidad de avisos": {
+        "valor": "93",
+        "fuente": "BNE 2025",
+        "numero": 93.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "3.547",
+        "fuente": "BNE 2025",
+        "numero": 3547.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "2.820",
+        "fuente": "BNE 2025",
+        "numero": 2820.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "320",
+        "fuente": "BNE 2025",
+        "numero": 320.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Trabajadores (as) de apoyo a la\nproduccion",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "207",
+        "fuente": "BNE 2025",
+        "numero": 207.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "San Fernando",
+    "archivo": "San-Fernando-Ficha-Comunal-102.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "75.585",
+        "fuente": "CENSO 2024",
+        "numero": 75585.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "36.247",
+        "fuente": "CENSO 2024",
+        "numero": 36247.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "39.338",
+        "fuente": "CENSO 2024",
+        "numero": 39338.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,148",
+        "fuente": "CENSO 2024",
+        "numero": 0.148
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "37.037",
+        "fuente": "ENE 2024",
+        "numero": 37037.0
+      },
+      "Cantidad de desocupados": {
+        "valor": "2.630*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "64.648",
+        "fuente": "ENE 2024",
+        "numero": 64648.0
+      },
+      "Fuerza de Trabajo": {
+        "valor": "39.668",
+        "fuente": "ENE 2024",
+        "numero": 39668.0
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "1.044.436",
+        "fuente": "MIDESO 2024",
+        "numero": 1044436.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "5,8",
+        "fuente": "MIDESO 2024",
+        "numero": 5.8
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "782.345",
+        "fuente": "MIDESO 2024",
+        "numero": 782345.0
+      },
+      "% Ocupados Formales": {
+        "valor": "38,3",
+        "fuente": "MIDESO 2024",
+        "numero": 38.3
+      },
+      "Total de empresas": {
+        "valor": "6.685",
+        "fuente": "SII 2024",
+        "numero": 6685.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "35.367",
+        "fuente": "SII 2024",
+        "numero": 35367.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "10.227",
+        "fuente": "SII 2024",
+        "numero": 10227.0
+      },
+      "Cantidad de avisos": {
+        "valor": "221",
+        "fuente": "BNE 2025",
+        "numero": 221.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "1.814",
+        "fuente": "BNE 2025",
+        "numero": 1814.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Embaladores (as) y empaquetadores (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "475",
+        "fuente": "BNE 2025",
+        "numero": 475.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Otras ocupaciones",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "352",
+        "fuente": "BNE 2025",
+        "numero": 352.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Inspectores (as) de seguridad y/o calidad",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "166",
+        "fuente": "BNE 2025",
+        "numero": 166.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "2",
+        "fuente": "CBC 2025",
+        "numero": 2.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "24",
+        "fuente": "CBC 2025",
+        "numero": 24.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "15",
+        "fuente": "CBC 2025",
+        "numero": 15.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "5",
+        "fuente": "CBC 2025",
+        "numero": 5.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "9",
+        "fuente": "CBC 2025",
+        "numero": 9.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "62",
+        "fuente": "CBC 2025",
+        "numero": 62.0
+      }
+    }
+  },
+  {
+    "comuna": "San Vicente",
+    "archivo": "San-Vicente-Ficha-Comunal-95.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "49.559",
+        "fuente": "CENSO 2024",
+        "numero": 49559.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "24.340",
+        "fuente": "CENSO 2024",
+        "numero": 24340.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "25.219",
+        "fuente": "CENSO 2024",
+        "numero": 25219.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,172",
+        "fuente": "CENSO 2024",
+        "numero": 0.172
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "19.001*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "36.499*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "20.749*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "995.660",
+        "fuente": "MIDESO 2024",
+        "numero": 995660.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "6,3",
+        "fuente": "MIDESO 2024",
+        "numero": 6.3
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "753.659",
+        "fuente": "MIDESO 2024",
+        "numero": 753659.0
+      },
+      "% Ocupados Formales": {
+        "valor": "33,3",
+        "fuente": "MIDESO 2024",
+        "numero": 33.3
+      },
+      "Total de empresas": {
+        "valor": "4.578",
+        "fuente": "SII 2024",
+        "numero": 4578.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "15.578",
+        "fuente": "SII 2024",
+        "numero": 15578.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "5.133",
+        "fuente": "SII 2024",
+        "numero": 5133.0
+      },
+      "Cantidad de avisos": {
+        "valor": "61",
+        "fuente": "BNE 2025",
+        "numero": 61.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "148",
+        "fuente": "BNE 2025",
+        "numero": 148.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Operarios de la conservación de frutas,\nlegumbres, verduras y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "30",
+        "fuente": "BNE 2025",
+        "numero": 30.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Tecnicos (as) en enfermeria",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "27",
+        "fuente": "BNE 2025",
+        "numero": 27.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Profesores de la enseñanza secundaria",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "16",
+        "fuente": "BNE 2025",
+        "numero": 16.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "NA",
+        "fuente": "CBC 2025",
+        "numero": null
+      }
+    }
+  },
+  {
+    "comuna": "Santa Cruz",
+    "archivo": "Santa-Cruz-Ficha-Comunal-111.pdf",
+    "indicadores": {
+      "Población censada": {
+        "valor": "41.209",
+        "fuente": "CENSO 2024",
+        "numero": 41209.0
+      },
+      "Cantidad de Hombres": {
+        "valor": "20.037",
+        "fuente": "CENSO 2024",
+        "numero": 20037.0
+      },
+      "Cantidad de Mujeres": {
+        "valor": "21.172",
+        "fuente": "CENSO 2024",
+        "numero": 21172.0
+      },
+      "% personas de 65 años o más": {
+        "valor": "0,156",
+        "fuente": "CENSO 2024",
+        "numero": 0.156
+      },
+      "Tasa de ocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Tasa de desocupación": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de ocupados": {
+        "valor": "17.151*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Cantidad de desocupados": {
+        "valor": "NA",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Población en Edad de Trabajar": {
+        "valor": "33.889*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Fuerza de Trabajo": {
+        "valor": "18.396*",
+        "fuente": "ENE 2024",
+        "numero": null
+      },
+      "Promedio de Ingresos Asalariados Formales": {
+        "valor": "969.774",
+        "fuente": "MIDESO 2024",
+        "numero": 969774.0
+      },
+      "% Asalariados formales que ganan el mínimo": {
+        "valor": "7,5",
+        "fuente": "MIDESO 2024",
+        "numero": 7.5
+      },
+      "Mediana de Ingresos Asalariados Dependientes": {
+        "valor": "706.714",
+        "fuente": "MIDESO 2024",
+        "numero": 706714.0
+      },
+      "% Ocupados Formales": {
+        "valor": "34,3",
+        "fuente": "MIDESO 2024",
+        "numero": 34.3
+      },
+      "Total de empresas": {
+        "valor": "4.560",
+        "fuente": "SII 2024",
+        "numero": 4560.0
+      },
+      "Total de trabajadores dependientes": {
+        "valor": "19.003",
+        "fuente": "SII 2024",
+        "numero": 19003.0
+      },
+      "Total de trabajadores a honorarios": {
+        "valor": "4.494",
+        "fuente": "SII 2024",
+        "numero": 4494.0
+      },
+      "Cantidad de avisos": {
+        "valor": "102",
+        "fuente": "BNE 2025",
+        "numero": 102.0
+      },
+      "Cantidad de vacantes": {
+        "valor": "262",
+        "fuente": "BNE 2025",
+        "numero": 262.0
+      },
+      "Primera ocupación con más vacantes": {
+        "valor": "Operarios de la conservación de frutas,\nlegumbres, verduras y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de primera ocupación": {
+        "valor": "60",
+        "fuente": "BNE 2025",
+        "numero": 60.0
+      },
+      "Segunda ocupación con más vacantes": {
+        "valor": "Profesionales de nivel medio de servicios\nadministrativos y afines",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de segunda ocupación": {
+        "valor": "34",
+        "fuente": "BNE 2025",
+        "numero": 34.0
+      },
+      "Tercera ocupación con más vacantes": {
+        "valor": "Cajeros (as)",
+        "fuente": "BNE 2025",
+        "numero": null
+      },
+      "Cantidad de vacantes de tercera ocupación": {
+        "valor": "18",
+        "fuente": "BNE 2025",
+        "numero": 18.0
+      },
+      "Cantidad de proyectos de inversión 2025-2029": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Gasto involucrado 2025-2029 en millones de dólares": {
+        "valor": "22",
+        "fuente": "CBC 2025",
+        "numero": 22.0
+      },
+      "Creación cantidad de empleos no calificados": {
+        "valor": "11",
+        "fuente": "CBC 2025",
+        "numero": 11.0
+      },
+      "Creación cantidad de empleos técnicos": {
+        "valor": "6",
+        "fuente": "CBC 2025",
+        "numero": 6.0
+      },
+      "Creación de cantidad de empleos profesionales": {
+        "valor": "2",
+        "fuente": "CBC 2025",
+        "numero": 2.0
+      },
+      "Cantidad de empleos en la fase de operación": {
+        "valor": "1",
+        "fuente": "CBC 2025",
+        "numero": 1.0
+      },
+      "Empleo Peak Total (N° Personas)": {
+        "valor": "28",
+        "fuente": "CBC 2025",
+        "numero": 28.0
+      }
+    }
+  }
+]

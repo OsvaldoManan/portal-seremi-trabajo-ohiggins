@@ -1,0 +1,699 @@
+{
+  "por_sector": [
+    {
+      "sector": "Transporte",
+      "cantidad": 5789,
+      "costo_total": 11869147770
+    },
+    {
+      "sector": "Recursos Hídricos",
+      "cantidad": 5517,
+      "costo_total": 4913447889
+    },
+    {
+      "sector": "Educación, Cultura y Patrimonio",
+      "cantidad": 4971,
+      "costo_total": 3921667237
+    },
+    {
+      "sector": "Multisectorial",
+      "cantidad": 3995,
+      "costo_total": 5042739441
+    },
+    {
+      "sector": "Salud",
+      "cantidad": 2016,
+      "costo_total": 2624418649
+    },
+    {
+      "sector": "Deportes",
+      "cantidad": 1882,
+      "costo_total": 719095168
+    },
+    {
+      "sector": "Vivienda y Desarrollo Urbano",
+      "cantidad": 1369,
+      "costo_total": 1076241147
+    },
+    {
+      "sector": "Recursos Naturales y Medio Ambiente",
+      "cantidad": 1344,
+      "costo_total": 3723008152
+    },
+    {
+      "sector": "Energía",
+      "cantidad": 1060,
+      "costo_total": 1638398738
+    },
+    {
+      "sector": "Seguridad Pública",
+      "cantidad": 953,
+      "costo_total": 528319884
+    },
+    {
+      "sector": "Justicia",
+      "cantidad": 572,
+      "costo_total": 585723256
+    },
+    {
+      "sector": "Turismo y Comercio",
+      "cantidad": 420,
+      "costo_total": 88890685
+    },
+    {
+      "sector": "Pesca",
+      "cantidad": 223,
+      "costo_total": 61481050
+    },
+    {
+      "sector": "Minería",
+      "cantidad": 123,
+      "costo_total": 84901658
+    },
+    {
+      "sector": "EDUCACIÓN",
+      "cantidad": 85,
+      "costo_total": 38074290
+    },
+    {
+      "sector": "Comunicaciones",
+      "cantidad": 77,
+      "costo_total": 70302276
+    },
+    {
+      "sector": "Arte, Cultura y Patrimonio",
+      "cantidad": 5,
+      "costo_total": 27933264
+    }
+  ],
+  "por_anio": [
+    {
+      "anio_postulacion": 1994,
+      "cantidad": 10,
+      "costo_total": 5848222
+    },
+    {
+      "anio_postulacion": 1995,
+      "cantidad": 9,
+      "costo_total": 7102764
+    },
+    {
+      "anio_postulacion": 1996,
+      "cantidad": 29,
+      "costo_total": 5425743
+    },
+    {
+      "anio_postulacion": 1997,
+      "cantidad": 1499,
+      "costo_total": 151058243
+    },
+    {
+      "anio_postulacion": 1998,
+      "cantidad": 1448,
+      "costo_total": 213819522
+    },
+    {
+      "anio_postulacion": 1999,
+      "cantidad": 1719,
+      "costo_total": 331522634
+    },
+    {
+      "anio_postulacion": 2000,
+      "cantidad": 1331,
+      "costo_total": 275387173
+    },
+    {
+      "anio_postulacion": 2001,
+      "cantidad": 1483,
+      "costo_total": 261696644
+    },
+    {
+      "anio_postulacion": 2002,
+      "cantidad": 1365,
+      "costo_total": 429717331
+    },
+    {
+      "anio_postulacion": 2003,
+      "cantidad": 1198,
+      "costo_total": 301242820
+    },
+    {
+      "anio_postulacion": 2004,
+      "cantidad": 989,
+      "costo_total": 295239505
+    },
+    {
+      "anio_postulacion": 2005,
+      "cantidad": 1137,
+      "costo_total": 395707736
+    },
+    {
+      "anio_postulacion": 2006,
+      "cantidad": 1284,
+      "costo_total": 1106090420
+    },
+    {
+      "anio_postulacion": 2007,
+      "cantidad": 1294,
+      "costo_total": 935077480
+    },
+    {
+      "anio_postulacion": 2008,
+      "cantidad": 1273,
+      "costo_total": 1103445166
+    },
+    {
+      "anio_postulacion": 2009,
+      "cantidad": 701,
+      "costo_total": 575279469
+    },
+    {
+      "anio_postulacion": 2010,
+      "cantidad": 558,
+      "costo_total": 569718608
+    },
+    {
+      "anio_postulacion": 2011,
+      "cantidad": 1073,
+      "costo_total": 804552018
+    },
+    {
+      "anio_postulacion": 2012,
+      "cantidad": 1057,
+      "costo_total": 907078145
+    },
+    {
+      "anio_postulacion": 2013,
+      "cantidad": 808,
+      "costo_total": 846556972
+    },
+    {
+      "anio_postulacion": 2014,
+      "cantidad": 820,
+      "costo_total": 917646456
+    },
+    {
+      "anio_postulacion": 2015,
+      "cantidad": 964,
+      "costo_total": 1576555131
+    },
+    {
+      "anio_postulacion": 2016,
+      "cantidad": 849,
+      "costo_total": 1287017111
+    },
+    {
+      "anio_postulacion": 2017,
+      "cantidad": 760,
+      "costo_total": 2832465491
+    },
+    {
+      "anio_postulacion": 2018,
+      "cantidad": 710,
+      "costo_total": 1325132160
+    },
+    {
+      "anio_postulacion": 2019,
+      "cantidad": 832,
+      "costo_total": 2407121522
+    },
+    {
+      "anio_postulacion": 2020,
+      "cantidad": 893,
+      "costo_total": 3377164933
+    },
+    {
+      "anio_postulacion": 2021,
+      "cantidad": 931,
+      "costo_total": 1526341143
+    },
+    {
+      "anio_postulacion": 2022,
+      "cantidad": 945,
+      "costo_total": 2633946074
+    },
+    {
+      "anio_postulacion": 2023,
+      "cantidad": 922,
+      "costo_total": 2510061642
+    },
+    {
+      "anio_postulacion": 2024,
+      "cantidad": 820,
+      "costo_total": 1931771513
+    },
+    {
+      "anio_postulacion": 2025,
+      "cantidad": 690,
+      "costo_total": 5167000763
+    }
+  ],
+  "por_etapa": [
+    {
+      "etapa_actual": "Perfil",
+      "cantidad": 14562
+    },
+    {
+      "etapa_actual": "Ejecución",
+      "cantidad": 12744
+    },
+    {
+      "etapa_actual": "DISEÑO",
+      "cantidad": 2026
+    },
+    {
+      "etapa_actual": "Prefactibilidad",
+      "cantidad": 391
+    },
+    {
+      "etapa_actual": "Terminado",
+      "cantidad": 366
+    },
+    {
+      "etapa_actual": "Operación",
+      "cantidad": 218
+    },
+    {
+      "etapa_actual": "Factibilidad",
+      "cantidad": 94
+    }
+  ],
+  "por_tipologia": [
+    {
+      "tipologia": "Estudio Básico",
+      "cantidad": 966,
+      "costo_total": 140715717
+    },
+    {
+      "tipologia": "Programa",
+      "cantidad": 2050,
+      "costo_total": 6991734384
+    },
+    {
+      "tipologia": "Proyecto",
+      "cantidad": 27385,
+      "costo_total": 29881340453
+    }
+  ],
+  "por_rate": [
+    {
+      "rate": "RS",
+      "cantidad": 14549,
+      "descripcion": "Recomendado Satisfactoriamente"
+    },
+    {
+      "rate": "OT",
+      "cantidad": 5337,
+      "descripcion": "Objetado Técnicamente"
+    },
+    {
+      "rate": "FI",
+      "cantidad": 3955,
+      "descripcion": "Falta Información"
+    },
+    {
+      "rate": "AD",
+      "cantidad": 62,
+      "descripcion": "Admisión"
+    },
+    {
+      "rate": "RA",
+      "cantidad": 57,
+      "descripcion": "Revisión"
+    },
+    {
+      "rate": "FA",
+      "cantidad": 32,
+      "descripcion": "Falta Antecedentes"
+    },
+    {
+      "rate": "VN",
+      "cantidad": 30,
+      "descripcion": "Sin Evaluación"
+    },
+    {
+      "rate": "IN",
+      "cantidad": 24,
+      "descripcion": "Inadmisible"
+    },
+    {
+      "rate": "*",
+      "cantidad": 13,
+      "descripcion": "Sin Calificar"
+    },
+    {
+      "rate": "SP",
+      "cantidad": 6,
+      "descripcion": "Sin Pronunciamiento"
+    },
+    {
+      "rate": "CF",
+      "cantidad": 3,
+      "descripcion": "Conforme"
+    }
+  ],
+  "top_formuladoras": [
+    {
+      "institucion": "DIRECCION DE OBRAS HIDRAULICAS MOP VI REGION",
+      "cantidad": 3071
+    },
+    {
+      "institucion": "VIALIDAD MOP VI REGION LIB.GRAL. BERNARDO O'HIGGIN",
+      "cantidad": 1764
+    },
+    {
+      "institucion": "SEREMI VIVIENDA VI REGION",
+      "cantidad": 1669
+    },
+    {
+      "institucion": "GOBIERNO REGIONAL - REGION VI LIBERT. BERNARDO O.",
+      "cantidad": 992
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE RANCAGUA",
+      "cantidad": 950
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE SAN FERNANDO",
+      "cantidad": 761
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE RENGO",
+      "cantidad": 760
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE SAN VICENTE",
+      "cantidad": 660
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE SANTA CRUZ",
+      "cantidad": 627
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE PICHIDEGUA",
+      "cantidad": 606
+    },
+    {
+      "institucion": "SERVICIO SALUD OHIGGINS",
+      "cantidad": 597
+    },
+    {
+      "institucion": "DIRECCION PLANEAMIENTO MOP VI REGION",
+      "cantidad": 590
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE PICHILEMU",
+      "cantidad": 564
+    },
+    {
+      "institucion": "GOBIERNO REGIONAL - REGION DEL LIBERTADOR GENERAL BERNARDO O'HIGGINS",
+      "cantidad": 554
+    },
+    {
+      "institucion": "MUNICIPALIDAD DE NAVIDAD",
+      "cantidad": 550
+    }
+  ],
+  "por_fuente": [
+    {
+      "fuente_simple": "F.N.D.R.",
+      "cantidad": 15646,
+      "costo_total": 16582369553
+    },
+    {
+      "fuente_simple": "Sectorial",
+      "cantidad": 12282,
+      "costo_total": 18160412547
+    },
+    {
+      "fuente_simple": "Mixto",
+      "cantidad": 1464,
+      "costo_total": 1989463904
+    },
+    {
+      "fuente_simple": "Otros",
+      "cantidad": 460,
+      "costo_total": 128484691
+    },
+    {
+      "fuente_simple": "Municipal",
+      "cantidad": 327,
+      "costo_total": 7455457
+    },
+    {
+      "fuente_simple": "Empresa",
+      "cantidad": 222,
+      "costo_total": 145604402
+    }
+  ],
+  "por_comuna": [
+    {
+      "comuna": "Rancagua",
+      "cantidad": 1875,
+      "costo_total": 4207397059
+    },
+    {
+      "comuna": "San Fernando",
+      "cantidad": 1145,
+      "costo_total": 1922495195
+    },
+    {
+      "comuna": "Rengo",
+      "cantidad": 1065,
+      "costo_total": 1237822039
+    },
+    {
+      "comuna": "Pichilemu",
+      "cantidad": 828,
+      "costo_total": 552873503
+    },
+    {
+      "comuna": "San Vicente",
+      "cantidad": 767,
+      "costo_total": 426719019
+    },
+    {
+      "comuna": "Chimbarongo",
+      "cantidad": 660,
+      "costo_total": 357785904
+    },
+    {
+      "comuna": "Navidad",
+      "cantidad": 631,
+      "costo_total": 465480966
+    },
+    {
+      "comuna": "Pichidegua",
+      "cantidad": 587,
+      "costo_total": 306161682
+    },
+    {
+      "comuna": "Santa Cruz",
+      "cantidad": 581,
+      "costo_total": 731949323
+    },
+    {
+      "comuna": "Peralillo",
+      "cantidad": 578,
+      "costo_total": 407822951
+    },
+    {
+      "comuna": "Paredones",
+      "cantidad": 523,
+      "costo_total": 519968997
+    },
+    {
+      "comuna": "Lolol",
+      "cantidad": 495,
+      "costo_total": 436257901
+    },
+    {
+      "comuna": "Las Cabras",
+      "cantidad": 492,
+      "costo_total": 322880267
+    },
+    {
+      "comuna": "Machalí",
+      "cantidad": 491,
+      "costo_total": 1130623823
+    },
+    {
+      "comuna": "Coltauco",
+      "cantidad": 471,
+      "costo_total": 202055630
+    },
+    {
+      "comuna": "Chépica",
+      "cantidad": 424,
+      "costo_total": 302909396
+    },
+    {
+      "comuna": "Palmilla",
+      "cantidad": 407,
+      "costo_total": 328741111
+    },
+    {
+      "comuna": "Nancagua",
+      "cantidad": 396,
+      "costo_total": 343139547
+    },
+    {
+      "comuna": "La Estrella",
+      "cantidad": 374,
+      "costo_total": 221522579
+    },
+    {
+      "comuna": "Graneros",
+      "cantidad": 371,
+      "costo_total": 1625704689
+    },
+    {
+      "comuna": "Malloa",
+      "cantidad": 362,
+      "costo_total": 275079676
+    },
+    {
+      "comuna": "Mostazal",
+      "cantidad": 352,
+      "costo_total": 158191322
+    },
+    {
+      "comuna": "Requínoa",
+      "cantidad": 313,
+      "costo_total": 167165837
+    },
+    {
+      "comuna": "Pumanque",
+      "cantidad": 310,
+      "costo_total": 318707764
+    },
+    {
+      "comuna": "Olivar",
+      "cantidad": 306,
+      "costo_total": 238208668
+    },
+    {
+      "comuna": "Codegua",
+      "cantidad": 282,
+      "costo_total": 383639953
+    },
+    {
+      "comuna": "Placilla",
+      "cantidad": 280,
+      "costo_total": 475242298
+    },
+    {
+      "comuna": "Coinco",
+      "cantidad": 277,
+      "costo_total": 122688978
+    },
+    {
+      "comuna": "Quinta de Tilcoco",
+      "cantidad": 235,
+      "costo_total": 210837145
+    },
+    {
+      "comuna": "Marchigüe",
+      "cantidad": 19,
+      "costo_total": 507981
+    },
+    {
+      "comuna": "Doñihue",
+      "cantidad": 9,
+      "costo_total": 480324
+    }
+  ],
+  "top_subsectores": [
+    {
+      "sub_sector": "AGUA POTABLE",
+      "cantidad": 3928
+    },
+    {
+      "sub_sector": "EDUCACION BASICA Y MEDIA",
+      "cantidad": 3150
+    },
+    {
+      "sub_sector": "TRANSPORTE CAMINERO",
+      "cantidad": 3051
+    },
+    {
+      "sub_sector": "TRANSPORTE URBANO,VIALIDAD PEATONAL",
+      "cantidad": 2631
+    },
+    {
+      "sub_sector": "DESARROLLO URBANO",
+      "cantidad": 1519
+    },
+    {
+      "sub_sector": "BAJA COMPLEJIDAD",
+      "cantidad": 1277
+    },
+    {
+      "sub_sector": "EVACUACION DISPOSICION FINAL AGUAS SERVIDAS",
+      "cantidad": 943
+    },
+    {
+      "sub_sector": "DEPORTE RECREATIVO",
+      "cantidad": 922
+    },
+    {
+      "sub_sector": "SEGURIDAD PÃšBLICA",
+      "cantidad": 871
+    },
+    {
+      "sub_sector": "ADMINISTRACION MULTISECTOR",
+      "cantidad": 828
+    },
+    {
+      "sub_sector": "AGRICULTURA",
+      "cantidad": 672
+    },
+    {
+      "sub_sector": "ORGANIZACION Y SERVICIOS COMUNALES",
+      "cantidad": 646
+    },
+    {
+      "sub_sector": "ARTE Y CULTURA",
+      "cantidad": 618
+    },
+    {
+      "sub_sector": "SOLUCION HABITACIONAL PARCIAL O COMPLEMENTARIA",
+      "cantidad": 614
+    },
+    {
+      "sub_sector": "EDUCACION PREBASICA",
+      "cantidad": 613
+    },
+    {
+      "sub_sector": "INTERSUBSECTORIAL MULTISECTOR",
+      "cantidad": 530
+    },
+    {
+      "sub_sector": "ALUMBRADO PUBLICO",
+      "cantidad": 519
+    },
+    {
+      "sub_sector": "DISTRIBUCION Y CONEXION FINAL USUARIOS",
+      "cantidad": 495
+    },
+    {
+      "sub_sector": "DEFENSAS FLUVIALES,MARITIMAS Y CAUCES NATURALES",
+      "cantidad": 473
+    },
+    {
+      "sub_sector": "RIEGO",
+      "cantidad": 458
+    }
+  ],
+  "resumen": {
+    "total_registros": 30401,
+    "total_proyectos": 27385,
+    "total_programas": 2050,
+    "total_estudios": 966,
+    "inversion_total_M": 37013790554.0,
+    "anio_min": 1994,
+    "anio_max": 2025,
+    "sectores_count": 17,
+    "instituciones_count": 222
+  }
+}
