@@ -1,0 +1,26 @@
+{
+  "name": "Portal SEREMI Trabajo O'Higgins",
+  "short_name": "SEREMI Trabajo",
+  "description": "Portal institucional del Observatorio Laboral de la Región del Libertador General Bernardo O'Higgins.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#F9FAFB",
+  "theme_color": "#0F3F8C",
+  "lang": "es-CL",
+  "icons": [
+    {
+      "src": "img/logo-seremi.png",
+      "sizes": "500x200",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/logo-seremi.webp",
+      "sizes": "500x200",
+      "type": "image/webp",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["government", "education", "business"]
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /tmp_pdf/
+
+Sitemap: https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/sitemap.xml

@@ -143,7 +143,13 @@ ${pctAvg !== null ? `<br><small>${pctAvg >= 0 ? '+' : ''}${pctAvg}% vs. promedio
       respond: q => {
         const comuna = findComuna(q);
         const c = DATA.comunas.find(x => x.comuna === comuna);
-        if (!c) return { text: `No tengo ficha para <b>${comuna}</b>.` };
+        if (!c) {
+          // Litueche y Peumo están en el GeoJSON pero sin ficha
+          return {
+            text: `<b>${comuna}</b> es una de las 33 comunas de O'Higgins, pero <b>no tengo ficha del Observatorio Laboral</b> para ella en esta versión. Las fichas comunales que sí tenemos son 31 (Litueche y Peumo aún no han sido procesadas).<br><br>Igual aparece en el <a href="comunas.html#tab-geomapa" style="color:#FFD200;">mapa geográfico</a> como referencia territorial.`,
+            suggestions: ['Comunas con ficha', 'Mapa geográfico', 'Población de Rancagua']
+          };
+        }
         const ind = c.indicadores;
         const pob = ind['Población censada']?.valor || '—';
         const emp = ind['Total de empresas']?.valor || '—';
@@ -509,6 +515,54 @@ O'Higgins integra el plan nacional con <b>500 inspecciones en 12 regiones hasta 
 
 <a href="directorio.html" style="color:#FFD200;">→ Directorio completo</a>`,
         suggestions: ['Ley Karin', 'Oficinas DT', 'ChileAtiende 101']
+      })
+    },
+    // Cobertura de datos / calidad
+    {
+      match: q => /\b(cobertura|calidad|completo|completitud|fuente|metodologia|fichas)\b/i.test(norm(q)),
+      respond: () => ({
+        text: `<b>📊 Cobertura de datos del Observatorio</b>
+
+<b>31 fichas comunales</b> (de 33 posibles · Litueche y Peumo pendientes)
+• Cada ficha contiene 32 indicadores
+• Fuentes: Censo 2024 (INE), ENE 2024, SII 2024, BNE 2025, MIDESO 2024, CBC 2025, BIP
+
+<b>Cobertura por indicador:</b>
+• ⚠️ Tasa de ocupación/desocupación: sin dato en las 31 fichas (no calculadas a nivel comunal)
+• ⚠️ PET / Fuerza de Trabajo / Ocupados: 7 de 31 comunas
+• ✅ Población, género, empresas, vacantes: 100%
+
+<b>Inversión:</b>
+• 30.401 iniciativas históricas (BIP 1994-2025) — 100%
+• 36 proyectos cartera 2026 (CBC) — confirmado
+
+<a href="institucional.html" style="color:#FFD200;">→ Ver metodología</a>`,
+        suggestions: ['Fuentes oficiales', 'Cuándo se actualiza', 'Comunas con ficha']
+      })
+    },
+    // Comunas con ficha (lista)
+    {
+      match: q => /\b(comunas.*ficha|lista.*comunas|todas.*comunas|cuantas.*comunas)\b/i.test(norm(q)),
+      respond: () => {
+        const lista = DATA.comunas.map(c => c.comuna).sort((a,b) => a.localeCompare(b,'es'));
+        return {
+          text: `<b>31 comunas con ficha comunal</b><br><br>${lista.join(' · ')}<br><br><small>Sin ficha aún: Litueche, Peumo.</small><br><br><a href="comunas.html" style="color:#FFD200;">→ Explorar fichas</a>`,
+          suggestions: ['Mapa geográfico', 'Ranking de comunas']
+        };
+      }
+    },
+    // Cuándo se actualiza
+    {
+      match: q => /\b(cuando.*actualiza|frecuencia|refresco|cada.cuanto)\b/i.test(norm(q)),
+      respond: () => ({
+        text: `<b>🔄 Actualización del portal</b>
+
+El portal tiene un workflow automático que reprocesa los datos <b>cada lunes a las 06:00 UTC</b> (~02:00 hora Chile). Si los archivos fuente cambiaron, los gráficos y rankings se actualizan automáticamente.
+
+Última actualización: <b>16 de mayo de 2026</b>
+
+<a href="changelog.html" style="color:#FFD200;">→ Registro de actualizaciones</a>`,
+        suggestions: ['Novedades', 'Cobertura de datos']
       })
     },
     // Changelog / cambios
