@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Actualizaciones — SEREMI del Trabajo O'Higgins</title>
+<meta name="description" content="Historial de actualizaciones, mejoras y nuevas funcionalidades del Portal SEREMI del Trabajo O'Higgins. Cambios documentados con fecha, versión y descripción.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+<style>
+.changelog-entry {
+  background: var(--bg-card, white);
+  border-radius: var(--radius);
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border, #E5E7EB);
+  position: relative;
+  overflow: hidden;
+}
+.changelog-entry::before {
+  content: "";
+  position: absolute; top: 0; left: 0; bottom: 0; width: 5px;
+  background: linear-gradient(180deg, #0F3F8C, #1E5BB8);
+}
+.changelog-entry.major::before { background: linear-gradient(180deg, #C0192B, #FFD200); }
+.changelog-entry.feature::before { background: linear-gradient(180deg, #2E7D32, #FFD200); }
+
+.cl-header {
+  display: flex; align-items: center; gap: 1rem;
+  margin-bottom: 1.25rem; flex-wrap: wrap;
+}
+.cl-version {
+  background: var(--blue); color: white;
+  padding: .35rem .85rem; border-radius: 100px;
+  font-weight: 700; font-size: .82rem;
+  letter-spacing: .04em;
+}
+.cl-version.major { background: var(--red); }
+.cl-version.feature { background: var(--green); }
+.cl-date {
+  color: var(--gray-600); font-size: .85rem;
+  font-variant-numeric: tabular-nums;
+}
+.cl-hash {
+  font-family: monospace; font-size: .78rem;
+  color: var(--gray-500); background: var(--gray-100);
+  padding: .2rem .5rem; border-radius: 4px;
+}
+.cl-title {
+  margin: 0; font-size: 1.3rem;
+  color: var(--gray-900);
+}
+.cl-changes {
+  list-style: none; padding: 0; margin: 1rem 0 0;
+}
+.cl-changes li {
+  padding: .5rem 0 .5rem 1.75rem;
+  position: relative;
+  font-size: .95rem;
+  line-height: 1.6;
+  color: var(--gray-700);
+  border-bottom: 1px dashed var(--gray-200);
+}
+.cl-changes li:last-child { border-bottom: 0; }
+.cl-changes li::before {
+  content: ""; position: absolute; left: 0; top: 1rem;
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--blue);
+}
+.cl-changes li.add::before { background: #2E7D32; }
+.cl-changes li.fix::before { background: #F57C00; }
+.cl-changes li.improve::before { background: #0F3F8C; }
+.cl-tag {
+  display: inline-block; font-size: .7rem;
+  padding: .12rem .5rem; border-radius: 4px;
+  font-weight: 700; text-transform: uppercase;
+  letter-spacing: .04em; margin-right: .5rem;
+  vertical-align: middle;
+}
+.cl-tag.add { background: rgba(46,125,50,.12); color: #2E7D32; }
+.cl-tag.fix { background: rgba(245,124,0,.12); color: #F57C00; }
+.cl-tag.improve { background: rgba(15,63,140,.12); color: #0F3F8C; }
+.cl-tag.major { background: rgba(192,25,43,.12); color: #C0192B; }
+
+.cl-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: .75rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-200);
+}
+.cl-stat {
+  text-align: center;
+  padding: .5rem;
+  background: var(--gray-100);
+  border-radius: 6px;
+}
+.cl-stat strong {
+  display: block; font-size: 1.2rem;
+  color: var(--blue-dark);
+}
+.cl-stat span {
+  font-size: .72rem; color: var(--gray-600);
+  text-transform: uppercase; letter-spacing: .04em;
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores Comunales</a>
+        <a href="inversion.html" class="nav-link">Inversión Regional</a>
+        <a href="analisis.html" class="nav-link">Análisis Estratégico</a>
+        <a href="lineas-accion.html" class="nav-link">Líneas de Acción</a>
+        <a href="programa.html" class="nav-link">Programa de Gobierno</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
+        <a href="changelog.html" class="nav-link">Cambios</a>
+        <a href="institucional.html" class="nav-link">Institucional</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Registro de Actualizaciones</nav>
+    <span class="eyebrow">Historial · Mayo 2026</span>
+    <h1>Registro de Actualizaciones</h1>
+    <p class="lead">Cronología de mejoras, nuevas funcionalidades y datos incorporados al Portal SEREMI Trabajo O'Higgins. Versionado por commits documentados.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container" style="max-width:960px;">
+
+    <!-- Resumen de versión actual -->
+    <div class="kpi-grid" style="margin-bottom: 3rem;">
+      <div class="kpi"><div class="kpi-icon" style="background:#0F3F8C">📦</div>
+        <div class="kpi-content"><span class="kpi-label">Versión actual</span><span class="kpi-value">v7</span><span class="kpi-foot">Chatbot + Changelog</span></div></div>
+      <div class="kpi"><div class="kpi-icon" style="background:#2E7D32">📄</div>
+        <div class="kpi-content"><span class="kpi-label">Páginas</span><span class="kpi-value">9</span><span class="kpi-foot">Secciones funcionales</span></div></div>
+      <div class="kpi"><div class="kpi-icon" style="background:#C0192B">📊</div>
+        <div class="kpi-content"><span class="kpi-label">Gráficos</span><span class="kpi-value">25+</span><span class="kpi-foot">Interactivos con Chart.js + D3</span></div></div>
+      <div class="kpi"><div class="kpi-icon" style="background:#F57C00">🔄</div>
+        <div class="kpi-content"><span class="kpi-label">Commits</span><span class="kpi-value">7</span><span class="kpi-foot">Desde 15 mayo 2026</span></div></div>
+    </div>
+
+    <!-- v7 - CHATBOT -->
+    <article class="changelog-entry feature">
+      <div class="cl-header">
+        <span class="cl-version feature">v7</span>
+        <span class="cl-date">📅 16 mayo 2026 · 10:00</span>
+        <span class="cl-hash">pendiente</span>
+      </div>
+      <h2 class="cl-title">🤖 Chatbot del Portal + Registro de Actualizaciones</h2>
+      <p style="color:var(--gray-700); margin-bottom: 1rem;">Asistente virtual con conocimiento de todos los datos del portal y página dedicada al historial de cambios.</p>
+      <ul class="cl-changes">
+        <li class="add"><span class="cl-tag add">Nuevo</span> Chatbot flotante en todas las páginas con 20+ intents reconocidos</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Botón "💬" en esquina inferior derecha, click para abrir panel de chat</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> El bot responde sobre indicadores comunales, inversión, leyes (Karin, 40 horas, salario mínimo), programas SENCE, oficinas y mesas regionales</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Fuzzy matching de nombres de comunas con normalización de acentos</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Respuestas con comparativa al promedio regional y ranking</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Sugerencias rápidas (chips) tras cada respuesta</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Página changelog.html con historial visual completo</li>
+        <li class="improve"><span class="cl-tag improve">Mejora</span> Buscador global indexa nueva página de changelog</li>
+      </ul>
+    </article>
+
+    <!-- v6 - LINEAS DE ACCION -->
+    <article class="changelog-entry">
+      <div class="cl-header">
+        <span class="cl-version">v6</span>
+        <span class="cl-date">📅 16 mayo 2026 · 09:24</span>
+        <span class="cl-hash">54de431</span>
+      </div>
+      <h2 class="cl-title">📋 Líneas de Acción Institucional Regional</h2>
+      <p style="color:var(--gray-700); margin-bottom: 1rem;">Sistematización de las líneas de gestión SEREMI con datos verificados desde fuentes oficiales (Mintrab, SENCE, DT, prensa regional).</p>
+      <ul class="cl-changes">
+        <li class="add"><span class="cl-tag add">Nuevo</span> Página lineas-accion.html con 6 ejes de gestión</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Eje 1: Empleabilidad (Consejo Regional de Capacitación con 696 cupos)</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Eje 2: Fiscalización (Programa Nacional Agrícola 25-26 con 500 inspecciones)</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Eje 3: Implementación regional Ley Karin (21.643)</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Eje 4: Mujer y trabajo (Sala Cuna Universal, Mujer Digital)</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Eje 5: 40 horas y salario mínimo $546.546 (Ley 21.751)</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Eje 6: Reforma previsional + 91.563 honorarios regionales</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Tabla con 6 mesas tripartitas activas en O'Higgins</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 13 enlaces verificados a fuentes oficiales</li>
+      </ul>
+      <div class="cl-stats">
+        <div class="cl-stat"><strong>6</strong><span>Ejes de gestión</span></div>
+        <div class="cl-stat"><strong>6</strong><span>Mesas regionales</span></div>
+        <div class="cl-stat"><strong>13</strong><span>Enlaces oficiales</span></div>
+      </div>
+    </article>
+
+    <!-- v5 - 4 MEJORAS MAYORES -->
+    <article class="changelog-entry major">
+      <div class="cl-header">
+        <span class="cl-version major">v5</span>
+        <span class="cl-date">📅 15 mayo 2026 · 23:17</span>
+        <span class="cl-hash">e5f52f7</span>
+        <span class="cl-tag major">Release mayor</span>
+      </div>
+      <h2 class="cl-title">🚀 Cuatro mejoras mayores simultáneas</h2>
+      <p style="color:var(--gray-700); margin-bottom: 1rem;">Mapa geográfico real, comparador, directorio y buscador global desplegados en un único release.</p>
+      <ul class="cl-changes">
+        <li class="add"><span class="cl-tag add">Nuevo</span> <b>Mapa geográfico real</b> de las 33 comunas con GeoJSON + D3.js, 10 indicadores seleccionables, 4 paletas de color</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Click sobre comuna en el mapa abre su ficha completa</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Descarga del mapa como SVG vectorial</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> <b>Comparador lado a lado</b> de hasta 3 comunas en paralelo</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 20+ indicadores agrupados en 6 categorías con barras proporcionales</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> <b>Directorio de servicios</b> con 8 oficinas verificadas + 33 OMIL</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Búsqueda + filtros por tipo (SEREMI/DT/SENCE/IPS) y comuna</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> <b>Buscador global</b> con atajo Ctrl+K en todas las páginas</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Workflow GitHub Actions para refresco automático semanal de datos</li>
+      </ul>
+      <div class="cl-stats">
+        <div class="cl-stat"><strong>4</strong><span>Features nuevas</span></div>
+        <div class="cl-stat"><strong>33</strong><span>Comunas geográficas</span></div>
+        <div class="cl-stat"><strong>5</strong><span>Tablas con CSV</span></div>
+      </div>
+    </article>
+
+    <!-- v4 - PROGRAMA -->
+    <article class="changelog-entry">
+      <div class="cl-header">
+        <span class="cl-version">v4</span>
+        <span class="cl-date">📅 15 mayo 2026 · 22:57</span>
+        <span class="cl-hash">1391980</span>
+      </div>
+      <h2 class="cl-title">📑 Programa de Gobierno aplicado a la SEREMI</h2>
+      <p style="color:var(--gray-700); margin-bottom: 1rem;">Adaptación regional de las Bases Programáticas al ámbito de competencia de la SEREMI O'Higgins.</p>
+      <ul class="cl-changes">
+        <li class="add"><span class="cl-tag add">Nuevo</span> Página programa.html con diagnóstico territorial y 9 ejes regionales</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Matriz de 12 medidas con trazabilidad nacional-regional</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Hoja de ruta para los primeros 100 días</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 10 metas regionales verificables al 2030</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Nota metodológica sobre el carácter de la adaptación</li>
+      </ul>
+    </article>
+
+    <!-- v3 - HEATMAP + DARK -->
+    <article class="changelog-entry">
+      <div class="cl-header">
+        <span class="cl-version">v3</span>
+        <span class="cl-date">📅 15 mayo 2026 · 22:44</span>
+        <span class="cl-hash">e578272</span>
+      </div>
+      <h2 class="cl-title">🌗 Mapa heatmap, modo oscuro y descargas CSV</h2>
+      <p style="color:var(--gray-700); margin-bottom: 1rem;">Tres mejoras de experiencia de usuario que prepararon el terreno para el mapa geográfico real.</p>
+      <ul class="cl-changes">
+        <li class="add"><span class="cl-tag add">Nuevo</span> Mapa heatmap de tiles con intensidad de color por indicador</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Buscador en tiempo real de comunas</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Modo oscuro con persistencia en localStorage</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Toggle de tema 🌙/☀️ en el header</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Descarga CSV de 5 tablas (UTF-8 BOM para Excel)</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Vista optimizada para impresión</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Badge animado "Actualizado [fecha]" en headers</li>
+      </ul>
+    </article>
+
+    <!-- v2 - ANALISIS -->
+    <article class="changelog-entry">
+      <div class="cl-header">
+        <span class="cl-version">v2</span>
+        <span class="cl-date">📅 15 mayo 2026 · 22:23</span>
+        <span class="cl-hash">d3c880c</span>
+      </div>
+      <h2 class="cl-title">🎯 Análisis Estratégico Regional</h2>
+      <p style="color:var(--gray-700); margin-bottom: 1rem;">Diagnóstico territorial completo con interpretación cualitativa y plan de objetivos institucionales.</p>
+      <ul class="cl-changes">
+        <li class="add"><span class="cl-tag add">Nuevo</span> Página analisis.html con 3 hallazgos centrales</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 4 gráficos analíticos (concentración Pareto, madurez portafolio, composición laboral 2026, calificación técnica)</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 6 diagnósticos cualitativos del territorio</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 6 brechas estructurales identificadas</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 6 líneas de mejora propuestas</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 7 objetivos estratégicos institucionales 2026-2028</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Tabla con 11 indicadores de seguimiento y meta 2028</li>
+      </ul>
+    </article>
+
+    <!-- v1 - LANZAMIENTO -->
+    <article class="changelog-entry major">
+      <div class="cl-header">
+        <span class="cl-version major">v1</span>
+        <span class="cl-date">📅 15 mayo 2026 · 22:09</span>
+        <span class="cl-hash">430f52a</span>
+        <span class="cl-tag major">Lanzamiento</span>
+      </div>
+      <h2 class="cl-title">🎉 Portal SEREMI del Trabajo y Previsión Social — versión inicial</h2>
+      <p style="color:var(--gray-700); margin-bottom: 1rem;">Lanzamiento oficial del portal con estructura base, datos integrados de 7 fuentes oficiales y despliegue automatizado.</p>
+      <ul class="cl-changes">
+        <li class="add"><span class="cl-tag add">Nuevo</span> 4 páginas iniciales: Inicio, Indicadores Comunales, Inversión Regional, Institucional</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 31 fichas comunales × 32 indicadores procesadas desde PDFs originales</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 30.401 iniciativas de inversión histórica (1994-2025) procesadas y agregadas</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 36 proyectos de cartera privada 2026 (CBC) con detalle de empleo</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Logo institucional oficial integrado</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> 6 gráficos de overview, KPIs animados, navegación responsive</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Script process_data.py para regenerar JSON desde fuentes</li>
+        <li class="add"><span class="cl-tag add">Nuevo</span> Workflow GitHub Actions para deploy automático en Pages</li>
+      </ul>
+      <div class="cl-stats">
+        <div class="cl-stat"><strong>31</strong><span>Comunas</span></div>
+        <div class="cl-stat"><strong>32</strong><span>Indicadores</span></div>
+        <div class="cl-stat"><strong>30.401</strong><span>Iniciativas BIP</span></div>
+        <div class="cl-stat"><strong>36</strong><span>Proyectos 2026</span></div>
+      </div>
+    </article>
+
+    <!-- Footer note -->
+    <div style="margin-top: 3rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(15,63,140,.05), rgba(255,210,0,.08)); border-radius: var(--radius); border-left: 4px solid var(--blue); text-align: center;">
+      <h3 style="margin-top:0; color:var(--blue-dark);">🔄 Refresco automático</h3>
+      <p style="margin:.5rem 0 0; line-height:1.7; color:var(--gray-700);">El portal se actualiza automáticamente cada lunes mediante GitHub Actions. Los datos se reprocesan desde las fuentes originales y, si hay cambios, se hace commit automático. También es posible disparar el refresco manualmente desde GitHub.</p>
+      <p style="margin-top:1rem;">
+        <a href="https://github.com/OsvaldoManan/portal-seremi-trabajo-ohiggins/commits/main" target="_blank" rel="noopener" style="font-weight:600;">Ver historial completo en GitHub →</a>
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-inner">
+    <div>
+      <h2>¿Probaste el asistente del portal?</h2>
+      <p>Pregúntale sobre indicadores, leyes, programas SENCE u oficinas. El botón 💬 está disponible en la esquina inferior derecha de cualquier página.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="index.html" class="btn btn-primary">Ir al Inicio</a>
+      <a href="lineas-accion.html" class="btn btn-secondary">Líneas de Acción</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="inversion.html">Inversión Regional</a></li>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="lineas-accion.html">Líneas de Acción</a></li>
+        <li><a href="programa.html">Programa de Gobierno</a></li>
+        <li><a href="directorio.html">Directorio</a></li>
+        <li><a href="changelog.html">Cambios</a></li>
+        <li><a href="changelog.html">Cambios</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="https://www.dt.gob.cl" target="_blank" rel="noopener">Dirección del Trabajo</a></li>
+        <li><a href="https://www.sence.gob.cl" target="_blank" rel="noopener">SENCE</a></li>
+        <li><a href="https://www.ips.gob.cl" target="_blank" rel="noopener">IPS</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Versión</h4>
+      <ul class="footer-sources">
+        <li>v7 · Chatbot + Changelog</li>
+        <li>16 mayo 2026</li>
+        <li><a href="https://github.com/OsvaldoManan/portal-seremi-trabajo-ohiggins" target="_blank" rel="noopener">GitHub →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/global-search.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

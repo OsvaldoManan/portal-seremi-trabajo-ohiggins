@@ -26,6 +26,8 @@
     { titulo: 'Programa · Primeros 100 días', url: 'programa.html', tags: '100 dias instalacion regional dia 1 30 60 90 catalogo SENCE', tipo: 'Sección' },
     { titulo: 'Directorio de Servicios', url: 'directorio.html', tags: 'directorio oficinas SEREMI DT SENCE IPS OMIL telefonos chileatiende BNE direcciones horarios', tipo: 'Página' },
     { titulo: 'Directorio · OMIL en 33 comunas', url: 'directorio.html', tags: 'OMIL oficina municipal informacion laboral intermediacion empleo programas SENCE asesoria empleadores', tipo: 'Sección' },
+    { titulo: 'Registro de Actualizaciones', url: 'changelog.html', tags: 'changelog historial cambios actualizaciones versiones release commits novedades', tipo: 'Página' },
+    { titulo: 'Asistente / Chatbot del Portal', url: 'changelog.html#chatbot', tags: 'chatbot asistente bot pregunta consulta ayuda virtual', tipo: 'Función' },
     { titulo: 'Institucional · Misión y valores', url: 'institucional.html', tags: 'mision vision valores SEREMI trabajo previsional ohiggins compromiso publico', tipo: 'Sección' },
     { titulo: 'Institucional · Servicios y metodología', url: 'institucional.html', tags: 'fuentes datos CENSO 2024 ENE SII BNE MIDESO CBC BIP metodologia institucional', tipo: 'Sección' },
   ];
