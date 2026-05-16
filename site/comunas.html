@@ -28,6 +28,7 @@
         <a href="inversion.html" class="nav-link">Inversión Regional</a>
         <a href="analisis.html" class="nav-link">Análisis Estratégico</a>
         <a href="programa.html" class="nav-link">Programa de Gobierno</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
         <a href="institucional.html" class="nav-link">Institucional</a>
       </nav>
       <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
@@ -48,14 +49,66 @@
   <div class="container">
 
     <div class="tabs">
-      <button class="tab active" data-tab="mapa">🗺️ Mapa regional</button>
+      <button class="tab active" data-tab="geomapa">🗺️ Mapa geográfico</button>
+      <button class="tab" data-tab="mapa">🔥 Heatmap</button>
       <button class="tab" data-tab="detalle">Ficha comunal</button>
-      <button class="tab" data-tab="comparar">Comparar comunas</button>
+      <button class="tab" data-tab="comparar">Comparar indicador</button>
+      <button class="tab" data-tab="lado-a-lado">📊 Lado a lado</button>
       <button class="tab" data-tab="ranking">Ranking regional</button>
     </div>
 
-    <!-- TAB: MAPA -->
-    <div class="tab-content active" id="tab-mapa">
+    <!-- TAB: MAPA GEOGRAFICO -->
+    <div class="tab-content active" id="tab-geomapa">
+      <div class="controls-bar">
+        <div class="control-group">
+          <label for="geo-indicator">Indicador a colorear</label>
+          <select id="geo-indicator">
+            <option value="Población censada">Población censada</option>
+            <option value="Cantidad de Hombres">Cantidad de Hombres</option>
+            <option value="Cantidad de Mujeres">Cantidad de Mujeres</option>
+            <option value="Cantidad de ocupados">Cantidad de ocupados</option>
+            <option value="Total de empresas">Total de empresas</option>
+            <option value="Total de trabajadores dependientes">Trabajadores dependientes</option>
+            <option value="Cantidad de vacantes">Vacantes BNE</option>
+            <option value="Cantidad de proyectos de inversión 2025-2029">Proyectos inversión 2025-29</option>
+            <option value="Gasto involucrado 2025-2029 en millones de dólares">Gasto inversión 2025-29 (MUSD)</option>
+            <option value="Empleo Peak Total (N° Personas)">Empleo Peak inversión</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="geo-palette">Paleta de color</label>
+          <select id="geo-palette">
+            <option value="blue">Azul institucional</option>
+            <option value="red">Rojo (alerta)</option>
+            <option value="green">Verde (positivo)</option>
+            <option value="yellow">Amarillo</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label>Acciones</label>
+          <button class="btn-download" id="download-geomap-svg">⬇ Descargar SVG</button>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h3 id="geo-title">Mapa geográfico — Población censada</h3>
+        <p class="chart-sub">33 comunas de la Región de O'Higgins coloreadas según el indicador. Click sobre una comuna para abrir su ficha. Hover para detalles.</p>
+        <div id="geomap-wrap" style="position:relative; min-height:540px; background:#F9FAFB; border-radius:var(--radius-sm); overflow:hidden;">
+          <svg id="geomap-svg" style="width:100%; height:540px;"></svg>
+          <div id="geomap-tooltip" style="position:absolute; pointer-events:none; background:rgba(26,35,50,.95); color:white; padding:.65rem .85rem; border-radius:6px; font-size:.85rem; display:none; z-index:10; box-shadow:0 4px 12px rgba(0,0,0,.3); min-width:180px;"></div>
+          <div id="geomap-legend" style="position:absolute; bottom:14px; right:14px; background:rgba(255,255,255,.95); padding:.6rem .8rem; border-radius:6px; font-size:.75rem; box-shadow:var(--shadow-sm);"></div>
+        </div>
+      </div>
+
+      <div style="margin-top:1.5rem; display:grid; grid-template-columns:repeat(3,1fr); gap:1rem;" class="map-stats">
+        <div class="kpi"><div class="kpi-icon" style="background:#0F3F8C">🏆</div><div class="kpi-content"><span class="kpi-label">Comuna líder</span><span class="kpi-value" id="geo-top">—</span><span class="kpi-foot" id="geo-top-val">—</span></div></div>
+        <div class="kpi"><div class="kpi-icon" style="background:#F57C00">📍</div><div class="kpi-content"><span class="kpi-label">Promedio regional</span><span class="kpi-value" id="geo-avg">—</span><span class="kpi-foot">31 comunas con datos</span></div></div>
+        <div class="kpi"><div class="kpi-icon" style="background:#6B7280">📉</div><div class="kpi-content"><span class="kpi-label">Brecha máx/min</span><span class="kpi-value" id="geo-gap">—</span><span class="kpi-foot">Concentración territorial</span></div></div>
+      </div>
+    </div>
+
+    <!-- TAB: HEATMAP -->
+    <div class="tab-content" id="tab-mapa">
       <div class="controls-bar">
         <div class="control-group">
           <label for="map-indicator">Indicador a visualizar</label>
@@ -133,6 +186,30 @@
         <h3 id="comparar-titulo">Comparación entre comunas</h3>
         <p class="chart-sub" id="comparar-sub">—</p>
         <div class="chart-wrap" style="height: 500px;"><canvas id="chart-comparar"></canvas></div>
+      </div>
+    </div>
+
+    <!-- TAB: LADO A LADO -->
+    <div class="tab-content" id="tab-lado-a-lado">
+      <div class="controls-bar" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="control-group">
+          <label for="cmp-a">Comuna A</label>
+          <select id="cmp-a"></select>
+        </div>
+        <div class="control-group">
+          <label for="cmp-b">Comuna B</label>
+          <select id="cmp-b"></select>
+        </div>
+        <div class="control-group">
+          <label for="cmp-c">Comuna C (opcional)</label>
+          <select id="cmp-c"><option value="">— Sin selección —</option></select>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h3>Comparativa por indicador</h3>
+        <p class="chart-sub">Las barras muestran el % relativo entre las comunas seleccionadas (la más alta = 100%). Los valores absolutos aparecen al lado.</p>
+        <div id="lado-a-lado-grid"></div>
       </div>
     </div>
 
@@ -235,7 +312,11 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/comunas.js"></script>
+<script src="js/geomap.js"></script>
+<script src="js/comparador.js"></script>
+<script src="js/global-search.js"></script>
 </body>
 </html>

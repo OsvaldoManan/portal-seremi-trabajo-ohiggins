@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Directorio de Servicios — SEREMI del Trabajo O'Higgins</title>
+<meta name="description" content="Directorio regional de oficinas de la SEREMI del Trabajo, Dirección del Trabajo, SENCE, IPS, OMIL y teléfonos útiles para trabajadores y empleadores de la Región de O'Higgins.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores Comunales</a>
+        <a href="inversion.html" class="nav-link">Inversión Regional</a>
+        <a href="analisis.html" class="nav-link">Análisis Estratégico</a>
+        <a href="programa.html" class="nav-link">Programa de Gobierno</a>
+        <a href="directorio.html" class="nav-link active">Directorio</a>
+        <a href="institucional.html" class="nav-link">Institucional</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Directorio de Servicios</nav>
+    <span class="eyebrow">Atención al trabajador y empleador</span>
+    <h1>Directorio Regional de Servicios</h1>
+    <p class="lead">Oficinas de la SEREMI del Trabajo, Dirección del Trabajo, SENCE, IPS y la red de Oficinas Municipales de Información Laboral (OMIL) en las 33 comunas de la Región de O'Higgins.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+
+    <!-- Búsqueda + filtros -->
+    <div class="controls-bar" style="grid-template-columns: 2fr 1fr 1fr;">
+      <div class="control-group">
+        <label for="dir-search">Buscar servicio, dirección o comuna</label>
+        <div class="search-wrap">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="dir-search" class="search-input" placeholder="Ej: Rancagua, SENCE, vacantes..." autocomplete="off">
+        </div>
+      </div>
+      <div class="control-group">
+        <label for="dir-tipo">Tipo de servicio</label>
+        <select id="dir-tipo">
+          <option value="">Todos</option>
+          <option value="SEREMI">SEREMI</option>
+          <option value="DT">Dirección del Trabajo</option>
+          <option value="SENCE">SENCE</option>
+          <option value="IPS">IPS / ChileAtiende</option>
+        </select>
+      </div>
+      <div class="control-group">
+        <label for="dir-comuna">Comuna</label>
+        <select id="dir-comuna"><option value="">Todas</option></select>
+      </div>
+    </div>
+
+    <!-- Teléfonos útiles destacados -->
+    <header class="section-head" style="margin-bottom:1.5rem; margin-top:2rem;">
+      <span class="eyebrow">Atención inmediata</span>
+      <h2 style="font-size:1.6rem;">Teléfonos útiles 24/7</h2>
+    </header>
+
+    <div class="kpi-grid" id="kpi-telefonos"></div>
+
+    <!-- Oficinas regionales destacadas -->
+    <header class="section-head" style="margin-bottom:1.5rem; margin-top:3rem;">
+      <span class="eyebrow">Oficinas regionales</span>
+      <h2 style="font-size:1.6rem;">Atención presencial</h2>
+      <p class="section-desc">Datos verificados: SEREMI Trabajo, Dirección del Trabajo y SENCE Regional.</p>
+    </header>
+
+    <div class="info-grid" id="oficinas-grid"></div>
+
+    <!-- Red OMIL -->
+    <header class="section-head" style="margin-bottom:1.5rem; margin-top:3rem;">
+      <span class="eyebrow">Red OMIL</span>
+      <h2 style="font-size:1.6rem;">Oficinas Municipales de Información Laboral</h2>
+      <p class="section-desc">Las 33 OMIL de la región brindan intermediación laboral, postulación a programas SENCE, asesoría a empleadores y derivación a servicios.</p>
+    </header>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Comuna</th>
+            <th>Municipalidad</th>
+            <th>Provincia</th>
+            <th>Servicios</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-omil"></tbody>
+      </table>
+    </div>
+
+    <!-- Nota -->
+    <div style="margin-top: 3rem; padding: 1.5rem; background: linear-gradient(135deg, rgba(245,124,0,.06), rgba(255,210,0,.08)); border-radius: var(--radius); border-left: 4px solid var(--orange);">
+      <h3 style="margin-top:0; color:var(--orange);">📞 ¿Cómo accedo a estos servicios?</h3>
+      <ul style="margin:.5rem 0 0 1.25rem; padding:0; line-height:1.8;">
+        <li><strong>Si soy trabajador o trabajadora:</strong> acércate primero a la OMIL de tu comuna o llama a ChileAtiende (101). Ahí te derivan al servicio correspondiente.</li>
+        <li><strong>Si soy empleador:</strong> publica tus vacantes en la Bolsa Nacional de Empleo (BNE.cl) o solicita asesoría en la Inspección del Trabajo de tu provincia.</li>
+        <li><strong>Si tengo un accidente del trabajo:</strong> llama de inmediato a tu mutualidad de empleadores (ACHS, Mutual, ISL).</li>
+        <li><strong>Para denuncias laborales:</strong> www.dt.gob.cl o presencialmente en la Inspección del Trabajo de tu provincia.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="inversion.html">Inversión Regional</a></li>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="programa.html">Programa de Gobierno</a></li>
+        <li><a href="directorio.html">Directorio</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="https://www.dt.gob.cl" target="_blank" rel="noopener">Dirección del Trabajo</a></li>
+        <li><a href="https://www.sence.gob.cl" target="_blank" rel="noopener">SENCE</a></li>
+        <li><a href="https://www.ips.gob.cl" target="_blank" rel="noopener">IPS</a></li>
+        <li><a href="https://www.bne.cl" target="_blank" rel="noopener">Bolsa Nacional de Empleo</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Fuentes</h4>
+      <ul class="footer-sources">
+        <li>CENSO 2024 — INE</li>
+        <li>ENE / SII / BNE / CBC / BIP / MIDESO</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/directorio.js"></script>
+<script src="js/global-search.js"></script>
+</body>
+</html>

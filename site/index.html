@@ -29,6 +29,7 @@
         <a href="inversion.html" class="nav-link">Inversión Regional</a>
         <a href="analisis.html" class="nav-link">Análisis Estratégico</a>
         <a href="programa.html" class="nav-link">Programa de Gobierno</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
         <a href="institucional.html" class="nav-link">Institucional</a>
       </nav>
       <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
@@ -198,6 +199,45 @@
   </div>
 </section>
 
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Nuevo · Mayo 2026</span>
+      <h2>Herramientas interactivas y de atención ciudadana</h2>
+      <p class="section-desc">Cuatro novedades para explorar el territorio y acceder a los servicios del trabajo en O'Higgins.</p>
+    </header>
+
+    <div class="info-grid">
+      <a href="comunas.html#tab-geomapa" style="text-decoration:none;">
+        <article class="info-card" style="height:100%;">
+          <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">🗺️</div>
+          <h3>Mapa geográfico real</h3>
+          <p>Mapa interactivo de las 33 comunas con polígonos territoriales reales, coloreados según 10 indicadores seleccionables. Hover para detalles, click para abrir ficha.</p>
+        </article>
+      </a>
+      <a href="comunas.html#tab-lado-a-lado" style="text-decoration:none;">
+        <article class="info-card" style="height:100%;">
+          <div class="icon-circle" style="background:rgba(46,125,50,.12);color:#2E7D32">📊</div>
+          <h3>Comparador lado a lado</h3>
+          <p>Compara hasta 3 comunas simultáneamente sobre 20+ indicadores agrupados en 6 categorías. Identifica brechas y fortalezas relativas con barras proporcionales.</p>
+        </article>
+      </a>
+      <a href="directorio.html" style="text-decoration:none;">
+        <article class="info-card" style="height:100%;">
+          <div class="icon-circle" style="background:rgba(245,124,0,.12);color:#F57C00">📞</div>
+          <h3>Directorio de servicios</h3>
+          <p>Oficinas de SEREMI, DT, SENCE, IPS y las 33 OMIL de la región con direcciones, teléfonos, horarios y enlaces. Filtros por tipo y comuna.</p>
+        </article>
+      </a>
+      <article class="info-card" style="cursor:pointer;" onclick="document.getElementById('global-search-btn')?.click()">
+        <div class="icon-circle" style="background:rgba(192,25,43,.1);color:#C0192B">🔍</div>
+        <h3>Buscador global</h3>
+        <p>Busca en todo el portal con <kbd style="background:#F3F4F6;padding:.1rem .4rem;border-radius:3px;font-family:monospace;font-size:.85em;">Ctrl+K</kbd>: páginas, secciones, indicadores y datos. Acceso rápido desde cualquier vista.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section class="section cta-section">
   <div class="container cta-inner">
     <div>
@@ -263,5 +303,6 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/home.js"></script>
+<script src="js/global-search.js"></script>
 </body>
 </html>
