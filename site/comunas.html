@@ -47,13 +47,59 @@
   <div class="container">
 
     <div class="tabs">
-      <button class="tab active" data-tab="detalle">Ficha comunal</button>
+      <button class="tab active" data-tab="mapa">🗺️ Mapa regional</button>
+      <button class="tab" data-tab="detalle">Ficha comunal</button>
       <button class="tab" data-tab="comparar">Comparar comunas</button>
       <button class="tab" data-tab="ranking">Ranking regional</button>
     </div>
 
+    <!-- TAB: MAPA -->
+    <div class="tab-content active" id="tab-mapa">
+      <div class="controls-bar">
+        <div class="control-group">
+          <label for="map-indicator">Indicador a visualizar</label>
+          <select id="map-indicator">
+            <option value="Población censada">Población censada</option>
+            <option value="Cantidad de Hombres">Cantidad de Hombres</option>
+            <option value="Cantidad de Mujeres">Cantidad de Mujeres</option>
+            <option value="Cantidad de ocupados">Cantidad de ocupados</option>
+            <option value="Total de empresas">Total de empresas</option>
+            <option value="Total de trabajadores dependientes">Trabajadores dependientes</option>
+            <option value="Cantidad de vacantes">Vacantes BNE</option>
+            <option value="Cantidad de proyectos de inversión 2025-2029">Proyectos inversión 2025-29</option>
+            <option value="Gasto involucrado 2025-2029 en millones de dólares">Gasto inversión 2025-29 (MUSD)</option>
+            <option value="Empleo Peak Total (N° Personas)">Empleo Peak inversión</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="comuna-search">Buscar comuna</label>
+          <div class="search-wrap">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="comuna-search" class="search-input" placeholder="Filtrar por nombre..." autocomplete="off">
+            <button class="search-clear" id="search-clear" aria-label="Limpiar">×</button>
+          </div>
+        </div>
+        <div class="control-group">
+          <label>Acciones</label>
+          <button class="btn-download" id="download-comunas-csv">⬇ Descargar CSV</button>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h3 id="map-title">Población censada por comuna</h3>
+        <p class="chart-sub">Visualización tipo heatmap: el color de cada celda representa la intensidad del indicador. Click en una comuna para ver su ficha completa.</p>
+        <div class="heatmap-grid" id="heatmap-grid"></div>
+        <div class="heatmap-legend">
+          <span>Menor</span>
+          <span class="heat-bar"></span>
+          <span>Mayor</span>
+          <span id="heat-stats" class="text-muted" style="margin-left:auto;"></span>
+        </div>
+      </div>
+    </div>
+
     <!-- TAB: FICHA -->
-    <div class="tab-content active" id="tab-detalle">
+    <div class="tab-content" id="tab-detalle">
       <div class="controls-bar">
         <div class="control-group">
           <label for="comuna-select">Seleccionar comuna</label>
@@ -115,6 +161,10 @@
       </div>
 
       <div style="margin-top: 2rem;" class="data-table-wrap">
+        <div class="table-actions">
+          <button class="btn-download" id="download-ranking-csv">⬇ Descargar CSV</button>
+          <button class="btn-download" onclick="window.print()">🖨 Imprimir</button>
+        </div>
         <h3 style="margin-bottom: 1rem;">Resumen comparativo de comunas</h3>
         <table class="data-table">
           <thead>

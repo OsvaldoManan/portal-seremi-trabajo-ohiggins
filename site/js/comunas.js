@@ -381,6 +381,96 @@
       `).join('');
   }
 
+  // ====== TAB MAPA / HEATMAP ======
+  function color(intensity) {
+    // intensity 0..1 -> blue gradient with alpha
+    const a = 0.08 + intensity * 0.85;
+    return `rgba(15, 63, 140, ${a.toFixed(3)})`;
+  }
+
+  function renderHeatmap(indicator) {
+    const grid = document.getElementById('heatmap-grid');
+    document.getElementById('map-title').textContent = `${indicator} por comuna`;
+
+    const data = comunas.map(c => ({
+      comuna: c.comuna,
+      valor: c.indicadores[indicator]?.numero || 0,
+      text: c.indicadores[indicator]?.valor || 'NA'
+    }));
+    const max = Math.max(...data.map(d => d.valor)) || 1;
+    const min = Math.min(...data.filter(d => d.valor > 0).map(d => d.valor)) || 0;
+    const total = data.reduce((s, d) => s + d.valor, 0);
+
+    document.getElementById('heat-stats').innerHTML =
+      `Total regional: <strong>${Utils.formatNumber(total)}</strong> · Máximo: <strong>${Utils.formatNumber(max)}</strong>`;
+
+    grid.innerHTML = data
+      .sort((a, b) => b.valor - a.valor)
+      .map(d => {
+        const intensity = max > 0 ? d.valor / max : 0;
+        const valor = d.valor > 0 ? Utils.formatNumber(d.valor, d.valor < 100 ? 2 : 0) : 'NA';
+        return `
+          <div class="heat-tile" style="--tile-color:${color(intensity)};" data-comuna="${d.comuna}" title="${d.comuna}: ${valor}">
+            <span class="heat-tile-name">${d.comuna}</span>
+            <span class="heat-tile-value">${valor}</span>
+            <span class="heat-tile-label">${intensity > 0 ? Math.round(intensity*100) + '%' : '—'}</span>
+          </div>
+        `;
+      }).join('');
+
+    // Click on tile -> switch to detalle tab with that comuna
+    grid.querySelectorAll('.heat-tile').forEach(tile => {
+      tile.addEventListener('click', () => {
+        selectComuna.value = tile.dataset.comuna;
+        renderFicha(tile.dataset.comuna);
+        document.querySelector('.tab[data-tab="detalle"]').click();
+        window.scrollTo({ top: document.querySelector('#tab-detalle').offsetTop - 80, behavior: 'smooth' });
+      });
+    });
+
+    // Apply current search filter to the new tiles
+    applyHeatmapFilter();
+  }
+
+  const mapIndicatorSel = document.getElementById('map-indicator');
+  mapIndicatorSel.addEventListener('change', () => renderHeatmap(mapIndicatorSel.value));
+  renderHeatmap(mapIndicatorSel.value);
+
+  // ====== Search/filter ======
+  const searchInput = document.getElementById('comuna-search');
+  const searchClear = document.getElementById('search-clear');
+
+  function applyHeatmapFilter() {
+    const q = searchInput.value.trim().toLowerCase();
+    document.querySelectorAll('.heat-tile').forEach(t => {
+      const match = !q || t.dataset.comuna.toLowerCase().includes(q);
+      t.classList.toggle('hidden', !match);
+    });
+  }
+  searchInput.addEventListener('input', applyHeatmapFilter);
+  searchClear.addEventListener('click', () => {
+    searchInput.value = '';
+    applyHeatmapFilter();
+    searchInput.focus();
+  });
+
+  // ====== CSV Downloads ======
+  document.getElementById('download-comunas-csv').addEventListener('click', () => {
+    // All indicators for all comunas
+    const allKeys = new Set();
+    comunas.forEach(c => Object.keys(c.indicadores).forEach(k => allKeys.add(k)));
+    const headers = ['Comuna', ...allKeys];
+    const rows = [headers];
+    comunas.forEach(c => {
+      const row = [c.comuna];
+      [...allKeys].forEach(k => {
+        row.push(c.indicadores[k]?.valor || '');
+      });
+      rows.push(row);
+    });
+    Utils.downloadCSV('indicadores-comunales-ohiggins.csv', rows);
+  });
+
   // ====== TABS Switch ======
   let comparingRendered = false;
   let rankingRendered = false;
@@ -399,6 +489,27 @@
       if (target === 'ranking' && !rankingRendered) {
         renderRanking();
         rankingRendered = true;
+        // Attach ranking download once
+        const dlBtn = document.getElementById('download-ranking-csv');
+        if (dlBtn) {
+          dlBtn.addEventListener('click', () => {
+            const headers = ['Comuna','Población','PET','Ocupados','Empresas','Vacantes','Inversión 2025-29 (MUSD)'];
+            const rows = [headers];
+            const num = (c, k) => c.indicadores[k]?.numero || 0;
+            [...comunas].sort((a,b) => num(b,'Población censada') - num(a,'Población censada')).forEach(c => {
+              rows.push([
+                c.comuna,
+                num(c,'Población censada'),
+                num(c,'Población en Edad de Trabajar'),
+                num(c,'Cantidad de ocupados'),
+                num(c,'Total de empresas'),
+                num(c,'Cantidad de vacantes'),
+                num(c,'Gasto involucrado 2025-2029 en millones de dólares')
+              ]);
+            });
+            Utils.downloadCSV('ranking-comunas-ohiggins.csv', rows);
+          });
+        }
       }
     });
   });

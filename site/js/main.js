@@ -74,7 +74,63 @@ const PALETTE = {
   ]
 };
 
-// ============== MOBILE NAV ==============
+// ============== CSV EXPORT ==============
+Utils.downloadCSV = function(filename, rows) {
+  const escape = (v) => {
+    if (v === null || v === undefined) return '';
+    const s = String(v);
+    if (s.includes(',') || s.includes('"') || s.includes('\n')) {
+      return '"' + s.replace(/"/g, '""') + '"';
+    }
+    return s;
+  };
+  const csv = rows.map(r => r.map(escape).join(',')).join('\n');
+  // BOM for Excel UTF-8 compatibility
+  const blob = new Blob(['﻿' + csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+};
+
+// ============== DARK MODE ==============
+const Theme = {
+  current() {
+    return document.documentElement.getAttribute('data-theme') || localStorage.getItem('theme') || 'light';
+  },
+  set(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    // Notify charts if any are listening
+    document.dispatchEvent(new CustomEvent('themechange', { detail: { theme } }));
+  },
+  toggle() {
+    this.set(this.current() === 'dark' ? 'light' : 'dark');
+  },
+  init() {
+    const saved = localStorage.getItem('theme');
+    if (saved) {
+      document.documentElement.setAttribute('data-theme', saved);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  }
+};
+// Apply theme ASAP to avoid flash
+Theme.init();
+
+// ============== LAST UPDATE ==============
+Utils.lastUpdateBadge = function(date) {
+  const d = date || new Date('2026-05-15');
+  const fmt = new Intl.DateTimeFormat('es-CL', { year: 'numeric', month: 'long', day: 'numeric' });
+  return `<span class="update-badge" title="Última actualización del Observatorio Laboral">Actualizado ${fmt.format(d)}</span>`;
+};
+
+// ============== MOBILE NAV + TOGGLES ==============
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.main-nav');
@@ -84,6 +140,23 @@ document.addEventListener('DOMContentLoaded', () => {
       toggle.setAttribute('aria-expanded', String(open));
     });
   }
+
+  // Add theme toggle to header if there's a nav
+  if (nav) {
+    const themeBtn = document.createElement('button');
+    themeBtn.className = 'theme-toggle';
+    themeBtn.setAttribute('aria-label', 'Cambiar tema');
+    themeBtn.innerHTML = '<span class="icon-moon">🌙</span><span class="icon-sun">☀️</span>';
+    themeBtn.addEventListener('click', () => Theme.toggle());
+    nav.appendChild(themeBtn);
+  }
+
+  // Add update badge to page-header lead
+  document.querySelectorAll('.page-header .eyebrow, .hero .eyebrow').forEach(el => {
+    if (!el.querySelector('.update-badge')) {
+      el.insertAdjacentHTML('beforeend', ' ' + Utils.lastUpdateBadge());
+    }
+  });
 
   // Animar contadores de hero
   const counters = document.querySelectorAll('[data-counter]');
@@ -99,8 +172,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     counters.forEach(c => obs.observe(c));
   }
+
+  // Refresh Chart.js defaults on theme change
+  document.addEventListener('themechange', () => {
+    if (typeof Chart !== 'undefined') {
+      const isDark = Theme.current() === 'dark';
+      Chart.defaults.color = isDark ? '#D1D5DB' : '#495467';
+      // Re-render all existing charts
+      Object.values(Chart.instances).forEach(c => {
+        c.options.scales = c.options.scales || {};
+        c.update('none');
+      });
+    }
+  });
 });
 
 // Expose globally
 window.Utils = Utils;
 window.PALETTE = PALETTE;
+window.Theme = Theme;

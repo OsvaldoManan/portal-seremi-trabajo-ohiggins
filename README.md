@@ -7,9 +7,21 @@ Sitio web estático con visualizaciones interactivas sobre indicadores comunales
 ## Contenido del portal
 
 - **Inicio** — Síntesis regional con KPIs y gráficos de overview
-- **Indicadores Comunales** — 31 fichas comunales con 32 indicadores cada una (Censo 2024, ENE, SII, BNE, MIDESO, CBC)
-- **Inversión Regional** — 30.401 iniciativas históricas (1994-2025) + 36 proyectos de la cartera 2026
+- **Indicadores Comunales** — 31 fichas comunales con 32 indicadores cada una. Incluye mapa heatmap interactivo, buscador y descarga CSV
+- **Inversión Regional** — 30.401 iniciativas históricas (1994-2025) + 36 proyectos de la cartera 2026, con descarga CSV
+- **Análisis Estratégico** — Diagnóstico, brechas, líneas de mejora y 7 objetivos institucionales 2026-2028 con indicadores de seguimiento
 - **Institucional** — Misión, visión, líneas de acción y servicios del sector trabajo
+
+## Funcionalidades
+
+- 🗺️ Mapa heatmap interactivo de las 31 comunas con 10 indicadores seleccionables
+- 🔍 Buscador / filtro de comunas en tiempo real
+- ⬇️ Descarga CSV de todas las tablas (compatible con Excel UTF-8)
+- 🌙 Modo oscuro con persistencia en localStorage
+- 🖨️ Vista optimizada para impresión institucional
+- 📅 Badge automático de "última actualización"
+- 📊 Más de 25 gráficos interactivos con Chart.js
+- 📱 Diseño responsivo (escritorio, tablet, móvil)
 
 ## Fuentes de datos
 

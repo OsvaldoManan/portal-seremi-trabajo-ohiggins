@@ -276,6 +276,20 @@
     </tr>
   `).join('');
 
+  // ====== CSV Downloads (historical) ======
+  document.getElementById('dl-sectores').addEventListener('click', () => {
+    const rows = [['Sector','Cantidad iniciativas','Inversion total (M$)','Promedio por iniciativa (M$)']];
+    hist.por_sector.forEach(s => {
+      rows.push([s.sector, s.cantidad, s.costo_total, Math.round(s.costo_total/s.cantidad)]);
+    });
+    Utils.downloadCSV('inversion-historica-por-sector.csv', rows);
+  });
+  document.getElementById('dl-comunas-hist').addEventListener('click', () => {
+    const rows = [['Comuna','Cantidad iniciativas','Inversion total (M$)']];
+    hist.por_comuna.forEach(c => rows.push([c.comuna, c.cantidad, c.costo_total]));
+    Utils.downloadCSV('inversion-historica-por-comuna.csv', rows);
+  });
+
   // ============== TAB 2026 ==============
   let rendered2026 = false;
   function render2026() {
@@ -427,6 +441,19 @@
         <td class="num">${Utils.formatNumber(p.empleo_operacion)}</td>
       </tr>
     `).join('');
+
+    // CSV download for 2026
+    const dlBtn = document.getElementById('dl-cartera-2026');
+    if (dlBtn) {
+      dlBtn.addEventListener('click', () => {
+        const rows = [['Comuna','Sector','Tipologia','Etapa','Cantidad','Inversion (MUSD)','Profesionales','Tecnicos','No calificados','Empleo operacion']];
+        inv26.registros.forEach(p => rows.push([
+          p.comuna || '', p.sector_economico, p.tipologia, p.etapa,
+          p.cantidad, p.inversion, p.profesionales, p.tecnicos, p.nc, p.empleo_operacion
+        ]));
+        Utils.downloadCSV('cartera-inversion-2026.csv', rows);
+      });
+    }
   }
 
   // ====== TABS ======

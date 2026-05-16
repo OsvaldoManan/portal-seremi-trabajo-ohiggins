@@ -20,3 +20,9 @@ desktop.ini
 # Temporales
 *.log
 *.tmp
+
+# Claude Code
+.claude/
+
+# Otros archivos personales no relacionados
+JOSE-ANTONIO-KAST-RIST.pdf
