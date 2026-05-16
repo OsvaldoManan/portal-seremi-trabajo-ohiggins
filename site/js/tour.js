@@ -48,8 +48,9 @@
     overlay.id = 'tour-overlay';
     overlay.style.cssText = `
       position: fixed; inset: 0; z-index: 99999;
-      background: rgba(0,0,0,.7); backdrop-filter: blur(2px);
+      background: rgba(0,0,0,.55); backdrop-filter: blur(2px);
       display: flex; align-items: center; justify-content: center;
+      padding: 1rem;
     `;
     document.body.appendChild(overlay);
 
@@ -58,12 +59,19 @@
     panel.setAttribute('role', 'dialog');
     panel.setAttribute('aria-labelledby', 'tour-title');
     panel.style.cssText = `
+      position: relative; z-index: 100000;
       background: white; padding: 2rem; border-radius: 16px;
-      max-width: 480px; width: 90%;
+      max-width: 480px; width: 100%;
       box-shadow: 0 24px 64px rgba(0,0,0,.4);
       animation: tourSlideUp .35s cubic-bezier(.2,.8,.2,1);
+      color: #1A2332;
     `;
-    document.body.appendChild(panel);
+    overlay.appendChild(panel);
+
+    // Click on overlay backdrop (not panel) closes the tour
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) complete(); });
+    // ESC to close
+    document.addEventListener('keydown', escHandler);
 
     if (!document.getElementById('tour-style')) {
       const style = document.createElement('style');
@@ -162,11 +170,17 @@
     }
   }
 
+  function escHandler(e) {
+    if (e.key === 'Escape') complete();
+  }
+
   function complete() {
     localStorage.setItem('tour_completed', '1');
     document.querySelectorAll('.tour-highlight').forEach(el => el.classList.remove('tour-highlight'));
+    document.removeEventListener('keydown', escHandler);
     overlay?.remove();
-    panel?.remove();
+    panel = null;
+    overlay = null;
   }
 
   function start() {
