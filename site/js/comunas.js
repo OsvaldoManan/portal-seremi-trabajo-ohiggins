@@ -432,27 +432,32 @@
     applyHeatmapFilter();
   }
 
-  const mapIndicatorSel = document.getElementById('map-indicator');
-  mapIndicatorSel.addEventListener('change', () => renderHeatmap(mapIndicatorSel.value));
-  renderHeatmap(mapIndicatorSel.value);
-
-  // ====== Search/filter ======
+  // ====== Search/filter (declarado ANTES de renderHeatmap para evitar TDZ) ======
   const searchInput = document.getElementById('comuna-search');
   const searchClear = document.getElementById('search-clear');
 
   function applyHeatmapFilter() {
+    if (!searchInput) return;
     const q = searchInput.value.trim().toLowerCase();
     document.querySelectorAll('.heat-tile').forEach(t => {
       const match = !q || t.dataset.comuna.toLowerCase().includes(q);
       t.classList.toggle('hidden', !match);
     });
   }
-  searchInput.addEventListener('input', applyHeatmapFilter);
-  searchClear.addEventListener('click', () => {
-    searchInput.value = '';
-    applyHeatmapFilter();
-    searchInput.focus();
-  });
+  if (searchInput) searchInput.addEventListener('input', applyHeatmapFilter);
+  if (searchClear) {
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      applyHeatmapFilter();
+      searchInput.focus();
+    });
+  }
+
+  const mapIndicatorSel = document.getElementById('map-indicator');
+  if (mapIndicatorSel) {
+    mapIndicatorSel.addEventListener('change', () => renderHeatmap(mapIndicatorSel.value));
+    renderHeatmap(mapIndicatorSel.value);
+  }
 
   // ====== CSV Downloads ======
   document.getElementById('download-comunas-csv').addEventListener('click', () => {
