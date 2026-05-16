@@ -1,0 +1,150 @@
+{
+  "fuente": "Instituto Nacional de Estadísticas (INE) - Síntesis Censo 2024 publicada el 27 de marzo de 2025",
+  "fecha_levantamiento": "Marzo-Julio 2024",
+  "fecha_resultados": "Marzo 2025",
+  "nota": "Primeros resultados del Censo de Población y Vivienda 2024. Datos agregados a nivel regional y nacional desde fuentes oficiales del INE.",
+  "url_fuente": "https://censo2024.ine.gob.cl",
+
+  "nacional": {
+    "poblacion_total": 18480432,
+    "hombres": 8950909,
+    "mujeres": 9529523,
+    "pct_mujeres": 51.5,
+    "pct_hombres": 48.5,
+    "hogares": 6596527,
+    "tamanio_hogar_promedio": 2.8,
+    "tamanio_hogar_1992": 4.0,
+    "hogares_unipersonales_pct": 21.8,
+    "hogares_unipersonales_1992_pct": 8.3,
+    "hogares_solo_65_pct": 11.6,
+    "hogares_solo_65_1992_pct": 4.3,
+    "hogares_con_menores_14_pct": 33.2,
+    "hogares_con_menores_14_1992_pct": 62.0,
+    "pct_65_o_mas_2024": 14.0,
+    "pct_65_o_mas_1992": 6.6,
+    "pct_menores_14_2024": 17.7,
+    "pct_menores_14_1992": 29.4,
+    "indice_envejecimiento": 79,
+    "indice_envejecimiento_1992": 22.3,
+    "migrantes_internacionales": 1608650,
+    "pct_migrantes": 8.8,
+    "censo_2017": 17574003,
+    "crecimiento_pct_2017_2024": 5.16
+  },
+
+  "regiones_ranking": [
+    {"region": "Metropolitana", "poblacion": 7400000, "pct_nacional": 40.0},
+    {"region": "Valparaíso", "poblacion": 1900000, "pct_nacional": 10.3},
+    {"region": "Biobío", "poblacion": 1600000, "pct_nacional": 8.7},
+    {"region": "Maule", "poblacion": 1045000, "pct_nacional": 5.7},
+    {"region": "Araucanía", "poblacion": 1000000, "pct_nacional": 5.4},
+    {"region": "O'Higgins", "poblacion": 964133, "pct_nacional": 5.2},
+    {"region": "Coquimbo", "poblacion": 757586, "pct_nacional": 4.1},
+    {"region": "Los Lagos", "poblacion": 880000, "pct_nacional": 4.8},
+    {"region": "Antofagasta", "poblacion": 650000, "pct_nacional": 3.5},
+    {"region": "Ñuble", "poblacion": 510000, "pct_nacional": 2.8},
+    {"region": "Tarapacá", "poblacion": 410000, "pct_nacional": 2.2},
+    {"region": "Los Ríos", "poblacion": 410000, "pct_nacional": 2.2},
+    {"region": "Atacama", "poblacion": 320000, "pct_nacional": 1.7},
+    {"region": "Arica y Parinacota", "poblacion": 250000, "pct_nacional": 1.4},
+    {"region": "Magallanes", "poblacion": 175000, "pct_nacional": 0.9},
+    {"region": "Aysén", "poblacion": 110000, "pct_nacional": 0.6}
+  ],
+
+  "regiones_indice_envejecimiento": {
+    "Valparaíso": 98.6,
+    "Ñuble": 97.6,
+    "Biobío": 92.0,
+    "O'Higgins": 88.0,
+    "Maule": 91.0,
+    "Coquimbo": 78.0,
+    "Metropolitana": 76.0,
+    "Tarapacá": 43.9,
+    "Antofagasta": 49.3
+  },
+
+  "ohiggins": {
+    "poblacion_total": 964133,
+    "hombres": 472390,
+    "mujeres": 491743,
+    "pct_mujeres": 51.0,
+    "pct_hombres": 49.0,
+    "ranking_nacional": 6,
+    "pct_del_pais": 5.2,
+    "comunas_total": 33,
+    "comunas_con_ficha": 31,
+    "censo_2017": 914555,
+    "crecimiento_pct_2017_2024": 5.42,
+    "comuna_mas_poblada": "Rancagua",
+    "rancagua_habitantes": 257744,
+    "pct_en_rancagua": 26.7,
+    "top3_comunas_pct": 41.2,
+    "comuna_menos_poblada": "Pumanque",
+    "indice_envejecimiento_estimado": 88.0,
+    "pct_65_o_mas_estimado": 14.5,
+    "pct_menores_14_estimado": 16.7
+  },
+
+  "comparativa_2017_2024": {
+    "ohiggins": {
+      "poblacion_2017": 914555,
+      "poblacion_2024": 964133,
+      "delta_abs": 49578,
+      "delta_pct": 5.42
+    },
+    "nacional": {
+      "poblacion_2017": 17574003,
+      "poblacion_2024": 18480432,
+      "delta_abs": 906429,
+      "delta_pct": 5.16
+    }
+  },
+
+  "implicaciones_seremi": [
+    {
+      "titulo": "Envejecimiento poblacional",
+      "dato": "14% de la población nacional tiene 65+ años, en O'Higgins se estima 14,5%",
+      "impacto": "Aumento de demanda en previsional (PGU, pensiones), salas cuna del trabajador, programas de cuidado. Necesidad de prolongar vida laboral activa con condiciones dignas.",
+      "linea_accion": "Eje 6 - Reforma Previsional"
+    },
+    {
+      "titulo": "Hogares más pequeños",
+      "dato": "Promedio de 2,8 personas por hogar vs 4,0 en 1992. Hogares unipersonales subieron de 8,3% a 21,8%",
+      "impacto": "Más personas viven solas. Cambia el modelo de cuidado: menos red familiar disponible, mayor presión sobre servicios públicos de cuidado y empleo de cuidadores formales.",
+      "linea_accion": "Eje 1 - Empleabilidad: foco en sector cuidados"
+    },
+    {
+      "titulo": "Paridad demográfica",
+      "dato": "51% mujeres / 49% hombres en O'Higgins, alineado con el promedio nacional (51,5%/48,5%)",
+      "impacto": "La paridad demográfica no se traduce en paridad laboral: brecha de participación, salarial y de inserción en sectores masculinizados (minería).",
+      "linea_accion": "Eje 4 - Mujer y Trabajo + Sala Cuna Universal"
+    },
+    {
+      "titulo": "Concentración urbana",
+      "dato": "26,7% de la población regional vive en Rancagua. Top 3 comunas concentran 41,2%",
+      "impacto": "Necesidad de servicios descentralizados: SEREMI Itinerante, OMIL fortalecidas, fiscalizaciones en comunas rurales y costeras donde la presencia institucional es menor.",
+      "linea_accion": "Plan estratégico 2026-2028 - OE4 Cohesión territorial"
+    },
+    {
+      "titulo": "Crecimiento poblacional regional",
+      "dato": "+5,42% desde Censo 2017 (49.578 personas más en 7 años)",
+      "impacto": "Demanda creciente sobre el mercado laboral. La cartera privada 2026 (US$7.000M, ~9.500 empleos) absorbe parte, pero exige planificación formativa.",
+      "linea_accion": "OE7 - Anticipación productiva"
+    },
+    {
+      "titulo": "Migración internacional",
+      "dato": "8,8% de la población nacional es migrante (1,6 millones). Doble que en 2017",
+      "impacto": "Inserción laboral de migrantes regulares, especialmente en sectores agrícola y servicios. Necesidad de coordinación con DT y SENCE para formalización.",
+      "linea_accion": "Eje 2 - Fiscalización y formalización"
+    }
+  ],
+
+  "edad_distribucion_estimada": {
+    "0-14": {"hombres": 80800, "mujeres": 80100, "total": 160900, "pct": 16.7},
+    "15-29": {"hombres": 92500, "mujeres": 91200, "total": 183700, "pct": 19.1},
+    "30-44": {"hombres": 98000, "mujeres": 99500, "total": 197500, "pct": 20.5},
+    "45-59": {"hombres": 94500, "mujeres": 99700, "total": 194200, "pct": 20.1},
+    "60-74": {"hombres": 70800, "mujeres": 78400, "total": 149200, "pct": 15.5},
+    "75+": {"hombres": 35790, "mujeres": 42843, "total": 78633, "pct": 8.1}
+  }
+}
