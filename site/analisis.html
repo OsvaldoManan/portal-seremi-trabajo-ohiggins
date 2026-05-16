@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Análisis Estratégico — SEREMI del Trabajo O'Higgins</title>
+<meta name="description" content="Análisis cuantitativo y cualitativo, brechas, mejoras propuestas y objetivos institucionales de la SEREMI del Trabajo y Previsión Social, Región de O'Higgins.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo">
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores Comunales</a>
+        <a href="inversion.html" class="nav-link">Inversión Regional</a>
+        <a href="analisis.html" class="nav-link active">Análisis Estratégico</a>
+        <a href="institucional.html" class="nav-link">Institucional</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Análisis Estratégico</nav>
+    <span class="eyebrow">Diagnóstico y planificación 2026-2028</span>
+    <h1>Análisis estratégico regional</h1>
+    <p class="lead">Lectura cuantitativa y cualitativa del territorio: hallazgos, brechas, líneas de mejora y objetivos institucionales para la gestión 2026-2028 de la SEREMI del Trabajo y Previsión Social de O'Higgins.</p>
+  </div>
+</section>
+
+<!-- ====== SINTESIS EJECUTIVA ====== -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Resumen ejecutivo</span>
+      <h2>Tres hallazgos centrales del diagnóstico</h2>
+      <p class="section-desc">Síntesis de la lectura cruzada de las 31 fichas comunales, 30.401 iniciativas históricas y la cartera privada 2026.</p>
+    </header>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">📍</div>
+        <h3>Concentración urbana acentuada</h3>
+        <p>El <strong>26,7%</strong> de la población regional vive en Rancagua y las 3 comunas más grandes concentran el <strong>41,2%</strong>. Las 10 comunas más pequeñas suman apenas el <strong>8,8%</strong>. Esta asimetría se replica en la actividad empresarial: <strong>23,1%</strong> de las empresas están en Rancagua.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(245,124,0,.12);color:#F57C00">⏳</div>
+        <h3>Cuello de botella en inversión pública</h3>
+        <p>De 30.401 iniciativas postuladas entre 1994 y 2025, el <strong>47,9% sigue en Perfil</strong> y solo el <strong>1,2% figura como terminado</strong>. Adicionalmente, el <strong>22,2%</strong> está objetado técnicamente y un <strong>16,4%</strong> con falta de información — una oportunidad clara de acompañamiento técnico a municipios.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(46,125,50,.12);color:#2E7D32">⚡</div>
+        <h3>Cartera 2026: minería e inmobiliaria al frente</h3>
+        <p>La cartera privada 2026 suma <strong>US$7.000 millones</strong> con <strong>5.610 empleos de construcción</strong> y <strong>3.869 empleos de operación</strong>. La minería concentra el <strong>81%</strong> de la inversión. El empleo proyectado requiere <strong>81% técnicos y no calificados</strong>, definiendo claramente la demanda formativa.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== HALLAZGOS CUANTITATIVOS ====== -->
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Análisis cuantitativo</span>
+      <h2>Lo que dicen los datos</h2>
+      <p class="section-desc">Visualizaciones específicas que sustentan el diagnóstico estratégico.</p>
+    </header>
+
+    <div class="charts-grid">
+      <div class="chart-card chart-large" style="background:rgba(255,255,255,.95);">
+        <h3>Concentración demográfica y empresarial</h3>
+        <p class="chart-sub">% acumulado de población y empresas por comuna (orden decreciente)</p>
+        <div class="chart-wrap"><canvas id="ch-concentracion"></canvas></div>
+      </div>
+      <div class="chart-card" style="background:rgba(255,255,255,.95);">
+        <h3>Madurez del portafolio</h3>
+        <p class="chart-sub">Etapa actual del ciclo de inversión 1994-2025</p>
+        <div class="chart-wrap"><canvas id="ch-madurez"></canvas></div>
+      </div>
+
+      <div class="chart-card chart-large" style="background:rgba(255,255,255,.95);">
+        <h3>Composición laboral proyectada 2026</h3>
+        <p class="chart-sub">Empleo de la cartera privada por sector y nivel de calificación</p>
+        <div class="chart-wrap"><canvas id="ch-laboral26"></canvas></div>
+      </div>
+      <div class="chart-card" style="background:rgba(255,255,255,.95);">
+        <h3>Calificación técnica RATE</h3>
+        <p class="chart-sub">% de iniciativas por estado de evaluación</p>
+        <div class="chart-wrap"><canvas id="ch-rate-pct"></canvas></div>
+      </div>
+    </div>
+
+    <div class="data-table-wrap" style="margin-top:2rem; background:rgba(255,255,255,.95);">
+      <h3 style="margin-bottom:1rem;">Indicadores agregados regionales</h3>
+      <table class="data-table">
+        <thead>
+          <tr><th>Indicador</th><th class="num">Valor</th><th>Observación</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Población total regional</strong></td><td class="num">964.133</td><td>Censo 2024 · 31 comunas con ficha</td></tr>
+          <tr><td><strong>Distribución de género</strong></td><td class="num">51,0% / 49,0%</td><td>Mujeres / hombres — paridad alcanzada</td></tr>
+          <tr><td><strong>Empresas activas</strong></td><td class="num">77.078</td><td>SII 2024</td></tr>
+          <tr><td><strong>Trabajadores dependientes</strong></td><td class="num">416.137</td><td>Formal con contrato</td></tr>
+          <tr><td><strong>Trabajadores a honorarios</strong></td><td class="num">91.563</td><td><span class="pill orange">22,0%</span> sobre dependientes</td></tr>
+          <tr><td><strong>Vacantes BNE</strong></td><td class="num">17.921</td><td>Oferta laboral publicada en plataforma estatal</td></tr>
+          <tr><td><strong>Inversión histórica acumulada</strong></td><td class="num">M$37.013.790</td><td>30.401 iniciativas BIP 1994-2025</td></tr>
+          <tr><td><strong>F.N.D.R. en financiamiento</strong></td><td class="num">51,5%</td><td>Alta dependencia del fondo regional</td></tr>
+          <tr><td><strong>Cartera privada 2026</strong></td><td class="num">US$7.000M</td><td>36 proyectos CBC en seguimiento</td></tr>
+          <tr><td><strong>Empleo proyectado total 2026</strong></td><td class="num">9.479</td><td>5.610 construcción + 3.869 operación</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ====== DIAGNOSTICO CUALITATIVO ====== -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Diagnóstico cualitativo</span>
+      <h2>Interpretación territorial</h2>
+      <p class="section-desc">Lectura cualitativa que complementa la evidencia cuantitativa con factores estructurales del territorio.</p>
+    </header>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <div class="icon-circle">🏙️</div>
+        <h3>Bicentralidad funcional</h3>
+        <p>La región opera con dos centros funcionales: <strong>Rancagua</strong> (Cachapoal) como capital político-administrativa y <strong>San Fernando</strong> (Colchagua) como nodo agroindustrial. Esta bicentralidad demanda una política laboral que combine atención metropolitana con cobertura provincial.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle">🌾</div>
+        <h3>Estacionalidad agroexportadora</h3>
+        <p>Pese al peso de la minería en la cartera 2026, la matriz productiva regional sigue siendo intensivamente agrofrutícola, con marcada estacionalidad temporal. Esto genera ciclos de demanda laboral pico y dependencia de migración intrarregional.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle">🏚️</div>
+        <h3>Brecha urbano-rural</h3>
+        <p>Las comunas costeras (Pichilemu, Navidad, La Estrella, Paredones) y las de baja densidad (Pumanque, Lolol, Placilla) muestran indicadores laborales sistemáticamente más débiles. Requieren intervención específica de los servicios del trabajo.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle">⚖️</div>
+        <h3>Informalidad encubierta</h3>
+        <p>La ratio del 22% honorarios/dependientes sugiere segmentos de informalidad encubierta y trabajo precario. Es un foco prioritario para fiscalización de la Dirección del Trabajo y formación en derechos laborales.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle">📚</div>
+        <h3>Demanda formativa específica</h3>
+        <p>La composición de empleo 2026 (81% técnicos y no calificados) define el rumbo de la oferta SENCE: capacitación técnica en oficios mineros, agroindustriales, energías renovables y construcción.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle">🤝</div>
+        <h3>Debilidad municipal técnica</h3>
+        <p>El 38,6% de iniciativas en estado OT/FI revela debilidad técnica municipal en formulación de proyectos. Existe espacio para articular asistencia técnica entre SUBDERE, GORE y los servicios del trabajo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== BRECHAS Y DESAFIOS ====== -->
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Brechas identificadas</span>
+      <h2>Desafíos estructurales del mercado laboral regional</h2>
+      <p class="section-desc">Brechas que orientan la priorización de la acción institucional 2026-2028.</p>
+    </header>
+
+    <div class="pillars">
+      <article class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>Asimetría territorial</h3>
+        <p>Servicios laborales concentrados en Rancagua y capitales provinciales. Las comunas rurales y costeras requieren operativos itinerantes y articulación con OMIL municipales fortalecidas.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>Pertinencia formativa</h3>
+        <p>Desfase entre la oferta de capacitación y la demanda real de la cartera privada 2026: minería, energías renovables, construcción especializada y agroindustria 4.0.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>Formalización laboral</h3>
+        <p>Alta proporción de trabajo a honorarios y temporal. Brecha en cumplimiento de derechos previsionales, salud y seguridad ocupacional, especialmente en faenas agrícolas y servicios.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">04</div>
+        <h3>Participación femenina</h3>
+        <p>Pese a la paridad demográfica, la inserción laboral femenina permanece bajo el promedio regional. Brecha de remuneración y techos de cristal sectoriales requieren intervención afirmativa.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">05</div>
+        <h3>Información para la toma de decisiones</h3>
+        <p>Datos dispersos, rezagados y sin integración comunal. Necesidad de un Observatorio Laboral Regional con tablero único, actualización trimestral y APIs para gobiernos locales.</p>
+      </article>
+      <article class="pillar">
+        <div class="pillar-num">06</div>
+        <h3>Coordinación interservicios</h3>
+        <p>Articulación insuficiente entre SEREMI, Dirección del Trabajo, SENCE, IPS, OMIL y municipios. Falta protocolo único de atención al trabajador y al empleador en territorio.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== MEJORAS PROPUESTAS ====== -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Líneas de mejora</span>
+      <h2>Propuestas de gestión 2026-2028</h2>
+      <p class="section-desc">Seis líneas de mejora derivadas del análisis, orientadas a cerrar las brechas identificadas y elevar la calidad del servicio.</p>
+    </header>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">M1</div>
+        <h3>SEREMI itinerante</h3>
+        <p>Operativos semanales en comunas con menor presencia institucional. Mesas de atención ciudadana integradas con DT, SENCE e IPS. Cobertura mensual rotativa por las 33 comunas.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">M2</div>
+        <h3>Plan formativo pertinente</h3>
+        <p>Alineación de la oferta SENCE con la cartera 2026: cursos en operación minera, energías limpias, construcción especializada y agroindustria con certificación reconocida por la industria.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">M3</div>
+        <h3>Programa Formaliza O'Higgins</h3>
+        <p>Campaña regional de formalización con incentivos a empleadores, capacitación a trabajadoras y trabajadores a honorarios, y fiscalización focalizada en sectores de alta informalidad.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">M4</div>
+        <h3>Mujer trabaja</h3>
+        <p>Mesa regional de equidad de género en el trabajo: salas cuna sectoriales, programas de reconversión femenina hacia oficios mineros y técnicos, mentorías y rompimiento de brechas salariales.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">M5</div>
+        <h3>Observatorio Laboral Regional 2.0</h3>
+        <p>Tablero único, abierto y actualizado trimestralmente. Integración con BIP, CBC, BNE, SII y APIs municipales. Reportes ejecutivos para autoridades y dirigencias sindicales.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.1);color:#0F3F8C">M6</div>
+        <h3>Asistencia técnica municipal</h3>
+        <p>Apoyo a municipios en la formulación BIP de iniciativas de empleo, capacitación e infraestructura laboral. Capacitación en evaluación social y técnica para destrabar el 38,6% en OT/FI.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ====== OBJETIVOS INSTITUCIONALES ====== -->
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Objetivos institucionales 2026-2028</span>
+      <h2>Plan estratégico regional del trabajo</h2>
+      <p class="section-desc">Siete objetivos estratégicos que articulan la acción de la SEREMI y la red de servicios del sector trabajo en O'Higgins.</p>
+    </header>
+
+    <div class="timeline" style="max-width:880px; margin:2rem auto 0; padding-left:2.5rem;">
+      <div class="timeline-item">
+        <span class="timeline-year">OE1 — Trabajo decente y formalización</span>
+        <p>Reducir la informalidad laboral regional en 5 puntos porcentuales al 2028. Aumentar en 20% la afiliación previsional de trabajadoras y trabajadores a honorarios mediante campañas focalizadas y articulación con la Dirección del Trabajo.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">OE2 — Capacitación pertinente</span>
+        <p>Capacitar a 12.000 personas al 2028 en oficios estratégicos alineados con la cartera de inversión privada: minería, energías renovables, construcción, agroindustria 4.0 y servicios logísticos. Certificación con validación del sector productivo.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">OE3 — Equidad de género en el trabajo</span>
+        <p>Aumentar la participación laboral femenina regional en 3 puntos porcentuales. Implementar 8 salas cuna sectoriales en las principales faenas mineras y agroindustriales. Reducir la brecha de remuneración de género en al menos 2 puntos porcentuales.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">OE4 — Cohesión territorial</span>
+        <p>Garantizar atención presencial de los servicios del trabajo en las 33 comunas a través del modelo SEREMI Itinerante y el fortalecimiento de las OMIL. Cobertura mínima mensual en comunas rurales y costeras.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">OE5 — Diálogo social tripartito</span>
+        <p>Convocar al menos 4 mesas tripartitas anuales: mesa regional del trabajo, mesa de género, mesa minera y mesa agroindustrial. Generar acuerdos vinculantes con organizaciones sindicales y gremiales.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">OE6 — Información para decidir</span>
+        <p>Consolidar el Observatorio Laboral Regional como referente público de datos abiertos. Publicar boletín trimestral, mantener este portal actualizado y desarrollar APIs de consulta para municipios y academia.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">OE7 — Anticipación a la transformación productiva</span>
+        <p>Anticipar la demanda laboral de los próximos 5 años mediante el monitoreo continuo de la cartera CBC. Generar planes de inserción y reconversión con al menos 6 meses de anticipación a la entrada en operación de proyectos de inversión.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== INDICADORES DE SEGUIMIENTO ====== -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Indicadores de seguimiento</span>
+      <h2>Cómo mediremos el avance</h2>
+      <p class="section-desc">Tablero de control para el monitoreo trimestral de los objetivos institucionales 2026-2028.</p>
+    </header>
+
+    <div class="data-table-wrap">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Objetivo</th>
+            <th>Indicador</th>
+            <th class="num">Línea base</th>
+            <th class="num">Meta 2028</th>
+            <th>Fuente</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><span class="pill">OE1</span></td><td>% trabajadores formales</td><td class="num">78,0%</td><td class="num">83,0%</td><td>SII / DT</td></tr>
+          <tr><td><span class="pill">OE1</span></td><td>Afiliación previsional honorarios</td><td class="num">91.563</td><td class="num">+20%</td><td>IPS / Previred</td></tr>
+          <tr><td><span class="pill green">OE2</span></td><td>Personas capacitadas SENCE/año</td><td class="num">3.000</td><td class="num">4.000</td><td>SENCE Regional</td></tr>
+          <tr><td><span class="pill green">OE2</span></td><td>Cursos alineados a cartera CBC</td><td class="num">35%</td><td class="num">70%</td><td>SENCE + CBC</td></tr>
+          <tr><td><span class="pill orange">OE3</span></td><td>Tasa participación laboral femenina</td><td class="num">49,5%</td><td class="num">52,5%</td><td>ENE / INE</td></tr>
+          <tr><td><span class="pill orange">OE3</span></td><td>Salas cuna sectoriales operando</td><td class="num">0</td><td class="num">8</td><td>SEREMI</td></tr>
+          <tr><td><span class="pill">OE4</span></td><td>Operativos en comunas rurales/año</td><td class="num">12</td><td class="num">132</td><td>SEREMI</td></tr>
+          <tr><td><span class="pill">OE4</span></td><td>OMIL fortalecidas</td><td class="num">15</td><td class="num">33</td><td>SUBDERE / SENCE</td></tr>
+          <tr><td><span class="pill red">OE5</span></td><td>Mesas tripartitas anuales</td><td class="num">2</td><td class="num">4</td><td>SEREMI</td></tr>
+          <tr><td><span class="pill green">OE6</span></td><td>Actualización portal datos</td><td class="num">Anual</td><td class="num">Trimestral</td><td>SEREMI</td></tr>
+          <tr><td><span class="pill orange">OE7</span></td><td>Proyectos CBC con plan laboral</td><td class="num">0%</td><td class="num">100%</td><td>SEREMI + CBC</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top: 3rem; padding: 2rem; background: linear-gradient(135deg, rgba(15,63,140,.05), rgba(255,210,0,.08)); border-radius: var(--radius); border-left: 4px solid var(--blue);">
+      <h3 style="margin-bottom:.75rem; color:var(--blue-dark);">📌 Compromiso institucional</h3>
+      <p style="margin:0; font-size:1.02rem; line-height:1.7; color:var(--gray-800);">Este análisis no es un documento estático: es una hoja de ruta viva que se actualizará semestralmente con los avances territoriales. La SEREMI del Trabajo y Previsión Social de O'Higgins reporta públicamente el cumplimiento de estos objetivos, en el marco del principio de transparencia activa y rendición de cuentas con la ciudadanía, organizaciones sindicales y el sector empleador.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-inner">
+    <div>
+      <h2>¿Quieres profundizar en los datos?</h2>
+      <p>Explora los indicadores comunales detallados y la cartera de inversión que sustentan este análisis.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="comunas.html" class="btn btn-primary">Indicadores Comunales</a>
+      <a href="inversion.html" class="btn btn-secondary">Inversión Regional</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="inversion.html">Inversión Regional</a></li>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Servicios</h4>
+      <ul>
+        <li><a href="https://www.dt.gob.cl" target="_blank" rel="noopener">Dirección del Trabajo</a></li>
+        <li><a href="https://www.sence.gob.cl" target="_blank" rel="noopener">SENCE</a></li>
+        <li><a href="https://www.ips.gob.cl" target="_blank" rel="noopener">IPS</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Fuentes</h4>
+      <ul class="footer-sources">
+        <li>CENSO 2024 — INE</li>
+        <li>ENE — Encuesta Nacional de Empleo</li>
+        <li>SII / BNE / CBC / BIP / MIDESO</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/analisis.js"></script>
+</body>
+</html>
