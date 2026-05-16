@@ -26,6 +26,7 @@
     { titulo: 'Programa · Primeros 100 días', url: 'programa.html', tags: '100 dias instalacion regional dia 1 30 60 90 catalogo SENCE', tipo: 'Sección' },
     { titulo: 'Directorio de Servicios', url: 'directorio.html', tags: 'directorio oficinas SEREMI DT SENCE IPS OMIL telefonos chileatiende BNE direcciones horarios', tipo: 'Página' },
     { titulo: 'Directorio · OMIL en 33 comunas', url: 'directorio.html', tags: 'OMIL oficina municipal informacion laboral intermediacion empleo programas SENCE asesoria empleadores', tipo: 'Sección' },
+    { titulo: 'Galería de Actividades · Instagram', url: 'galeria.html', tags: 'galeria instagram fotos posts reels actividades terreno operativos mesas trabajoohiggins', tipo: 'Página' },
     { titulo: 'Brechas de Género', url: 'genero.html', tags: 'genero mujer hombre paridad demografia equidad sala cuna karin', tipo: 'Página' },
     { titulo: 'Proyección Demanda Laboral 2026-2030', url: 'proyeccion.html', tags: 'proyeccion demanda laboral gap analysis cartera SENCE formacion capital humano', tipo: 'Página' },
     { titulo: 'Glosario y Preguntas Frecuentes', url: 'recursos.html', tags: 'recursos glosario faq preguntas frecuentes definiciones BIP RATE PET IMM cotizar acoso', tipo: 'Página' },

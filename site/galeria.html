@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galería de Actividades — SEREMI Trabajo O'Higgins</title>
+<meta name="description" content="Galería de actividades, fiscalizaciones, mesas regionales y operativos de la SEREMI del Trabajo y Previsión Social de O'Higgins. Posts oficiales desde Instagram @trabajoohiggins.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="canonical" href="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/galeria.html">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0F3F8C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Galería de Actividades — SEREMI Trabajo O'Higgins">
+<meta property="og:description" content="Operativos, mesas regionales y fiscalizaciones de la SEREMI Trabajo O'Higgins desde marzo 2026.">
+<meta property="og:image" content="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/img/logo-seremi.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.gallery-card {
+  background: var(--bg-card, white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border, #E5E7EB);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+.gallery-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lg);
+}
+.gallery-embed {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #0F3F8C 0%, #1E5BB8 50%, #FFD200 100%);
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.gallery-embed::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.55));
+  pointer-events: none;
+}
+.gallery-icon {
+  position: relative;
+  z-index: 1;
+  font-size: 4.5rem;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,.4));
+}
+.gallery-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  background: rgba(255,255,255,.95);
+  color: var(--blue-dark);
+  padding: .35rem .75rem;
+  border-radius: 100px;
+  font-size: .75rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: .35rem;
+  backdrop-filter: blur(4px);
+}
+.gallery-type-badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 2;
+  background: linear-gradient(135deg, #F09433, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888);
+  color: white;
+  padding: .35rem .75rem;
+  border-radius: 100px;
+  font-size: .72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.gallery-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.gallery-title {
+  margin: 0 0 .5rem;
+  font-size: 1.05rem;
+  color: var(--gray-900);
+  line-height: 1.35;
+}
+.gallery-desc {
+  margin: 0 0 1rem;
+  font-size: .87rem;
+  color: var(--gray-700);
+  line-height: 1.55;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.gallery-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-bottom: 1rem;
+}
+.gallery-tag {
+  background: rgba(15,63,140,.08);
+  color: var(--blue);
+  padding: .15rem .55rem;
+  border-radius: 4px;
+  font-size: .7rem;
+  font-weight: 600;
+}
+.gallery-footer {
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--gray-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery-date {
+  font-size: .8rem;
+  color: var(--gray-600);
+}
+.gallery-link {
+  background: linear-gradient(135deg, #F09433, #DC2743, #BC1888);
+  color: white;
+  padding: .45rem .85rem;
+  border-radius: 6px;
+  font-size: .82rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  transition: transform .15s;
+}
+.gallery-link:hover {
+  transform: scale(1.05);
+  color: white;
+}
+.gallery-filters {
+  background: var(--bg-card, white);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border, #E5E7EB);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+}
+.filter-pill {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-200);
+  padding: .4rem .9rem;
+  border-radius: 100px;
+  font-size: .82rem;
+  cursor: pointer;
+  transition: all .15s;
+  color: var(--gray-700);
+}
+.filter-pill:hover { background: var(--gray-200); }
+.filter-pill.active {
+  background: var(--blue);
+  color: white;
+  border-color: var(--blue);
+}
+.gallery-card.hidden { display: none; }
+.instagram-cta {
+  background: linear-gradient(135deg, #F09433 0%, #DC2743 50%, #BC1888 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: var(--radius);
+  text-align: center;
+  margin: 3rem 0;
+}
+.instagram-cta h2 {
+  color: white;
+  margin-bottom: .75rem;
+}
+.instagram-cta p {
+  opacity: .95;
+  margin-bottom: 1.5rem;
+}
+.instagram-cta .btn {
+  background: white;
+  color: #BC1888;
+  font-weight: 700;
+}
+.instagram-cta .btn:hover {
+  background: rgba(255,255,255,.92);
+  color: #BC1888;
+  transform: translateY(-1px);
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <picture>
+          <source srcset="img/logo-seremi.webp" type="image/webp">
+          <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo" width="500" height="200">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores</a>
+        <a href="inversion.html" class="nav-link">Inversión</a>
+        <a href="lineas-accion.html" class="nav-link">Líneas Acción</a>
+        <a href="galeria.html" class="nav-link active">📷 Galería</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
+        <a href="recursos.html" class="nav-link">Recursos</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Galería de Actividades</nav>
+    <span class="eyebrow">📷 Trabajo en terreno</span>
+    <h1>Galería de Actividades</h1>
+    <p class="lead">Operativos, mesas regionales, fiscalizaciones y trabajo institucional de la SEREMI del Trabajo y Previsión Social de O'Higgins. Posts oficiales desde el Instagram <a href="https://www.instagram.com/trabajoohiggins/" target="_blank" rel="noopener" style="color:#FFD200; font-weight:700;">@trabajoohiggins</a>, filtrados desde marzo 2026.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+
+    <div class="kpi-grid" id="gal-kpis"></div>
+
+    <header class="section-head" style="margin-top:3rem; margin-bottom:1rem;">
+      <span class="eyebrow">Filtros</span>
+      <h2 style="font-size:1.5rem;">Explora por mes o tipo</h2>
+    </header>
+
+    <div class="gallery-filters">
+      <strong style="color:var(--gray-700); margin-right:.5rem;">Mes:</strong>
+      <div class="filter-pills" id="filter-month">
+        <button class="filter-pill active" data-filter="all">Todos</button>
+      </div>
+    </div>
+    <div class="gallery-filters">
+      <strong style="color:var(--gray-700); margin-right:.5rem;">Tipo:</strong>
+      <div class="filter-pills" id="filter-type">
+        <button class="filter-pill active" data-filter="all">Todos</button>
+        <button class="filter-pill" data-filter="post">📷 Posts</button>
+        <button class="filter-pill" data-filter="reel">🎬 Reels</button>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="gallery-grid"></div>
+
+    <div class="instagram-cta">
+      <div style="font-size:3rem; margin-bottom:.5rem;">📷</div>
+      <h2>Sigue todas las actividades en Instagram</h2>
+      <p>Para ver más actividades anteriores a mayo, los reels semanales y las historias destacadas, sigue la cuenta oficial.</p>
+      <a href="https://www.instagram.com/trabajoohiggins/" target="_blank" rel="noopener" class="btn btn-primary">
+        @trabajoohiggins
+      </a>
+    </div>
+
+    <div style="background: linear-gradient(135deg, rgba(15,63,140,.05), rgba(255,210,0,.08)); padding: 1.5rem; border-radius: var(--radius); border-left: 4px solid var(--blue); margin-bottom: 2rem;">
+      <h3 style="margin-top:0; color:var(--blue-dark);">📌 Sobre esta galería</h3>
+      <p style="margin:.5rem 0 0; line-height:1.7;">Los datos provienen del Instagram oficial de la SEREMI del Trabajo y Previsión Social O'Higgins (<a href="https://www.instagram.com/trabajoohiggins/" target="_blank" rel="noopener">@trabajoohiggins</a>). Las imágenes y textos completos pertenecen a su autor. Esta galería actúa como índice y enlace al contenido original. Al hacer click en un post, se abre el contenido directamente en Instagram.</p>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Análisis</h4>
+      <ul>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="genero.html">Brechas de Género</a></li>
+        <li><a href="proyeccion.html">Proyección Demanda</a></li>
+        <li><a href="lineas-accion.html">Líneas de Acción</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Datos y comunidad</h4>
+      <ul>
+        <li><a href="comunas.html">Indicadores</a></li>
+        <li><a href="inversion.html">Inversión</a></li>
+        <li><a href="galeria.html">Galería de Actividades</a></li>
+        <li><a href="directorio.html">Directorio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="recursos.html">Glosario y FAQ</a></li>
+        <li><a href="programa.html">Programa de Gobierno</a></li>
+        <li><a href="changelog.html">Cambios</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v9"></script>
+<script src="js/galeria.js?v9"></script>
+<script src="js/global-search.js?v9"></script>
+<script src="js/chatbot.js?v9"></script>
+</body>
+</html>
