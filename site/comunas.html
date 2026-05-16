@@ -105,12 +105,111 @@
   <div class="container">
 
     <div class="tabs">
-      <button class="tab active" data-tab="geomapa">🗺️ Mapa geográfico</button>
+      <button class="tab active" data-tab="geomapa">🗺️ Mapa</button>
+      <button class="tab" data-tab="idlc">⭐ Índice IDLC</button>
+      <button class="tab" data-tab="correlacion">📈 Correlaciones</button>
       <button class="tab" data-tab="mapa">🔥 Heatmap</button>
       <button class="tab" data-tab="detalle">Ficha comunal</button>
-      <button class="tab" data-tab="comparar">Comparar indicador</button>
+      <button class="tab" data-tab="comparar">Comparar</button>
       <button class="tab" data-tab="lado-a-lado">📊 Lado a lado</button>
-      <button class="tab" data-tab="ranking">Ranking regional</button>
+      <button class="tab" data-tab="ranking">Ranking</button>
+    </div>
+
+    <!-- TAB: IDLC -->
+    <div class="tab-content" id="tab-idlc">
+      <div style="background: linear-gradient(135deg, rgba(15,63,140,.08), rgba(255,210,0,.1)); padding:2rem; border-radius:var(--radius); border-left:4px solid var(--blue); margin-bottom:2rem;">
+        <h2 style="margin-top:0; color:var(--blue-dark);">⭐ Índice de Desarrollo Laboral Comunal (IDLC)</h2>
+        <p style="margin:.5rem 0; line-height:1.7;">Indicador sintético <strong>0 a 100</strong> que combina seis componentes laborales clave para rankear las 31 comunas. Identifica comunas con mejor desempeño global y aquellas que requieren intervención prioritaria.</p>
+        <details style="margin-top:1rem;">
+          <summary style="cursor:pointer; font-weight:600; color:var(--blue);">Ver metodología de cálculo</summary>
+          <div style="margin-top:1rem; padding:1rem; background:rgba(255,255,255,.6); border-radius:6px;">
+            <p style="margin:0 0 .75rem;"><strong>Componentes y pesos:</strong></p>
+            <ul style="margin:0; padding-left:1.5rem; line-height:1.8; font-size:.9rem;">
+              <li><b>Densidad empresarial (20%)</b> — empresas SII por cada 1.000 habitantes</li>
+              <li><b>Formalización laboral (20%)</b> — trabajadores dependientes / población</li>
+              <li><b>Equilibrio honorarios (15%)</b> — menor proporción de honorarios sobre dependientes</li>
+              <li><b>Dinamismo BNE (15%)</b> — vacantes publicadas por cada 1.000 habitantes</li>
+              <li><b>Inversión per cápita (15%)</b> — gasto 25-29 (MUSD) por habitante</li>
+              <li><b>Empleo proyectado (15%)</b> — empleo peak inversión por cada 1.000 habitantes</li>
+            </ul>
+            <p style="margin:.75rem 0 0; font-size:.85rem; color:var(--gray-700);">Cada componente se normaliza 0-100 con min-max sobre las 31 comunas. El IDLC final es el promedio ponderado.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="kpi-grid" id="idlc-kpis"></div>
+
+      <div class="charts-grid">
+        <div class="chart-card chart-large">
+          <h3>Ranking IDLC — 31 comunas</h3>
+          <p class="chart-sub">Score 0-100. Mayor puntaje = mejor desempeño laboral integrado</p>
+          <div class="chart-wrap" style="height:760px;"><canvas id="ch-idlc-ranking"></canvas></div>
+        </div>
+        <div class="chart-card">
+          <h3>IDLC promedio por provincia</h3>
+          <p class="chart-sub">Comparación entre Cachapoal, Colchagua y Cardenal Caro</p>
+          <div class="chart-wrap"><canvas id="ch-idlc-provincia"></canvas></div>
+        </div>
+      </div>
+
+      <div class="data-table-wrap" style="margin-top:2rem;">
+        <div class="table-actions">
+          <button class="btn-download" id="dl-idlc">⬇ Descargar CSV</button>
+        </div>
+        <h3 style="margin-bottom:1rem;">Detalle IDLC por comuna</h3>
+        <div style="overflow-x:auto;">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Comuna</th>
+              <th class="num">IDLC</th>
+              <th class="num">D. Empresas</th>
+              <th class="num">Formalización</th>
+              <th class="num">Eq. Honorarios</th>
+              <th class="num">Dinamismo</th>
+              <th class="num">Inv. P.C.</th>
+              <th class="num">Empleo Proy.</th>
+            </tr>
+          </thead>
+          <tbody id="tabla-idlc"></tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: CORRELACIONES -->
+    <div class="tab-content" id="tab-correlacion">
+      <div style="background: linear-gradient(135deg, rgba(46,125,50,.06), rgba(15,63,140,.06)); padding:2rem; border-radius:var(--radius); border-left:4px solid var(--green); margin-bottom:2rem;">
+        <h2 style="margin-top:0; color:var(--blue-dark);">📈 Correlaciones entre indicadores</h2>
+        <p style="margin:.5rem 0;">Scatter plot interactivo que muestra la relación entre dos variables comunales con regresión lineal y coeficiente de determinación (R²). Click en un punto para abrir la ficha de esa comuna.</p>
+      </div>
+
+      <div class="controls-bar" style="grid-template-columns: 1fr 1fr 1fr;">
+        <div class="control-group">
+          <label for="corr-x">Eje X (variable independiente)</label>
+          <select id="corr-x"></select>
+        </div>
+        <div class="control-group">
+          <label for="corr-y">Eje Y (variable dependiente)</label>
+          <select id="corr-y"></select>
+        </div>
+        <div class="control-group">
+          <label>Tipo de regresión</label>
+          <select id="corr-type">
+            <option value="linear">Lineal</option>
+            <option value="power">Potencia (log-log)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h3 id="corr-title">Correlación entre variables</h3>
+        <p class="chart-sub" id="corr-stats">Selecciona variables para visualizar la relación</p>
+        <div class="chart-wrap" style="height:540px;"><canvas id="ch-correlacion"></canvas></div>
+      </div>
+
+      <div id="corr-insight" style="margin-top:1.5rem;"></div>
     </div>
 
     <!-- TAB: MAPA GEOGRAFICO -->
@@ -119,7 +218,8 @@
         <div class="control-group">
           <label for="geo-indicator">Indicador a colorear</label>
           <select id="geo-indicator">
-            <option value="Población censada">Población censada</option>
+            <option value="__IDLC__">⭐ IDLC (Índice de Desarrollo Laboral)</option>
+            <option value="Población censada" selected>Población censada</option>
             <option value="Cantidad de Hombres">Cantidad de Hombres</option>
             <option value="Cantidad de Mujeres">Cantidad de Mujeres</option>
             <option value="Cantidad de ocupados">Cantidad de ocupados</option>
@@ -341,6 +441,9 @@
         <li><a href="lineas-accion.html">Líneas de Acción</a></li>
         <li><a href="programa.html">Programa de Gobierno</a></li>
         <li><a href="directorio.html">Directorio</a></li>
+        <li><a href="genero.html">Brechas de Género</a></li>
+        <li><a href="proyeccion.html">Proyección Demanda</a></li>
+        <li><a href="recursos.html">Glosario y FAQ</a></li>
         <li><a href="changelog.html">Cambios</a></li>
         <li><a href="institucional.html">Institucional</a></li>
       </ul>
@@ -380,6 +483,9 @@
 <script src="js/comunas.js"></script>
 <script src="js/geomap.js"></script>
 <script src="js/comparador.js"></script>
+<script src="js/idlc.js"></script>
+<script src="js/correlacion.js"></script>
+<script src="js/url-state.js"></script>
 <script src="js/global-search.js"></script>
 <script src="js/chatbot.js"></script>
 </body>

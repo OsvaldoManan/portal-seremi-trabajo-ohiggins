@@ -117,6 +117,52 @@
   </div>
 </section>
 
+<!-- Rutas por perfil de usuario -->
+<section class="section section-light" id="perfiles" style="padding-top:3.5rem; padding-bottom:1rem;">
+  <div class="container">
+    <header class="section-head" style="margin-bottom:2rem;">
+      <span class="eyebrow">¿Quién eres?</span>
+      <h2>Encuentra rápido lo que necesitas</h2>
+      <p class="section-desc">El portal te guía según tu perfil. Selecciona el que más se acerca a tu rol.</p>
+    </header>
+
+    <div class="info-grid">
+      <button class="info-card perfil-card" data-perfil="trabajador" aria-label="Soy trabajador o trabajadora" style="cursor:pointer; text-align:left; border:none; font-family:inherit; width:100%;">
+        <div class="icon-circle" style="background:rgba(46,125,50,.12); color:#2E7D32; font-size:1.6rem;">👷</div>
+        <h3>Soy trabajador/a</h3>
+        <p style="margin:0; color:var(--gray-700);">Postular a empleo, capacitarme, conocer mis derechos, denunciar, cotizar como honorario.</p>
+        <div style="margin-top:1rem; color:var(--blue); font-weight:600; font-size:.9rem;">Ver rutas →</div>
+      </button>
+      <button class="info-card perfil-card" data-perfil="empleador" aria-label="Soy empleador o empleadora" style="cursor:pointer; text-align:left; border:none; font-family:inherit; width:100%;">
+        <div class="icon-circle" style="background:rgba(15,63,140,.12); color:#0F3F8C; font-size:1.6rem;">🏢</div>
+        <h3>Soy empleador/a</h3>
+        <p style="margin:0; color:var(--gray-700);">Cumplir Ley Karin y 40 horas, publicar vacantes, formalizar, subsidios al empleo.</p>
+        <div style="margin-top:1rem; color:var(--blue); font-weight:600; font-size:.9rem;">Ver rutas →</div>
+      </button>
+      <button class="info-card perfil-card" data-perfil="autoridad" aria-label="Soy autoridad o funcionario público" style="cursor:pointer; text-align:left; border:none; font-family:inherit; width:100%;">
+        <div class="icon-circle" style="background:rgba(192,25,43,.12); color:#C0192B; font-size:1.6rem;">🏛️</div>
+        <h3>Soy autoridad / municipio</h3>
+        <p style="margin:0; color:var(--gray-700);">Análisis territorial, ranking IDLC, cartera de inversión por comuna, datos abiertos.</p>
+        <div style="margin-top:1rem; color:var(--blue); font-weight:600; font-size:.9rem;">Ver rutas →</div>
+      </button>
+      <button class="info-card perfil-card" data-perfil="investigador" aria-label="Soy investigador o académico" style="cursor:pointer; text-align:left; border:none; font-family:inherit; width:100%;">
+        <div class="icon-circle" style="background:rgba(123,31,162,.12); color:#7B1FA2; font-size:1.6rem;">🔬</div>
+        <h3>Soy investigador/a</h3>
+        <p style="margin:0; color:var(--gray-700);">Correlaciones, descarga CSV, GeoJSON, metodología IDLC, fuentes oficiales.</p>
+        <div style="margin-top:1rem; color:var(--blue); font-weight:600; font-size:.9rem;">Ver rutas →</div>
+      </button>
+    </div>
+
+    <!-- Modal overlay para rutas (oculto por defecto) -->
+    <div id="perfil-modal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.65); z-index:9999; backdrop-filter:blur(4px); padding:2rem 1rem; overflow-y:auto;">
+      <div style="background:var(--bg-card, white); max-width:680px; margin:2rem auto; border-radius:16px; padding:2.5rem; position:relative; box-shadow:0 24px 64px rgba(0,0,0,.3);">
+        <button id="perfil-close" aria-label="Cerrar" style="position:absolute; top:1rem; right:1rem; background:var(--gray-200); border:0; width:36px; height:36px; border-radius:50%; font-size:1.1rem; cursor:pointer;">×</button>
+        <div id="perfil-modal-content"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section section-light" id="dashboard">
   <div class="container">
     <header class="section-head">
@@ -328,6 +374,9 @@
         <li><a href="lineas-accion.html">Líneas de Acción</a></li>
         <li><a href="programa.html">Programa de Gobierno</a></li>
         <li><a href="directorio.html">Directorio</a></li>
+        <li><a href="genero.html">Brechas de Género</a></li>
+        <li><a href="proyeccion.html">Proyección Demanda</a></li>
+        <li><a href="recursos.html">Glosario y FAQ</a></li>
         <li><a href="changelog.html">Cambios</a></li>
         <li><a href="institucional.html">Institucional</a></li>
       </ul>
@@ -364,6 +413,8 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/home.js"></script>
+<script src="js/perfiles.js"></script>
+<script src="js/tour.js"></script>
 <script src="js/global-search.js"></script>
 <script src="js/chatbot.js"></script>
 </body>

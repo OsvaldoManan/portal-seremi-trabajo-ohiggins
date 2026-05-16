@@ -231,9 +231,95 @@ for pdf_path in pdfs:
     })
 
 os.makedirs('site/data', exist_ok=True)
+
+# ====== ÍNDICE DE DESARROLLO LABORAL COMUNAL (IDLC) ======
+# Componentes (todos normalizados 0-100):
+#   1. Densidad empresarial: empresas / población * 1000 (capacidad productiva local)
+#   2. Penetración laboral formal: dependientes / población (formalización)
+#   3. Equilibrio honorarios-dependientes: 1 - (honorarios / dependientes) [menos precariedad = mejor]
+#   4. Oferta de empleo: vacantes BNE / población * 1000 (dinamismo del mercado)
+#   5. Inversión per cápita: gasto 25-29 (MUSD) / población * 1M (oportunidades futuras)
+#   6. Empleo proyectado: empleo peak / población * 1000 (densidad de proyectos)
+def get_num(c, k):
+    v = c['indicadores'].get(k, {}).get('numero')
+    return v if v else 0
+
+# Calcular componentes brutos
+for c in comunas_data:
+    pob = get_num(c, 'Población censada') or 1
+    empresas = get_num(c, 'Total de empresas')
+    dependientes = get_num(c, 'Total de trabajadores dependientes')
+    honorarios = get_num(c, 'Total de trabajadores a honorarios')
+    vacantes = get_num(c, 'Cantidad de vacantes')
+    gasto = get_num(c, 'Gasto involucrado 2025-2029 en millones de dólares')
+    empleo_peak = get_num(c, 'Empleo Peak Total (N° Personas)')
+
+    c['_idlc_raw'] = {
+        'densidad_empresarial': (empresas / pob * 1000) if pob > 0 else 0,
+        'penetracion_formal': (dependientes / pob) if pob > 0 else 0,
+        'equilibrio_honor': max(0, 1 - (honorarios / dependientes)) if dependientes > 0 else 0,
+        'oferta_empleo': (vacantes / pob * 1000) if pob > 0 else 0,
+        'inversion_pc': (gasto / pob * 1_000_000) if pob > 0 else 0,
+        'empleo_proy': (empleo_peak / pob * 1000) if pob > 0 else 0,
+    }
+
+# Normalizar cada componente a 0-100 usando min-max
+COMP_KEYS = ['densidad_empresarial', 'penetracion_formal', 'equilibrio_honor',
+             'oferta_empleo', 'inversion_pc', 'empleo_proy']
+COMP_NAMES = {
+    'densidad_empresarial': 'Densidad empresarial',
+    'penetracion_formal': 'Formalización laboral',
+    'equilibrio_honor': 'Equilibrio honorarios',
+    'oferta_empleo': 'Dinamismo BNE',
+    'inversion_pc': 'Inversión per cápita',
+    'empleo_proy': 'Empleo proyectado'
+}
+COMP_WEIGHTS = {
+    'densidad_empresarial': 0.20,
+    'penetracion_formal': 0.20,
+    'equilibrio_honor': 0.15,
+    'oferta_empleo': 0.15,
+    'inversion_pc': 0.15,
+    'empleo_proy': 0.15
+}
+
+for key in COMP_KEYS:
+    values = [c['_idlc_raw'][key] for c in comunas_data]
+    valid = [v for v in values if v > 0]
+    if not valid:
+        continue
+    mn, mx = min(valid), max(valid)
+    rng = mx - mn if mx > mn else 1
+    for c in comunas_data:
+        v = c['_idlc_raw'][key]
+        c['_idlc_raw'][key + '_norm'] = round(((v - mn) / rng) * 100, 1) if v > 0 else 0
+
+# Calcular IDLC final
+for c in comunas_data:
+    score = 0
+    components = {}
+    for key in COMP_KEYS:
+        norm_v = c['_idlc_raw'].get(key + '_norm', 0)
+        components[COMP_NAMES[key]] = norm_v
+        score += norm_v * COMP_WEIGHTS[key]
+    c['idlc'] = {
+        'score': round(score, 1),
+        'componentes': components,
+        'raw': {COMP_NAMES[k]: round(c['_idlc_raw'][k], 2) for k in COMP_KEYS}
+    }
+    del c['_idlc_raw']  # cleanup
+
+# Ranking
+sorted_comunas = sorted(comunas_data, key=lambda x: -x['idlc']['score'])
+for rank, c in enumerate(sorted_comunas, 1):
+    c['idlc']['rank'] = rank
+    c['idlc']['total'] = len(comunas_data)
+
 with open('site/data/comunas.json', 'w', encoding='utf-8') as f:
     json.dump(comunas_data, f, ensure_ascii=False, indent=2)
-print(f'OK comunas.json: {len(comunas_data)} comunas')
+print(f'OK comunas.json: {len(comunas_data)} comunas con IDLC calculado')
+print(f'   Top 3 IDLC: {[(c["comuna"], c["idlc"]["score"]) for c in sorted_comunas[:3]]}')
+print(f'   Bottom 3 IDLC: {[(c["comuna"], c["idlc"]["score"]) for c in sorted_comunas[-3:]]}')
 
 # ============== XLS HISTORICO ==============
 print('\n=== PROCESANDO XLS HISTORICO ===')

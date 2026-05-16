@@ -76,10 +76,16 @@
     const path = d3.geoPath().projection(projection);
 
     // Get values for each feature
+    const isIDLC = indicator === '__IDLC__';
     const values = geo.features.map(f => {
       const comName = f.properties.Comuna;
       const cdata = dataByName.get(normalizeName(comName));
-      const v = cdata?.indicadores[indicator]?.numero || 0;
+      let v;
+      if (isIDLC) {
+        v = cdata?.idlc?.score || 0;
+      } else {
+        v = cdata?.indicadores[indicator]?.numero || 0;
+      }
       return { feature: f, comuna: comName, value: v, has: !!cdata };
     });
 
@@ -93,7 +99,8 @@
     const top = [...valid].sort((a, b) => b.value - a.value)[0];
     const bot = [...valid].sort((a, b) => a.value - b.value)[0];
 
-    document.getElementById('geo-title').textContent = `Mapa geográfico — ${indicator}`;
+    const titleLabel = isIDLC ? 'Índice de Desarrollo Laboral Comunal (IDLC)' : indicator;
+    document.getElementById('geo-title').textContent = `Mapa geográfico — ${titleLabel}`;
     document.getElementById('geo-top').textContent = top ? top.comuna : '—';
     document.getElementById('geo-top-val').textContent = top ? fmt(top.value) : '—';
     document.getElementById('geo-avg').textContent = fmt(avg, 1);

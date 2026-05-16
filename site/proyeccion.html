@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyección de Demanda Laboral 2026-2030 — SEREMI O'Higgins</title>
+<meta name="description" content="Proyección de demanda laboral 2026-2030 cruzando la cartera de inversión privada con la oferta formativa SENCE. Identificación de gaps por oficio y sector.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="canonical" href="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/proyeccion.html">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0F3F8C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Proyección Demanda Laboral 2026-2030 — O'Higgins">
+<meta property="og:description" content="Gap analysis entre cartera de inversión y oferta formativa por sector económico regional.">
+<meta property="og:image" content="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/img/logo-seremi.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <picture>
+          <source srcset="img/logo-seremi.webp" type="image/webp">
+          <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo" width="500" height="200">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores</a>
+        <a href="inversion.html" class="nav-link">Inversión</a>
+        <a href="proyeccion.html" class="nav-link active">Proyección</a>
+        <a href="genero.html" class="nav-link">Género</a>
+        <a href="lineas-accion.html" class="nav-link">Líneas Acción</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Proyección Demanda Laboral</nav>
+    <span class="eyebrow">Anticipación productiva · OE7</span>
+    <h1>Proyección de Demanda Laboral 2026-2030</h1>
+    <p class="lead">Análisis prospectivo que cruza la cartera de inversión privada con la oferta formativa SENCE para identificar gaps de capital humano por sector económico y comuna. Insumo para planificación formativa y movilización de actores regionales.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div style="background: linear-gradient(135deg, rgba(245,124,0,.06), rgba(15,63,140,.06)); padding:2rem; border-radius:var(--radius); border-left:4px solid var(--orange); margin-bottom:3rem;">
+      <h3 style="margin-top:0; color:var(--blue-dark);">🎯 Metodología</h3>
+      <p style="margin:.5rem 0; line-height:1.7;">El análisis cruza dos universos: (a) <strong>demanda laboral proyectada</strong> derivada de la cartera CBC 2026 con sus empleos profesional/técnico/no calificado por sector económico, y (b) una <strong>oferta formativa de referencia</strong> compuesta por el catálogo SENCE regional (Becas Laborales, Talento Digital, Despega MIPE, Mujer Digital) y los cupos del Consejo Regional de Capacitación (696 cupos). El gap = demanda – oferta proyectada anual.</p>
+    </div>
+
+    <header class="section-head">
+      <span class="eyebrow">Visión general</span>
+      <h2>Demanda laboral consolidada de la cartera 2026</h2>
+    </header>
+
+    <div class="kpi-grid" id="proy-kpis"></div>
+
+    <div class="charts-grid" style="margin-top:3rem;">
+      <div class="chart-card chart-large">
+        <h3>Demanda proyectada por sector económico</h3>
+        <p class="chart-sub">Profesionales + Técnicos + No calificados (construcción) + Operación</p>
+        <div class="chart-wrap" style="height:480px;"><canvas id="ch-demanda-sector"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Composición de la demanda</h3>
+        <p class="chart-sub">Por nivel de calificación</p>
+        <div class="chart-wrap"><canvas id="ch-demanda-comp"></canvas></div>
+      </div>
+
+      <div class="chart-card chart-large">
+        <h3>Demanda vs Oferta SENCE estimada</h3>
+        <p class="chart-sub">Comparación entre empleo a generar y cupos formativos disponibles por año</p>
+        <div class="chart-wrap" style="height:440px;"><canvas id="ch-gap"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Cobertura formativa por sector</h3>
+        <p class="chart-sub">% de demanda cubierta con oferta actual</p>
+        <div class="chart-wrap"><canvas id="ch-cobertura"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Gaps prioritarios</span>
+      <h2>Dónde concentrar la inversión formativa</h2>
+      <p class="section-desc">Análisis sectorial identificando los gaps más relevantes para alinear la oferta formativa regional.</p>
+    </header>
+
+    <div class="info-grid" id="gaps-grid"></div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Recomendaciones</span>
+      <h2>Plan formativo regional 2026-2030</h2>
+      <p class="section-desc">Líneas de acción derivadas del análisis de gaps para la SEREMI del Trabajo y el Consejo Regional de Capacitación.</p>
+    </header>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(245,124,0,.12);color:#F57C00">⛏️</div>
+        <h3>Capital humano minero</h3>
+        <p>Codelco El Teniente concentra <strong>~70% del empleo proyectado regional</strong>. Priorizar formación técnica en operación de equipos, mantención, control de procesos y seguridad. Articular con liceos TP de Rancagua y Machalí.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(46,125,50,.12);color:#2E7D32">⚡</div>
+        <h3>Energías renovables</h3>
+        <p>Cartera 2026 incluye parques fotovoltaicos y eólicos en Marchigüe, Requínoa, San Fernando. Capacitar técnicos en instalación, mantención y O&M de plantas solares/eólicas.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.12);color:#0F3F8C">🏗️</div>
+        <h3>Construcción especializada</h3>
+        <p>Cartera inmobiliaria + obras públicas en Rancagua, Machalí, Rengo. Maestros especialistas, operadores de maquinaria, supervisores. Reconversión de temporeros agrícolas a oficios constructivos.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(192,25,43,.12);color:#C0192B">🌾</div>
+        <h3>Agroindustria 4.0</h3>
+        <p>Aún el principal sector regional aunque no aparezca con fuerza en CBC. Tecnología de packing, riego inteligente, gestión post-cosecha. Programa Mujer Digital alineado al sector.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(123,31,162,.12);color:#7B1FA2">💻</div>
+        <h3>Habilidades digitales transversales</h3>
+        <p>Línea Reinvéntate de Talento Digital ya opera en Rancagua. Escalar a otras comunas con cupos para reconversión de personas cesantes y mayores de 55 años.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(255,210,0,.18);color:#B89400">👥</div>
+        <h3>Inclusión activa</h3>
+        <p>Programas afirmativos para mujeres en minería (mesa con El Teniente), jóvenes (Aprendices), personas con discapacidad (Ley 21.015) y migrantes regulares.</p>
+      </article>
+    </div>
+
+    <div style="margin-top:3rem;" class="data-table-wrap">
+      <div class="table-actions">
+        <button class="btn-download" id="dl-proyeccion">⬇ Descargar CSV</button>
+      </div>
+      <h3 style="margin-bottom:1rem;">Gap analysis por sector económico</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Sector</th>
+            <th class="num">Profesionales</th>
+            <th class="num">Técnicos</th>
+            <th class="num">No calif.</th>
+            <th class="num">Operación</th>
+            <th class="num">Total</th>
+            <th class="num">Oferta SENCE est.</th>
+            <th class="num">Gap</th>
+            <th>Prioridad</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-proyeccion"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-inner">
+    <div>
+      <h2>¿Quieres capacitarte en un sector con alta demanda?</h2>
+      <p>SENCE ofrece cursos gratuitos en los oficios identificados como prioritarios. Postula al programa que mejor se ajuste a tu perfil.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="https://sence.gob.cl/personas/cursos" target="_blank" rel="noopener" class="btn btn-primary">Cursos SENCE</a>
+      <a href="lineas-accion.html" class="btn btn-secondary">Líneas de Acción</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Análisis</h4>
+      <ul>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="genero.html">Brechas de Género</a></li>
+        <li><a href="proyeccion.html">Proyección Demanda</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Datos</h4>
+      <ul>
+        <li><a href="comunas.html">Indicadores</a></li>
+        <li><a href="inversion.html">Inversión</a></li>
+        <li><a href="directorio.html">Directorio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="recursos.html">Glosario y FAQ</a></li>
+        <li><a href="changelog.html">Cambios</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/proyeccion.js"></script>
+<script src="js/global-search.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>

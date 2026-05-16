@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brechas de Género en el Trabajo — SEREMI O'Higgins</title>
+<meta name="description" content="Análisis de brechas de género en el mercado laboral de la Región de O'Higgins: paridad demográfica por comuna, indicadores de equidad y desafíos pendientes.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="canonical" href="https://osvaldomanan.githubs.io/portal-seremi-trabajo-ohiggins/genero.html">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0F3F8C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brechas de Género en el Trabajo — SEREMI O'Higgins">
+<meta property="og:description" content="Análisis de equidad de género en el mercado laboral regional con indicadores comunales.">
+<meta property="og:image" content="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/img/logo-seremi.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <picture>
+          <source srcset="img/logo-seremi.webp" type="image/webp">
+          <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo" width="500" height="200">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores</a>
+        <a href="inversion.html" class="nav-link">Inversión</a>
+        <a href="analisis.html" class="nav-link">Análisis</a>
+        <a href="genero.html" class="nav-link active">Género</a>
+        <a href="lineas-accion.html" class="nav-link">Líneas Acción</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
+        <a href="institucional.html" class="nav-link">Institucional</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Brechas de Género</nav>
+    <span class="eyebrow">Equidad de género en el trabajo</span>
+    <h1>Brechas de Género en el Mercado Laboral</h1>
+    <p class="lead">Análisis comunal de la paridad demográfica y los desafíos estructurales para alcanzar la equidad de género en el trabajo en la Región de O'Higgins. Marco: Ley Karin 21.643 + Convenio OIT 190 + Sala Cuna Universal.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <div style="background: linear-gradient(135deg, rgba(192,25,43,.05), rgba(255,210,0,.1)); padding:2rem; border-radius:var(--radius); border-left:4px solid var(--red); margin-bottom:3rem;">
+      <h3 style="margin-top:0; color:var(--red);">⚠️ Nota metodológica</h3>
+      <p style="margin:.5rem 0; line-height:1.7;">A nivel comunal solo está disponible <strong>la distribución demográfica por género</strong> (Censo 2024). Los indicadores de empleo, ingresos y formalidad desagregados por género no se publican a escala comunal en las fuentes oficiales — esa información requiere acceso a microdatos del SII o ENE. Este análisis combina lo disponible con benchmarks nacionales para visibilizar brechas y orientar la acción institucional.</p>
+    </div>
+
+    <header class="section-head">
+      <span class="eyebrow">Síntesis regional</span>
+      <h2>Cifras clave de género en O'Higgins</h2>
+    </header>
+
+    <div class="kpi-grid" id="g-kpis"></div>
+
+    <div class="charts-grid" style="margin-top:3rem;">
+      <div class="chart-card chart-large">
+        <h3>Distribución demográfica por comuna</h3>
+        <p class="chart-sub">% de mujeres sobre el total comunal · Línea roja = paridad (50%)</p>
+        <div class="chart-wrap" style="height:680px;"><canvas id="ch-paridad"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Índice de paridad demográfica</h3>
+        <p class="chart-sub">Mujeres / Hombres regional</p>
+        <div class="chart-wrap"><canvas id="ch-paridad-donut"></canvas></div>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem;" class="charts-grid">
+      <div class="chart-card chart-large">
+        <h3>Brecha demográfica: dónde hay más mujeres que hombres</h3>
+        <p class="chart-sub">Comunas ordenadas por desviación de la paridad (50/50)</p>
+        <div class="chart-wrap" style="height:480px;"><canvas id="ch-desviacion"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Composición regional total</h3>
+        <p class="chart-sub">Censo 2024 — 31 comunas</p>
+        <div class="chart-wrap"><canvas id="ch-total-genero"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Brechas estructurales</span>
+      <h2>Lo que sabemos a nivel nacional aplicado a O'Higgins</h2>
+      <p class="section-desc">Síntesis de brechas documentadas en el mercado laboral chileno que afectan particularmente a las mujeres de la región.</p>
+    </header>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(192,25,43,.12);color:#C0192B">📉</div>
+        <h3>Brecha de participación laboral</h3>
+        <p>A nivel nacional, la tasa de participación femenina es <strong>≈50%</strong> vs. <strong>≈70%</strong> masculina (INE/ENE). En O'Higgins, con su matriz agroindustrial estacional, la brecha puede ser aún mayor en comunas rurales y costeras.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(245,124,0,.12);color:#F57C00">💰</div>
+        <h3>Brecha salarial</h3>
+        <p>Diferencia promedio nacional de <strong>~15-20%</strong> en ingresos por trabajo equivalente. Sectores feminizados (servicios personales, comercio, salud) suelen tener remuneraciones más bajas que sectores masculinizados (minería, construcción, transporte).</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(15,63,140,.12);color:#0F3F8C">🏠</div>
+        <h3>Carga de cuidados</h3>
+        <p>27% de hogares regionales monoparentales encabezados mayoritariamente por mujeres (Censo). El cuidado infantil no remunerado limita la participación laboral femenina. La <strong>Sala Cuna Universal</strong> busca corregir esta barrera estructural.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(46,125,50,.12);color:#2E7D32">⛏️</div>
+        <h3>Inclusión en sectores masculinizados</h3>
+        <p>La minería en O'Higgins (Codelco El Teniente) emplea baja proporción femenina. La reunión del 14 de mayo de 2026 entre El Teniente y los SEREMIs definió hoja de ruta para aumentar inclusión femenina en faenas mineras.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(123,31,162,.12);color:#7B1FA2">🌾</div>
+        <h3>Temporeras agrícolas</h3>
+        <p>Sector con alta presencia femenina pero condiciones precarias: contratos verbales, jornadas extensas, exposición a fitosanitarios. El <strong>Programa Nacional de Fiscalización Agrícola 2025-2026</strong> incluye protección a la maternidad como eje prioritario.</p>
+      </article>
+      <article class="info-card">
+        <div class="icon-circle" style="background:rgba(255,210,0,.18);color:#B89400">⚖️</div>
+        <h3>Acoso y violencia laboral</h3>
+        <p>La <strong>Ley Karin (21.643)</strong> protege a trabajadoras y trabajadores. Las mujeres son históricamente más afectadas por acoso sexual y violencia en el trabajo. La SEREMI capacitó a 300+ representantes en la Universidad de O'Higgins.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Tabla detallada</span>
+      <h2>Distribución demográfica por comuna</h2>
+    </header>
+
+    <div class="data-table-wrap">
+      <div class="table-actions">
+        <button class="btn-download" id="dl-genero">⬇ Descargar CSV</button>
+      </div>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Comuna</th>
+            <th class="num">Hombres</th>
+            <th class="num">Mujeres</th>
+            <th class="num">Total</th>
+            <th class="num">% Mujeres</th>
+            <th>Diagnóstico paridad</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-genero"></tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:3rem; padding:2rem; background: linear-gradient(135deg, rgba(192,25,43,.05), rgba(15,63,140,.05)); border-radius:var(--radius); border-left:4px solid var(--red);">
+      <h3 style="margin-top:0; color:var(--blue-dark);">🎯 Acciones institucionales en curso</h3>
+      <ol style="margin:.5rem 0 0 1.25rem; line-height:1.85;">
+        <li><strong>Sala Cuna Universal</strong> — proyecto de ley que elimina el requisito de 20 trabajadoras para garantizar acceso (eje 4 de Líneas de Acción).</li>
+        <li><strong>Mujer Digital</strong> — 65 cursos SENCE online gratuitos para empleabilidad femenina.</li>
+        <li><strong>Mesa Minería + Género</strong> — hoja de ruta con Codelco El Teniente para inclusión femenina en faenas.</li>
+        <li><strong>Bono al Trabajo de la Mujer</strong> — subsidio para trabajadoras dependientes e independientes entre 25 y 59 años.</li>
+        <li><strong>Fiscalización con foco en maternidad</strong> — Programa Nacional Agrícola 25-26.</li>
+        <li><strong>Difusión Ley Karin</strong> — capacitación a empleadores, sindicatos y trabajadoras.</li>
+      </ol>
+      <p style="margin-top:1.25rem;"><a href="lineas-accion.html" style="font-weight:600;">→ Ver Eje 4 completo en Líneas de Acción</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-inner">
+    <div>
+      <h2>¿Eres mujer y buscas trabajo o capacitación?</h2>
+      <p>Postula gratuitamente a los cursos del programa Mujer Digital y conoce los subsidios disponibles.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="https://sence.gob.cl" target="_blank" rel="noopener" class="btn btn-primary">Cursos SENCE</a>
+      <a href="directorio.html" class="btn btn-secondary">Oficinas</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Análisis</h4>
+      <ul>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="genero.html">Brechas de Género</a></li>
+        <li><a href="proyeccion.html">Proyección Demanda</a></li>
+        <li><a href="lineas-accion.html">Líneas de Acción</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Datos</h4>
+      <ul>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="inversion.html">Inversión Regional</a></li>
+        <li><a href="directorio.html">Directorio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="recursos.html">Glosario y FAQ</a></li>
+        <li><a href="changelog.html">Cambios</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/genero.js"></script>
+<script src="js/global-search.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
