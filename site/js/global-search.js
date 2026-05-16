@@ -27,6 +27,8 @@
     { titulo: 'Directorio de Servicios', url: 'directorio.html', tags: 'directorio oficinas SEREMI DT SENCE IPS OMIL telefonos chileatiende BNE direcciones horarios', tipo: 'Página' },
     { titulo: 'Directorio · OMIL en 33 comunas', url: 'directorio.html', tags: 'OMIL oficina municipal informacion laboral intermediacion empleo programas SENCE asesoria empleadores', tipo: 'Sección' },
     { titulo: 'Galería de Actividades · Instagram', url: 'galeria.html', tags: 'galeria instagram fotos posts reels actividades terreno operativos mesas trabajoohiggins', tipo: 'Página' },
+    { titulo: 'Censo 2024 aplicado a la SEREMI', url: 'censo-2024.html', tags: 'censo 2024 INE poblacion demografia envejecimiento hogares migrantes nacional regional comparativa pirámide piramide edad sexo', tipo: 'Página' },
+    { titulo: 'Censo · Implicancias para SEREMI Trabajo', url: 'censo-2024.html', tags: 'implicaciones censo seremi trabajo previsional cuidados paridad concentracion urbana migracion', tipo: 'Sección' },
     { titulo: 'Calendario, Noticias y Recursos', url: 'actividades.html', tags: 'actividades calendario eventos noticias boletin recursos plantillas descargas pdf', tipo: 'Página' },
     { titulo: 'Calendario · Eventos próximos', url: 'actividades.html#tab-calendario', tags: 'calendario eventos mesa operativo feria capacitacion fiscalizacion dialogo', tipo: 'Sección' },
     { titulo: 'Boletín · Noticias regionales', url: 'actividades.html#tab-noticias', tags: 'noticias boletin notas articulos canteros pelequen bono invierno', tipo: 'Sección' },

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Censo 2024 aplicado a la SEREMI — Región de O'Higgins</title>
+<meta name="description" content="Datos del Censo 2024 (INE) para la Región de O'Higgins y sus implicancias para la política laboral de la SEREMI del Trabajo y Previsión Social. Demografía, hogares, envejecimiento y migración.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="canonical" href="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/censo-2024.html">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0F3F8C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Censo 2024 aplicado a la SEREMI Trabajo O'Higgins">
+<meta property="og:description" content="Datos demográficos del Censo 2024 y su impacto en las líneas de acción institucional regional.">
+<meta property="og:image" content="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/img/logo-seremi.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+<style>
+.censo-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.censo-hero-stat {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  text-align: center;
+  backdrop-filter: blur(4px);
+}
+.censo-hero-stat .num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #FFD200;
+  display: block;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+}
+.censo-hero-stat .label {
+  font-size: .85rem;
+  margin-top: .35rem;
+  display: block;
+  opacity: .9;
+}
+
+.implicacion-card {
+  background: var(--bg-card, white);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  border: 1px solid var(--border, #E5E7EB);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+.implicacion-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; bottom: 0;
+  width: 5px;
+  background: linear-gradient(180deg, #0F3F8C, #FFD200);
+}
+.implicacion-card h3 {
+  margin: 0 0 .75rem;
+  color: var(--blue-dark);
+  font-size: 1.1rem;
+}
+.implicacion-dato {
+  background: rgba(255,210,0,.12);
+  border-left: 3px solid #FFD200;
+  padding: .75rem 1rem;
+  margin: .75rem 0;
+  font-size: .9rem;
+  border-radius: 4px;
+  color: var(--gray-800);
+}
+.implicacion-tag {
+  display: inline-block;
+  background: rgba(15,63,140,.08);
+  color: var(--blue);
+  padding: .3rem .75rem;
+  border-radius: 100px;
+  font-size: .78rem;
+  font-weight: 600;
+  margin-top: .75rem;
+}
+
+.tendencia-card {
+  background: var(--bg-card, white);
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius);
+  border-left: 4px solid var(--blue);
+  margin-bottom: 1rem;
+}
+.tendencia-comparison {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: .5rem;
+}
+.tendencia-then, .tendencia-now {
+  text-align: center;
+  flex: 1;
+}
+.tendencia-then .yr { font-size: .75rem; color: var(--gray-500); }
+.tendencia-then .val { font-size: 1.5rem; color: var(--gray-600); font-weight: 600; }
+.tendencia-now .yr { font-size: .75rem; color: var(--blue); font-weight: 600; }
+.tendencia-now .val { font-size: 1.5rem; color: var(--blue-dark); font-weight: 800; }
+.tendencia-arrow {
+  color: var(--blue);
+  font-size: 1.5rem;
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <picture>
+          <source srcset="img/logo-seremi.webp" type="image/webp">
+          <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo" width="500" height="200">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores</a>
+        <a href="censo-2024.html" class="nav-link active">📊 Censo 2024</a>
+        <a href="lineas-accion.html" class="nav-link">Líneas Acción</a>
+        <a href="actividades.html" class="nav-link">📅 Actividades</a>
+        <a href="galeria.html" class="nav-link">📷 Galería</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Censo 2024 aplicado a la SEREMI</nav>
+    <span class="eyebrow">📊 Censo de Población y Vivienda 2024 — INE</span>
+    <h1>Censo 2024 aplicado a la SEREMI Trabajo</h1>
+    <p class="lead">Resultados del Censo 2024 para la Región de O'Higgins y cómo cada hallazgo demográfico se traduce en líneas de acción para la SEREMI del Trabajo y Previsión Social. Levantamiento: marzo-julio 2024. Publicación: marzo 2025.</p>
+    <div class="censo-hero-stats">
+      <div class="censo-hero-stat"><span class="num">964.133</span><span class="label">Habitantes en O'Higgins</span></div>
+      <div class="censo-hero-stat"><span class="num">6º</span><span class="label">Región más poblada</span></div>
+      <div class="censo-hero-stat"><span class="num">+5,4%</span><span class="label">vs. Censo 2017</span></div>
+      <div class="censo-hero-stat"><span class="num">5,2%</span><span class="label">de la población país</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOQUE 1: RESUMEN REGIONAL -->
+<section class="section section-light">
+  <div class="container">
+    <div style="background: linear-gradient(135deg, rgba(15,63,140,.06), rgba(255,210,0,.1)); padding:2rem; border-radius:var(--radius); border-left:4px solid var(--blue); margin-bottom:3rem;">
+      <h3 style="margin-top:0; color:var(--blue-dark);">📌 Sobre esta sección</h3>
+      <p style="margin:.5rem 0 0; line-height:1.7;">El <strong>Censo 2024</strong> es el principal instrumento estadístico del Estado de Chile. Sus resultados son la base sobre la cual la SEREMI del Trabajo y Previsión Social O'Higgins planifica políticas, focaliza fiscalizaciones y articula con SENCE, IPS y la red de OMIL. Esta página integra los datos del INE con las <a href="lineas-accion.html">6 líneas de acción institucional</a> y los <a href="analisis.html">7 objetivos estratégicos 2026-2028</a>.</p>
+    </div>
+
+    <header class="section-head">
+      <span class="eyebrow">Panorama regional</span>
+      <h2>O'Higgins en cifras</h2>
+      <p class="section-desc">Resultados del Censo 2024 contrastados con el promedio nacional y la versión 2017.</p>
+    </header>
+
+    <div id="censo-kpis" class="kpi-grid"></div>
+
+    <div class="charts-grid" style="margin-top:3rem;">
+      <div class="chart-card chart-large">
+        <h3>Ranking de regiones por población</h3>
+        <p class="chart-sub">Top 16 regiones. O'Higgins en sexto lugar</p>
+        <div class="chart-wrap" style="height:480px;"><canvas id="ch-regiones"></canvas></div>
+      </div>
+      <div class="chart-card">
+        <h3>Distribución por sexo</h3>
+        <p class="chart-sub">Censo 2024 · O'Higgins vs Chile</p>
+        <div class="chart-wrap"><canvas id="ch-sexo"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOQUE 2: TENDENCIAS DEMOGRAFICAS -->
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Tendencias 1992 → 2024</span>
+      <h2>Cómo cambió Chile en 32 años</h2>
+      <p class="section-desc">Los grandes movimientos demográficos que reconfiguran la política laboral y previsional.</p>
+    </header>
+
+    <div id="tendencias-list" class="info-grid"></div>
+
+    <div class="charts-grid" style="margin-top:3rem;">
+      <div class="chart-card chart-large" style="background:rgba(255,255,255,.97);">
+        <h3 style="color:#0A2D6B;">Evolución del envejecimiento poblacional</h3>
+        <p class="chart-sub">Índice de envejecimiento (personas 65+ por cada 100 menores de 15)</p>
+        <div class="chart-wrap" style="height:340px;"><canvas id="ch-envejecimiento"></canvas></div>
+      </div>
+      <div class="chart-card" style="background:rgba(255,255,255,.97);">
+        <h3 style="color:#0A2D6B;">Índice por región (2024)</h3>
+        <p class="chart-sub">O'Higgins en posición media</p>
+        <div class="chart-wrap" style="height:340px;"><canvas id="ch-envejecimiento-regiones"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOQUE 3: PIRAMIDE POBLACIONAL -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Estructura por edad y sexo</span>
+      <h2>Pirámide poblacional de O'Higgins</h2>
+      <p class="section-desc">Distribución por tramos etarios. Datos a nivel comunal estimados a partir de patrones regionales del INE.</p>
+    </header>
+
+    <div class="chart-card">
+      <h3>Pirámide poblacional regional</h3>
+      <p class="chart-sub">Hombres (izquierda) vs Mujeres (derecha) por tramo etario</p>
+      <div class="chart-wrap" style="height:480px;"><canvas id="ch-piramide"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOQUE 4: IMPLICANCIAS PARA LA SEREMI -->
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Vínculo institucional</span>
+      <h2>¿Qué significa el Censo 2024 para la SEREMI Trabajo?</h2>
+      <p class="section-desc">Cada dato demográfico se traduce en una decisión de política laboral. Aquí está el cruce explícito.</p>
+    </header>
+
+    <div id="implicaciones-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(360px, 1fr)); gap:1.5rem;"></div>
+  </div>
+</section>
+
+<!-- BLOQUE 5: CRUCE CON LINEAS DE ACCION -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Hoja de ruta</span>
+      <h2>Próximos pasos del Observatorio</h2>
+      <p class="section-desc">El INE entregará entregas adicionales del Censo 2024 durante 2025-2026.</p>
+    </header>
+
+    <div class="timeline" style="max-width:880px; margin:1rem auto 0; padding-left:2.5rem;">
+      <div class="timeline-item">
+        <span class="timeline-year">✓ Marzo 2025 — Primera entrega</span>
+        <p>Población total por región y comuna, distribución por sexo y tramos etarios principales. Total de viviendas y hogares.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">Próximamente 2025-2026 — Entregas adicionales</span>
+        <p>Características educacionales, situación laboral (ocupados, desocupados, fuerza de trabajo), pueblos originarios, discapacidad, migración detallada y vivienda.</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-year">2026 — Integración al Observatorio</span>
+        <p>La SEREMI integrará los datos finales del Censo 2024 a las fichas comunales del Observatorio Laboral, permitiendo análisis interseccional (género × edad × territorio).</p>
+      </div>
+    </div>
+
+    <div style="margin-top:3rem; padding:2rem; background: linear-gradient(135deg, rgba(15,63,140,.05), rgba(255,210,0,.08)); border-radius: var(--radius); border-left: 4px solid var(--blue); text-align: center;">
+      <h3 style="margin-top:0; color:var(--blue-dark);">📚 Fuente oficial</h3>
+      <p style="margin:.5rem 0;">Todos los datos provienen del <strong>Instituto Nacional de Estadísticas (INE)</strong>, principal organismo estadístico del Estado de Chile.</p>
+      <p style="margin-top:1rem;">
+        <a href="https://censo2024.ine.gob.cl" target="_blank" rel="noopener" style="font-weight:600;">Sitio oficial Censo 2024 →</a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-inner">
+    <div>
+      <h2>Explora los indicadores por comuna</h2>
+      <p>Los datos del Censo 2024 se integran en las 31 fichas comunales del Observatorio Laboral.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="comunas.html" class="btn btn-primary">Indicadores Comunales</a>
+      <a href="lineas-accion.html" class="btn btn-secondary">Líneas de Acción</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Análisis</h4>
+      <ul>
+        <li><a href="censo-2024.html">📊 Censo 2024</a></li>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="genero.html">Brechas de Género</a></li>
+        <li><a href="proyeccion.html">Proyección Demanda</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Datos y comunidad</h4>
+      <ul>
+        <li><a href="comunas.html">Indicadores</a></li>
+        <li><a href="inversion.html">Inversión</a></li>
+        <li><a href="galeria.html">📷 Galería</a></li>
+        <li><a href="actividades.html">📅 Actividades</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="recursos.html">Glosario y FAQ</a></li>
+        <li><a href="lineas-accion.html">Líneas Acción</a></li>
+        <li><a href="directorio.html">Directorio</a></li>
+        <li><a href="changelog.html">Cambios</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js?v13"></script>
+<script src="js/censo-2024.js?v13"></script>
+<script src="js/global-search.js?v13"></script>
+<script src="js/chatbot.js?v13"></script>
+</body>
+</html>
