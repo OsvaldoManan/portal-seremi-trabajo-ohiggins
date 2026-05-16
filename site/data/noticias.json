@@ -1,0 +1,76 @@
+{
+  "actualizado": "2026-05-16",
+  "nota": "Boletín regional con notas extendidas que complementan los posts de redes sociales y reflejan la línea programática de la SEREMI.",
+  "noticias": [
+    {
+      "id": "2026-05-bono-invierno",
+      "fecha": "2026-05-08",
+      "titulo": "Bono de Invierno 2026: $81.257 para más de 1,5 millones de adultos mayores",
+      "categoria": "Beneficios",
+      "autor": "SEREMI Trabajo O'Higgins",
+      "resumen": "Comenzó el pago del Bono de Invierno 2026, que beneficia a pensionados mayores de 65 años con un aporte único de $81.257 que se paga junto con la pensión del mes de mayo.",
+      "contenido": "<p>La SEREMI del Trabajo y Previsión Social O'Higgins, Carmen Gloria Manríquez, supervisó el primer punto de pago del Bono de Invierno 2026 en la región, marcando el inicio de un beneficio dirigido a más de 1,5 millones de adultos mayores en todo Chile.</p><p>El bono de <strong>$81.257</strong> se paga automáticamente junto con la pensión del mes de mayo y no requiere postulación previa. Beneficia a:</p><ul><li>Pensionados del antiguo sistema (IPS)</li><li>Pensionados de las AFP que reciben aporte previsional solidario</li><li>Receptores de la Pensión Garantizada Universal (PGU)</li><li>Mayores de 65 años con asignación familiar o maternal</li></ul><p>Los puntos de pago de la región se distribuyen en sucursales de ChileAtiende, oficinas IPS de Rancagua, San Fernando y Santa Cruz, además de cajas vecinas y transferencia electrónica.</p><p><strong>Consultas:</strong> ChileAtiende 101 o ips.gob.cl</p>",
+      "tags": ["bono", "IPS", "adultos mayores", "previsional"]
+    },
+    {
+      "id": "2026-05-mesa-canteros",
+      "fecha": "2026-05-15",
+      "titulo": "Seremis convocan mesa con trabajadores canteros de Pelequén",
+      "categoria": "Mesas Tripartitas",
+      "autor": "SEREMI Trabajo O'Higgins",
+      "resumen": "La Seremi del Trabajo Carmen Gloria Manríquez encabezó una mesa multisectorial con trabajadores canteros, autoridades regionales y la Diputada Natalia Romero para abordar la seguridad laboral en el rubro.",
+      "contenido": "<p>En Pelequén se realizó una mesa de trabajo convocada por la SEREMI del Trabajo y Previsión Social de O'Higgins, en conjunto con la Diputada Natalia Romero, la Seremi de Salud y la Seremi de Minería, para abordar la situación que afecta a los trabajadores canteros del sector.</p><p>Durante la jornada, las autoridades escucharon las principales inquietudes de los trabajadores y abordaron la necesidad de <strong>fortalecer la seguridad y salud laboral</strong> en esta actividad productiva que entrega identidad a la región.</p><blockquote>\"La protección de la salud y la seguridad de los trabajadores debe estar siempre en el centro. Nuestro compromiso es seguir presentes en el territorio y avanzar en un trabajo coordinado junto a las comunidades y servicios públicos\"<br>— Carmen Gloria Manríquez, SEREMI Trabajo y Previsión Social O'Higgins</blockquote><p>La actividad se enmarca en el Eje 2 de las Líneas de Acción Institucional: fiscalización, formalización y cumplimiento, con foco en sectores productivos con identidad regional.</p>",
+      "tags": ["Pelequén", "seguridad laboral", "canteros", "mesa tripartita"]
+    },
+    {
+      "id": "2026-05-capital-humano-turistico",
+      "fecha": "2026-05-14",
+      "titulo": "Se constituye la Mesa Regional de Capital Humano Turístico en San Vicente",
+      "categoria": "Capacitación",
+      "autor": "SEREMI Trabajo O'Higgins",
+      "resumen": "Primera sesión de la mesa que busca articular oferta formativa SENCE con la demanda del sector turismo regional, con énfasis en empleabilidad de jóvenes y mujeres.",
+      "contenido": "<p>En San Vicente se desarrolló la primera sesión de la <strong>Mesa Regional de Capital Humano Turístico</strong>, instancia destinada a fortalecer la formación y empleabilidad en el sector turismo regional, sector con creciente potencial en O'Higgins.</p><p>La mesa articula a la SEREMI del Trabajo, SENCE, el Ministerio de Economía a través de SERNATUR Regional, gremios turísticos y representantes del sector productivo. Los principales acuerdos incluyen:</p><ul><li>Identificación de oficios prioritarios: guías turísticos, gastronomía típica, alojamiento rural</li><li>Diseño de cursos SENCE con pertinencia territorial</li><li>Programa especial para emprendedoras del valle de Colchagua</li><li>Vinculación con liceos técnico-profesionales con especialidad turística</li></ul><p>El sector turístico regional ha mostrado crecimiento sostenido tras la pandemia, con foco en enoturismo (Colchagua), turismo de playa (Pichilemu) y turismo rural en Cardenal Caro.</p>",
+      "tags": ["turismo", "San Vicente", "SENCE", "capital humano"]
+    },
+    {
+      "id": "2026-05-discapacidad",
+      "fecha": "2026-05-13",
+      "titulo": "Mesa Regional de Discapacidad e Inclusión: avanzar en la Ley 21.015",
+      "categoria": "Inclusión",
+      "autor": "SEREMI Trabajo O'Higgins",
+      "resumen": "La SEREMI participó en la sesión regional dedicada a fortalecer el cumplimiento de la Ley de Inclusión Laboral en empresas de la región.",
+      "contenido": "<p>La SEREMI del Trabajo participó en la Mesa Regional de Discapacidad e Inclusión, articulando acciones con SENADIS, MIDESO y servicios del sector trabajo para mejorar la inserción laboral de personas con discapacidad en la región.</p><p>La <strong>Ley 21.015 de Inclusión Laboral</strong> obliga a las empresas con 100 o más trabajadores a contar con al menos 1% de personas con discapacidad. En O'Higgins, el cumplimiento sigue siendo desafío en sectores productivos con condiciones físicas complejas (minería, agroindustria).</p><p>Las líneas de trabajo definidas en la mesa incluyen:</p><ul><li>Programas SENCE Aprendices con cuota especial para PcD</li><li>Asesoría técnica a empresas para adaptación de puestos</li><li>Bolsa de empleo BNE con filtro de accesibilidad</li><li>Articulación con Codelco El Teniente y grandes empresas regionales</li></ul>",
+      "tags": ["discapacidad", "Ley 21.015", "inclusión", "empleabilidad"]
+    },
+    {
+      "id": "2026-05-informalidad",
+      "fecha": "2026-05-12",
+      "titulo": "SEREMI aborda impacto de la informalidad en el comercio de Rancagua",
+      "categoria": "Formalización",
+      "autor": "SEREMI Trabajo O'Higgins",
+      "resumen": "Reunión de trabajo con la Cámara de Comercio de Rancagua para diseñar un plan de formalización que combine incentivos y fiscalización.",
+      "contenido": "<p>La SEREMI del Trabajo se reunió con la Cámara de Comercio de Rancagua para abordar el impacto de la informalidad laboral en el sector comercio, que afecta directamente la competitividad de las empresas formales.</p><p>En la región, los datos del Observatorio Laboral muestran que <strong>91.563 trabajadores</strong> están bajo régimen de honorarios — un 22% sobre el total de trabajadores dependientes formales. En sectores específicos como comercio, gastronomía y servicios personales, la ratio puede ser aún mayor.</p><p>El plan acordado contempla:</p><ul><li>Campaña conjunta de difusión de obligaciones tributarias y previsionales</li><li>Asistencia técnica para microempresas en formalización (Despega MIPE)</li><li>Fiscalización focalizada en zonas comerciales del centro de Rancagua</li><li>Mesa de seguimiento trimestral con la Cámara y la Dirección del Trabajo</li></ul><p>El objetivo a 4 años es reducir en <strong>5 puntos porcentuales la informalidad</strong> regional, alineado con el OE1 del Plan Estratégico Institucional.</p>",
+      "tags": ["informalidad", "comercio", "Rancagua", "formalización"]
+    },
+    {
+      "id": "2026-05-mujer-trabajo",
+      "fecha": "2026-05-11",
+      "titulo": "Mesa Mujer: avanzar en equidad de género en el mercado laboral regional",
+      "categoria": "Equidad de género",
+      "autor": "SEREMI Trabajo O'Higgins",
+      "resumen": "Encuentro interinstitucional para impulsar la participación femenina en sectores tradicionalmente masculinizados como minería y construcción.",
+      "contenido": "<p>La SEREMI del Trabajo y Previsión Social, Carmen Gloria Manríquez, participó en la Mesa Mujer, espacio de articulación interinstitucional para la equidad de género en el empleo regional.</p><p>Aunque O'Higgins presenta paridad demográfica (51% mujeres, 49% hombres según Censo 2024), <strong>la participación laboral femenina sigue por debajo del promedio nacional</strong>. La matriz productiva regional, marcada por minería y agroindustria estacional, presenta barreras estructurales que la SEREMI busca abordar.</p><p>Líneas de acción acordadas:</p><ul><li><strong>Mujer Digital</strong>: 65 cursos online gratuitos para empleabilidad femenina</li><li><strong>Sala Cuna Universal</strong>: difusión del proyecto de ley que elimina el requisito de 20 trabajadoras</li><li><strong>Inclusión en minería</strong>: hoja de ruta con Codelco El Teniente</li><li><strong>Bono al Trabajo de la Mujer</strong>: subsidio SENCE para trabajadoras de 25-59 años</li></ul>",
+      "tags": ["mujer", "equidad de género", "Mesa Mujer", "Mujer Digital"]
+    },
+    {
+      "id": "2026-05-salario-minimo",
+      "fecha": "2026-05-05",
+      "titulo": "Vigente nuevo salario mínimo de $546.546 desde mayo 2026",
+      "categoria": "Remuneraciones",
+      "autor": "SEREMI Trabajo O'Higgins",
+      "resumen": "La Ley 21.751 establece el reajuste del Ingreso Mínimo Mensual a $546.546 desde mayo y un mecanismo automático de reajuste anual a partir de 2027.",
+      "contenido": "<p>Entró en vigencia el nuevo <strong>Ingreso Mínimo Mensual (IMM)</strong> establecido por la Ley 21.751, que fija el salario mínimo en <strong>$546.546 brutos</strong> desde mayo de 2026, con un reajuste de la variación del IPC enero-marzo (+1,4%).</p><p>El proyecto, publicado en el Diario Oficial, contempla además un <strong>mecanismo automático de reajuste anual</strong> a partir de enero de 2027, que considerará el comportamiento de la economía y la productividad.</p><p>Implicancias para empleadores:</p><ul><li>Obligación de ajustar contratos vigentes al nuevo monto</li><li>Recalcular gratificaciones legales (25% del IMM × 12 = $1.639.638 anual)</li><li>Actualizar bases de cálculo previsional</li></ul><p>La SEREMI del Trabajo y la Dirección del Trabajo Regional realizan jornadas informativas con gremios para facilitar la implementación.</p>",
+      "tags": ["salario mínimo", "Ley 21.751", "IMM", "remuneraciones"]
+    }
+  ]
+}

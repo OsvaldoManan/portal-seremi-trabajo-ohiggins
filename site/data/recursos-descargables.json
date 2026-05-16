@@ -1,0 +1,159 @@
+{
+  "actualizado": "2026-05-16",
+  "nota": "Plantillas, guías y enlaces a recursos oficiales para trabajadores y empleadores de la Región de O'Higgins.",
+  "recursos": [
+    {
+      "categoria": "Contratos y finiquito",
+      "items": [
+        {
+          "titulo": "Modelo de Contrato de Trabajo Individual",
+          "descripcion": "Plantilla oficial DT con cláusulas básicas obligatorias para contrato indefinido o plazo fijo.",
+          "tipo": "Plantilla DT",
+          "url": "https://www.dt.gob.cl/portal/1626/articles-95628_recurso_1.pdf",
+          "icono": "📝",
+          "interno": false
+        },
+        {
+          "titulo": "Modelo de Finiquito de Trabajo",
+          "descripcion": "Plantilla oficial para finalizar la relación laboral. Recuerda que debe ser firmado ante ministro de fe.",
+          "tipo": "Plantilla DT",
+          "url": "https://www.dt.gob.cl/portal/1626/articles-60229_recurso_1.pdf",
+          "icono": "📋",
+          "interno": false
+        },
+        {
+          "titulo": "Carta de aviso de término de contrato",
+          "descripcion": "Modelo de carta de aviso de término según causales del Código del Trabajo.",
+          "tipo": "Plantilla DT",
+          "url": "https://www.dt.gob.cl/portal/1626/articles-60230_recurso_1.pdf",
+          "icono": "✉️",
+          "interno": false
+        }
+      ]
+    },
+    {
+      "categoria": "Denuncias y derechos",
+      "items": [
+        {
+          "titulo": "Denuncia online por incumplimientos laborales",
+          "descripcion": "Sistema digital de la Dirección del Trabajo para presentar denuncias con tu RUT. Confidencialidad garantizada.",
+          "tipo": "Trámite online",
+          "url": "https://www.dt.gob.cl/portal/1626/w3-propertyvalue-21885.html",
+          "icono": "⚖️",
+          "interno": false
+        },
+        {
+          "titulo": "Guía completa Ley Karin (21.643)",
+          "descripcion": "Procedimientos de prevención, investigación y sanción de acoso laboral, sexual y violencia. Obligatorio para empleadores.",
+          "tipo": "Guía oficial",
+          "url": "https://www.dt.gob.cl/portal/1626/w3-propertyvalue-159064.html",
+          "icono": "🛡️",
+          "interno": false
+        },
+        {
+          "titulo": "Derechos del trabajador agrícola de temporada",
+          "descripcion": "Ficha resumen DT con todos los derechos: contrato, jornada, transporte, alimentación, sala cuna, maternidad.",
+          "tipo": "Ficha DT",
+          "url": "https://www.dt.gob.cl/portal/1626/w3-propertyvalue-22065.html",
+          "icono": "🌾",
+          "interno": false
+        }
+      ]
+    },
+    {
+      "categoria": "Capacitación y empleo",
+      "items": [
+        {
+          "titulo": "Catálogo SENCE Becas Laborales 2026",
+          "descripcion": "Lista completa de cursos disponibles para personas vulnerables, cesantes, cuidadoras, migrantes y pueblos originarios.",
+          "tipo": "Programa SENCE",
+          "url": "https://sence.gob.cl/personas/cursos",
+          "icono": "🎓",
+          "interno": false
+        },
+        {
+          "titulo": "Postulación a Mujer Digital",
+          "descripcion": "65 cursos online gratuitos para mujeres sobre habilidades digitales, e-commerce y emprendimiento.",
+          "tipo": "Programa SENCE",
+          "url": "https://sence.gob.cl/personas/mujer-digital",
+          "icono": "💻",
+          "interno": false
+        },
+        {
+          "titulo": "Despega MIPE: cursos para microempresas",
+          "descripcion": "Programa 100% online para propietarios y trabajadores de micro y pequeñas empresas. Inglés y gestión.",
+          "tipo": "Programa SENCE",
+          "url": "https://sence.gob.cl/personas/despega-mipe",
+          "icono": "🚀",
+          "interno": false
+        }
+      ]
+    },
+    {
+      "categoria": "Previsional",
+      "items": [
+        {
+          "titulo": "Cómo cotizar como trabajador a honorarios",
+          "descripcion": "Guía paso a paso para cumplir con la cotización obligatoria via Operación Renta.",
+          "tipo": "Guía IPS",
+          "url": "https://www.previred.com/web/honorarios",
+          "icono": "💰",
+          "interno": false
+        },
+        {
+          "titulo": "Postulación a PGU (Pensión Garantizada Universal)",
+          "descripcion": "Para personas mayores de 65 años. Postulación en ChileAtiende o IPS.",
+          "tipo": "Trámite IPS",
+          "url": "https://www.chileatiende.gob.cl/fichas/76015-postular-a-la-pension-garantizada-universal-pgu",
+          "icono": "🛡️",
+          "interno": false
+        },
+        {
+          "titulo": "Consulta saldo Seguro de Cesantía",
+          "descripcion": "Revisa tu cuenta individual de Seguro de Cesantía y postula al Fondo Solidario si quedaste sin trabajo.",
+          "tipo": "AFC",
+          "url": "https://www.afc.cl",
+          "icono": "📊",
+          "interno": false
+        }
+      ]
+    },
+    {
+      "categoria": "Datos abiertos del Observatorio",
+      "items": [
+        {
+          "titulo": "Indicadores Comunales (CSV)",
+          "descripcion": "Las 31 fichas comunales con 32 indicadores cada una. Compatible con Excel UTF-8.",
+          "tipo": "Datos abiertos",
+          "url": "data/comunas.json",
+          "icono": "📊",
+          "interno": true
+        },
+        {
+          "titulo": "Inversión histórica 1994-2025 (JSON)",
+          "descripcion": "30.401 iniciativas BIP agregadas por sector, año, etapa, comuna.",
+          "tipo": "Datos abiertos",
+          "url": "data/inversion_historica.json",
+          "icono": "🏗️",
+          "interno": true
+        },
+        {
+          "titulo": "Cartera de Inversión 2026 (JSON)",
+          "descripcion": "36 proyectos privados con empleo proyectado por nivel y sector.",
+          "tipo": "Datos abiertos",
+          "url": "data/inversion_2026.json",
+          "icono": "📈",
+          "interno": true
+        },
+        {
+          "titulo": "GeoJSON de las 33 comunas",
+          "descripcion": "Polígonos territoriales de O'Higgins para visualizaciones cartográficas.",
+          "tipo": "Datos abiertos",
+          "url": "data/geo/ohiggins.geojson",
+          "icono": "🗺️",
+          "interno": true
+        }
+      ]
+    }
+  ]
+}

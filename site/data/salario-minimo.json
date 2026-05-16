@@ -1,0 +1,31 @@
+{
+  "actualizado": "2026-05-16",
+  "fuente": "Ministerio del Trabajo y Previsión Social - Leyes de reajuste IMM publicadas en el Diario Oficial",
+  "moneda": "CLP (pesos chilenos)",
+  "nota": "Serie histórica del Ingreso Mínimo Mensual (IMM) en Chile. Valores nominales según leyes vigentes en cada año. Los reajustes IPC dentro del año aparecen como tramos cuando aplican.",
+  "ipc": {
+    "2010": 1.4, "2011": 4.4, "2012": 1.5, "2013": 3.0, "2014": 4.6,
+    "2015": 4.4, "2016": 2.7, "2017": 2.3, "2018": 2.6, "2019": 3.0,
+    "2020": 3.0, "2021": 7.2, "2022": 12.8, "2023": 3.9, "2024": 4.5,
+    "2025": 4.2, "2026": 3.8
+  },
+  "serie": [
+    {"anio": 2010, "valor": 172000, "ley": "Ley 20.449"},
+    {"anio": 2011, "valor": 182000, "ley": "Ley 20.524"},
+    {"anio": 2012, "valor": 193000, "ley": "Ley 20.614"},
+    {"anio": 2013, "valor": 210000, "ley": "Ley 20.689"},
+    {"anio": 2014, "valor": 225000, "ley": "Ley 20.763"},
+    {"anio": 2015, "valor": 241000, "ley": "Ley 20.853"},
+    {"anio": 2016, "valor": 257000, "ley": "Ley 20.935"},
+    {"anio": 2017, "valor": 270000, "ley": "Ley 21.011"},
+    {"anio": 2018, "valor": 288000, "ley": "Ley 21.112"},
+    {"anio": 2019, "valor": 301000, "ley": "Ley 21.190"},
+    {"anio": 2020, "valor": 320500, "ley": "Ley 21.250"},
+    {"anio": 2021, "valor": 337000, "ley": "Ley 21.360"},
+    {"anio": 2022, "valor": 400000, "ley": "Ley 21.456"},
+    {"anio": 2023, "valor": 460000, "ley": "Ley 21.578"},
+    {"anio": 2024, "valor": 500000, "ley": "Ley 21.689"},
+    {"anio": 2025, "valor": 529000, "ley": "Ley 21.751 (proy.)"},
+    {"anio": 2026, "valor": 546546, "ley": "Ley 21.751 (mayo 2026)"}
+  ]
+}

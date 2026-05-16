@@ -82,6 +82,7 @@
         <a href="analisis.html" class="nav-link">Análisis Estratégico</a>
         <a href="lineas-accion.html" class="nav-link active">Líneas de Acción</a>
         <a href="galeria.html" class="nav-link">📷 Galería</a>
+        <a href="actividades.html" class="nav-link">📅 Actividades</a>
         <a href="programa.html" class="nav-link">Programa de Gobierno</a>
         <a href="directorio.html" class="nav-link">Directorio</a>
         <a href="changelog.html" class="nav-link">Cambios</a>
@@ -316,6 +317,28 @@
         <p>Promoción del uso del Seguro de Cesantía y del Fondo Solidario por empresas y trabajadores, especialmente en sectores con alta rotación. Atención coordinada con AFC Chile y orientación en las inspecciones provinciales.</p>
       </article>
     </div>
+
+    <!-- Serie histórica Salario Mínimo -->
+    <header class="section-head" style="margin-top:3.5rem; margin-bottom:1.5rem;">
+      <span class="eyebrow">Serie temporal 2010-2026</span>
+      <h2 style="color:#FFFFFF;">📈 Evolución del Ingreso Mínimo Mensual</h2>
+      <p class="section-desc">Cómo ha crecido el IMM en Chile durante los últimos 17 años. Valores nominales según leyes vigentes.</p>
+    </header>
+
+    <div class="charts-grid">
+      <div class="chart-card chart-large" style="background:rgba(255,255,255,.97);">
+        <h3 style="color:#0A2D6B;">Salario Mínimo nominal (CLP)</h3>
+        <p class="chart-sub">Pesos chilenos al cierre de cada año</p>
+        <div class="chart-wrap" style="height:380px;"><canvas id="ch-sm-historico"></canvas></div>
+      </div>
+      <div class="chart-card" style="background:rgba(255,255,255,.97);">
+        <h3 style="color:#0A2D6B;">Variación anual vs IPC</h3>
+        <p class="chart-sub">% de reajuste año a año</p>
+        <div class="chart-wrap" style="height:380px;"><canvas id="ch-sm-variacion"></canvas></div>
+      </div>
+    </div>
+
+    <div id="sm-kpis" class="kpi-grid" style="margin-top:2rem;"></div>
   </div>
 </section>
 
@@ -533,8 +556,10 @@
   </div>
 </footer>
 
-<script src="js/main.js?v8"></script>
-<script src="js/global-search.js?v8"></script>
-<script src="js/chatbot.js?v8"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="js/main.js?v12"></script>
+<script src="js/salario-historico.js?v12"></script>
+<script src="js/global-search.js?v12"></script>
+<script src="js/chatbot.js?v12"></script>
 </body>
 </html>
