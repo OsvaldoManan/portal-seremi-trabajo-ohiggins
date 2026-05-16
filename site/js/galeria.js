@@ -84,16 +84,20 @@
     </blockquote>`;
   }
 
+  // Renderiza placeholder ligero (no blockquote, eso se inyecta al ser visible)
   function renderCards() {
     const grid = document.getElementById('gallery-grid');
-    grid.innerHTML = allPosts.map(p => `
-      <article class="gallery-card" data-month="${p.fecha.slice(0,7)}" data-type="${p.tipo}" data-url="${p.url}">
+    grid.innerHTML = allPosts.map((p, i) => `
+      <article class="gallery-card" data-month="${p.fecha.slice(0,7)}" data-type="${p.tipo}" data-url="${p.url}" data-index="${i}">
         <div class="gallery-header">
           <span class="gallery-type-pill">${p.tipo === 'reel' ? '🎬 Reel' : '📷 Post'}</span>
           <span class="gallery-date-pill">📅 ${formatDate(p.fecha)}</span>
         </div>
-        <div class="gallery-embed-wrap" data-lazy-embed="${p.url}">
-          ${buildEmbedHTML(p)}
+        <div class="gallery-embed-wrap" data-pending="1" data-url="${p.url}">
+          <div class="gallery-placeholder">
+            <div class="gallery-placeholder-icon">📷</div>
+            <div class="gallery-placeholder-text">Cargando post de Instagram…</div>
+          </div>
         </div>
         <div class="gallery-body">
           <h3 class="gallery-title">${p.titulo}</h3>
@@ -112,8 +116,11 @@
 
   renderCards();
 
-  // ====== Lazy load script de Instagram (una sola vez) ======
+  // ====== Lazy load: cargar script Instagram + inyectar blockquote solo cuando card es visible ======
   let igScriptLoaded = false;
+  let igScriptReady = false;
+  const pendingProcess = [];
+
   function loadInstagramScript() {
     if (igScriptLoaded) return;
     igScriptLoaded = true;
@@ -121,7 +128,8 @@
     s.async = true;
     s.src = '//www.instagram.com/embed.js';
     s.onload = () => {
-      // Procesar todos los embeds visibles
+      igScriptReady = true;
+      // Procesar embeds que ya están inyectados
       if (window.instgrm && window.instgrm.Embeds) {
         window.instgrm.Embeds.process();
       }
@@ -129,22 +137,39 @@
     document.body.appendChild(s);
   }
 
-  // Trigger lazy load cuando el primer card entra al viewport
+  function injectEmbed(wrap) {
+    if (!wrap || wrap.dataset.pending !== '1') return;
+    wrap.dataset.pending = '0';
+    const url = wrap.dataset.url;
+    if (!url) return;
+    wrap.innerHTML = buildEmbedHTML({ url });
+    loadInstagramScript();
+    // Reprocesar este embed específicamente cuando el script esté listo
+    const tryProcess = () => {
+      if (window.instgrm && window.instgrm.Embeds) {
+        window.instgrm.Embeds.process();
+      } else if (igScriptLoaded && !igScriptReady) {
+        setTimeout(tryProcess, 300);
+      }
+    };
+    tryProcess();
+  }
+
   if ('IntersectionObserver' in window) {
-    const obs = new IntersectionObserver((entries) => {
+    const cardObs = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
-          loadInstagramScript();
-          obs.disconnect();
+          const wrap = e.target.querySelector('.gallery-embed-wrap');
+          injectEmbed(wrap);
+          cardObs.unobserve(e.target);
         }
       });
-    }, { rootMargin: '200px' });
+    }, { rootMargin: '300px 0px 300px 0px', threshold: 0.01 });
 
-    const firstCard = document.querySelector('.gallery-card');
-    if (firstCard) obs.observe(firstCard);
+    document.querySelectorAll('.gallery-card').forEach(c => cardObs.observe(c));
   } else {
-    // Fallback: cargar inmediatamente
-    setTimeout(loadInstagramScript, 500);
+    // Fallback: inyectar todos
+    document.querySelectorAll('.gallery-embed-wrap').forEach(injectEmbed);
   }
 
   // ====== Filter logic ======
