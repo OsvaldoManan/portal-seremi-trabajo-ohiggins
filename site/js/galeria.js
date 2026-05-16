@@ -1,4 +1,4 @@
-// ============== GALERÍA DE INSTAGRAM (con embeds oficiales) ==============
+// ============== GALERÍA DE INSTAGRAM (imágenes locales) ==============
 (async function() {
   let data;
   try {
@@ -59,46 +59,27 @@
     filterMonth.appendChild(btn);
   });
 
-  // ====== Render cards con embed placeholder (lazy loaded) ======
-  function buildEmbedHTML(post) {
-    // Convertir URL para que sea limpia para embed
-    const url = post.url.replace(/\/$/, '') + '/';
-    return `<blockquote class="instagram-media" data-instgrm-permalink="${url}" data-instgrm-version="14"
-      style="background:#FFF; border:0; border-radius:0; box-shadow:none; margin:0; max-width:540px; min-width:0; padding:0; width:100%;">
-      <a href="${url}" target="_blank" rel="noopener"
-         style="background:#FFFFFF; line-height:0; padding:0; text-align:center; text-decoration:none; width:100%; display:block;">
-        <div style="padding:16px; display:flex; flex-direction:column; align-items:center; gap:.75rem;">
-          <div style="display:flex; align-items:center; gap:.5rem; width:100%;">
-            <div style="background:linear-gradient(135deg,#F09433,#DC2743,#BC1888); border-radius:50%; height:40px; width:40px;"></div>
-            <div style="display:flex; flex-direction:column; flex:1;">
-              <div style="background:#F4F4F4; border-radius:4px; height:14px; width:120px;"></div>
-              <div style="background:#F4F4F4; border-radius:4px; margin-top:6px; height:10px; width:80px;"></div>
-            </div>
-          </div>
-          <div style="padding:0; height:200px; width:100%; background:linear-gradient(135deg,#F09433 0%,#DC2743 50%,#BC1888 100%); border-radius:4px; display:flex; align-items:center; justify-content:center;">
-            <span style="font-size:2.5rem; color:rgba(255,255,255,.95);">📷</span>
-          </div>
-          <div style="color:#3897F0; font-size:13px; font-weight:600;">Cargando post de Instagram…</div>
-        </div>
-      </a>
-    </blockquote>`;
-  }
-
-  // Renderiza placeholder ligero (no blockquote, eso se inyecta al ser visible)
+  // ====== Render cards con imágenes locales ======
   function renderCards() {
     const grid = document.getElementById('gallery-grid');
     grid.innerHTML = allPosts.map((p, i) => `
-      <article class="gallery-card" data-month="${p.fecha.slice(0,7)}" data-type="${p.tipo}" data-url="${p.url}" data-index="${i}">
+      <article class="gallery-card" data-month="${p.fecha.slice(0,7)}" data-type="${p.tipo}">
         <div class="gallery-header">
           <span class="gallery-type-pill">${p.tipo === 'reel' ? '🎬 Reel' : '📷 Post'}</span>
           <span class="gallery-date-pill">📅 ${formatDate(p.fecha)}</span>
         </div>
-        <div class="gallery-embed-wrap" data-pending="1" data-url="${p.url}">
-          <div class="gallery-placeholder">
-            <div class="gallery-placeholder-icon">📷</div>
-            <div class="gallery-placeholder-text">Cargando post de Instagram…</div>
+        <a href="${p.url}" target="_blank" rel="noopener" class="gallery-image-link" aria-label="Abrir en Instagram: ${p.titulo}">
+          <div class="gallery-image-wrap">
+            <img src="${p.imagen}" alt="${p.titulo}" loading="${i < 3 ? 'eager' : 'lazy'}" decoding="async" class="gallery-image">
+            ${p.tipo === 'reel' ? '<div class="gallery-play"><span>▶</span></div>' : ''}
+            <div class="gallery-overlay">
+              <div class="gallery-overlay-content">
+                <span class="gallery-overlay-icon">📷</span>
+                <span class="gallery-overlay-text">Ver en Instagram</span>
+              </div>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="gallery-body">
           <h3 class="gallery-title">${p.titulo}</h3>
           <p class="gallery-desc">${p.descripcion}</p>
@@ -116,81 +97,16 @@
 
   renderCards();
 
-  // ====== Lazy load: cargar script Instagram + inyectar blockquote solo cuando card es visible ======
-  let igScriptLoaded = false;
-  let igScriptReady = false;
-  const pendingProcess = [];
-
-  function loadInstagramScript() {
-    if (igScriptLoaded) return;
-    igScriptLoaded = true;
-    const s = document.createElement('script');
-    s.async = true;
-    s.src = '//www.instagram.com/embed.js';
-    s.onload = () => {
-      igScriptReady = true;
-      // Procesar embeds que ya están inyectados
-      if (window.instgrm && window.instgrm.Embeds) {
-        window.instgrm.Embeds.process();
-      }
-    };
-    document.body.appendChild(s);
-  }
-
-  function injectEmbed(wrap) {
-    if (!wrap || wrap.dataset.pending !== '1') return;
-    wrap.dataset.pending = '0';
-    const url = wrap.dataset.url;
-    if (!url) return;
-    wrap.innerHTML = buildEmbedHTML({ url });
-    loadInstagramScript();
-    // Reprocesar este embed específicamente cuando el script esté listo
-    const tryProcess = () => {
-      if (window.instgrm && window.instgrm.Embeds) {
-        window.instgrm.Embeds.process();
-      } else if (igScriptLoaded && !igScriptReady) {
-        setTimeout(tryProcess, 300);
-      }
-    };
-    tryProcess();
-  }
-
-  if ('IntersectionObserver' in window) {
-    const cardObs = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const wrap = e.target.querySelector('.gallery-embed-wrap');
-          injectEmbed(wrap);
-          cardObs.unobserve(e.target);
-        }
-      });
-    }, { rootMargin: '300px 0px 300px 0px', threshold: 0.01 });
-
-    document.querySelectorAll('.gallery-card').forEach(c => cardObs.observe(c));
-  } else {
-    // Fallback: inyectar todos
-    document.querySelectorAll('.gallery-embed-wrap').forEach(injectEmbed);
-  }
-
   // ====== Filter logic ======
   let activeMonth = 'all';
   let activeType = 'all';
 
   function applyFilters() {
-    let visible = 0;
     document.querySelectorAll('.gallery-card').forEach(c => {
       const matchMonth = activeMonth === 'all' || c.dataset.month === activeMonth;
       const matchType = activeType === 'all' || c.dataset.type === activeType;
-      const show = matchMonth && matchType;
-      c.classList.toggle('hidden', !show);
-      if (show) visible++;
+      c.classList.toggle('hidden', !(matchMonth && matchType));
     });
-    // Re-process Instagram embeds tras cambio de filtro
-    setTimeout(() => {
-      if (window.instgrm && window.instgrm.Embeds) {
-        window.instgrm.Embeds.process();
-      }
-    }, 100);
   }
 
   document.querySelectorAll('#filter-month .filter-pill').forEach(p => {
@@ -210,4 +126,5 @@
       applyFilters();
     });
   });
+
 })();

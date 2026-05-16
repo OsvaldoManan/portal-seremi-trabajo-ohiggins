@@ -61,52 +61,86 @@
   font-weight: 600;
   border: 1px solid var(--gray-200);
 }
-.gallery-embed-wrap {
+.gallery-image-link {
+  display: block;
+  text-decoration: none;
   position: relative;
-  width: 100%;
-  min-height: 320px;
-  background: #FAFAFA;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   overflow: hidden;
 }
-.gallery-embed-wrap blockquote.instagram-media {
-  width: 100% !important;
-  margin: 0 !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
+.gallery-image-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #F5F5F5;
+  overflow: hidden;
 }
-.gallery-embed-wrap iframe {
-  border-radius: 0 !important;
-  max-width: 100% !important;
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .4s ease;
 }
-.gallery-placeholder {
+.gallery-card:hover .gallery-image {
+  transform: scale(1.05);
+}
+.gallery-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(240,148,51,.85), rgba(220,39,67,.85), rgba(188,24,136,.85));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity .25s;
+  backdrop-filter: blur(2px);
+}
+.gallery-card:hover .gallery-overlay {
+  opacity: 1;
+}
+.gallery-overlay-content {
+  text-align: center;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: .5rem;
+  transform: translateY(10px);
+  transition: transform .25s;
+}
+.gallery-card:hover .gallery-overlay-content {
+  transform: translateY(0);
+}
+.gallery-overlay-icon {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,.3));
+}
+.gallery-overlay-text {
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+.gallery-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 320px;
-  background: linear-gradient(135deg, #F09433 0%, #DC2743 50%, #BC1888 100%);
+  pointer-events: none;
+}
+.gallery-play span {
+  background: rgba(0,0,0,.55);
   color: white;
-  gap: .75rem;
-}
-.gallery-placeholder-icon {
-  font-size: 3rem;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,.3));
-  animation: galPulse 1.8s ease-in-out infinite;
-}
-@keyframes galPulse {
-  0%, 100% { opacity: .7; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.08); }
-}
-.gallery-placeholder-text {
-  font-size: .85rem;
-  font-weight: 600;
-  opacity: .95;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  padding-left: 5px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 20px rgba(0,0,0,.3);
 }
 .gallery-body {
   padding: 1.25rem;
@@ -366,9 +400,9 @@
   </div>
 </footer>
 
-<script src="js/main.js?v11"></script>
-<script src="js/galeria.js?v11"></script>
-<script src="js/global-search.js?v11"></script>
-<script src="js/chatbot.js?v11"></script>
+<script src="js/main.js?v12"></script>
+<script src="js/galeria.js?v12"></script>
+<script src="js/global-search.js?v12"></script>
+<script src="js/chatbot.js?v12"></script>
 </body>
 </html>
