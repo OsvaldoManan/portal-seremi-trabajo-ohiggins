@@ -1,0 +1,87 @@
+{
+  "actualizado": "2026-05-16",
+  "fuente": "INE (Censo 2024, ENE), SII, BNE - valores nacionales para benchmarking",
+  "nota": "Valores de referencia nacional para comparar con indicadores de cada comuna de O'Higgins. Promedios o totales según corresponda.",
+  "benchmarks": {
+    "Población censada": {
+      "tipo": "promedio_comuna",
+      "valor_chile": 56370,
+      "descripcion": "Población media por comuna en Chile (19.493.184 habitantes / 346 comunas)",
+      "fuente": "INE Censo 2024"
+    },
+    "Tasa de ocupación": {
+      "tipo": "tasa_nacional",
+      "valor_chile": 0.563,
+      "descripcion": "Tasa de ocupación nacional 56,3%",
+      "fuente": "INE ENE trimestre móvil 2024"
+    },
+    "Tasa de desocupación": {
+      "tipo": "tasa_nacional",
+      "valor_chile": 0.085,
+      "descripcion": "Tasa de desocupación nacional 8,5%",
+      "fuente": "INE ENE trimestre móvil 2024"
+    },
+    "Promedio de Ingresos Asalariados Formales": {
+      "tipo": "promedio_nacional",
+      "valor_chile": 850000,
+      "descripcion": "Ingreso medio formal nacional",
+      "fuente": "SII / MIDESO"
+    },
+    "Mediana de Ingresos Asalariados Dependientes": {
+      "tipo": "mediana_nacional",
+      "valor_chile": 620000,
+      "descripcion": "Mediana de ingreso de asalariados dependientes",
+      "fuente": "MIDESO"
+    },
+    "% Ocupados Formales": {
+      "tipo": "porcentaje_nacional",
+      "valor_chile": 73.2,
+      "descripcion": "% de ocupados con contrato formal a nivel nacional",
+      "fuente": "INE ENE"
+    },
+    "Total de empresas": {
+      "tipo": "promedio_comuna",
+      "valor_chile": 3500,
+      "descripcion": "Promedio de empresas activas por comuna en Chile (~1.2M empresas / 346 comunas)",
+      "fuente": "SII"
+    },
+    "Total de trabajadores dependientes": {
+      "tipo": "promedio_comuna",
+      "valor_chile": 24000,
+      "descripcion": "Promedio de dependientes formales por comuna",
+      "fuente": "SII"
+    },
+    "Cantidad de vacantes": {
+      "tipo": "promedio_comuna",
+      "valor_chile": 1200,
+      "descripcion": "Promedio de vacantes activas por comuna en BNE",
+      "fuente": "BNE 2025"
+    },
+    "% Asalariados formales que ganan el mínimo": {
+      "tipo": "porcentaje_nacional",
+      "valor_chile": 13.5,
+      "descripcion": "% nacional de asalariados que ganan el salario mínimo",
+      "fuente": "INE ENE / MIDESO"
+    }
+  },
+  "regiones_comparativa": {
+    "Población censada": {
+      "Metropolitana": 7112808,
+      "Valparaíso": 1815902,
+      "Bío-Bío": 1556805,
+      "Maule": 1044950,
+      "O'Higgins": 964133,
+      "Araucanía": 957224,
+      "Coquimbo": 757586
+    },
+    "Empresas": {
+      "Metropolitana": 380000,
+      "Valparaíso": 96000,
+      "Bío-Bío": 82000,
+      "Maule": 65000,
+      "O'Higgins": 77078,
+      "Araucanía": 55000,
+      "Coquimbo": 49000
+    }
+  }
+}

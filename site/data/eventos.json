@@ -1,0 +1,106 @@
+{
+  "actualizado": "2026-05-16",
+  "nota": "Calendario referencial de actividades, operativos y mesas regionales de la SEREMI Trabajo y la red de servicios del sector trabajo de O'Higgins.",
+  "eventos": [
+    {
+      "fecha": "2026-05-20",
+      "hora": "10:00",
+      "titulo": "Mesa Regional de Capacitación",
+      "tipo": "mesa",
+      "comuna": "Rancagua",
+      "lugar": "SEREMI Trabajo, Germán Riesco 277",
+      "organiza": "SEREMI Trabajo",
+      "descripcion": "Sesión ordinaria del Consejo Regional de Capacitación. Asignación de cupos formativos por comuna."
+    },
+    {
+      "fecha": "2026-05-22",
+      "hora": "09:30",
+      "titulo": "Operativo SEREMI Itinerante - Pichilemu",
+      "tipo": "operativo",
+      "comuna": "Pichilemu",
+      "lugar": "Centro Cultural Agustín Ross",
+      "organiza": "SEREMI Trabajo + DT + SENCE + IPS",
+      "descripcion": "Atención integral en terreno: trámites IPS, postulación a cursos SENCE, denuncias laborales."
+    },
+    {
+      "fecha": "2026-05-23",
+      "hora": "09:00",
+      "titulo": "Feria Laboral Regional 2026",
+      "tipo": "feria",
+      "comuna": "Rancagua",
+      "lugar": "Medialuna Monumental de Rancagua",
+      "organiza": "SEREMI + BNE + Codelco El Teniente",
+      "descripcion": "Vacantes presentadas por más de 50 empresas regionales. Stand de capacitación SENCE y mesa de orientación previsional."
+    },
+    {
+      "fecha": "2026-05-27",
+      "hora": "11:00",
+      "titulo": "Capacitación Ley Karin para empleadores",
+      "tipo": "capacitacion",
+      "comuna": "San Fernando",
+      "lugar": "Cámara de Comercio Colchagua",
+      "organiza": "SEREMI Trabajo + DT Colchagua + UOH",
+      "descripcion": "Jornada formativa sobre protocolos obligatorios de prevención del acoso laboral y sexual."
+    },
+    {
+      "fecha": "2026-05-29",
+      "hora": "10:00",
+      "titulo": "Mesa Minera con Codelco El Teniente",
+      "tipo": "mesa",
+      "comuna": "Machalí",
+      "lugar": "Codelco División El Teniente",
+      "organiza": "SEREMI Trabajo + Minería + MinMujerEG",
+      "descripcion": "Hoja de ruta para inclusión femenina en faenas mineras. Seguimiento de acuerdos de mayo."
+    },
+    {
+      "fecha": "2026-06-03",
+      "hora": "09:00",
+      "titulo": "Fiscalización Agrícola - Cosecha tardía",
+      "tipo": "fiscalizacion",
+      "comuna": "Chimbarongo",
+      "lugar": "Faenas agrícolas zona uvina",
+      "organiza": "DT + SEREMI Trabajo + SEREMI Salud",
+      "descripcion": "Operativo del Programa Nacional Agrícola 25-26. Foco en contratos, transporte y maternidad."
+    },
+    {
+      "fecha": "2026-06-05",
+      "hora": "15:00",
+      "titulo": "Mesa Mujer y Trabajo",
+      "tipo": "mesa",
+      "comuna": "Rancagua",
+      "lugar": "SERNAMEG Regional",
+      "organiza": "SEREMI Trabajo + MinMujerEG",
+      "descripcion": "Mesa interinstitucional para articular el programa Mujer Digital y Bono Trabajo Mujer."
+    },
+    {
+      "fecha": "2026-06-10",
+      "hora": "10:30",
+      "titulo": "Diálogo Social Tripartito Regional",
+      "tipo": "dialogo",
+      "comuna": "Rancagua",
+      "lugar": "Hotel O'Higgins",
+      "organiza": "SEREMI Trabajo",
+      "descripcion": "Encuentro semestral con gremios empresariales (CPC, Cámaras) y organizaciones sindicales (CUT Territorial)."
+    },
+    {
+      "fecha": "2026-06-12",
+      "hora": "09:30",
+      "titulo": "Operativo SEREMI Itinerante - Comunas costeras",
+      "tipo": "operativo",
+      "comuna": "Navidad",
+      "lugar": "Municipalidad de Navidad",
+      "organiza": "SEREMI + servicios sector trabajo",
+      "descripcion": "Atención integral en comunas de Cardenal Caro: Navidad, La Estrella, Litueche."
+    },
+    {
+      "fecha": "2026-06-17",
+      "hora": "11:00",
+      "titulo": "Lanzamiento Talento Digital - Cohorte 2",
+      "tipo": "capacitacion",
+      "comuna": "Rancagua",
+      "lugar": "SENCE Regional, Campos 241",
+      "organiza": "SENCE O'Higgins",
+      "descripcion": "Inicio del curso Front-End Trainee V2.0 - 25 cupos disponibles para personas cesantes."
+    }
+  ]
+}

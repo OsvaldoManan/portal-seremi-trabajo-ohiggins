@@ -58,6 +58,12 @@
   });
   selectIndicator.value = 'Población censada';
 
+  // ====== Cargar benchmarks nacionales (opcional, no bloquea) ======
+  let benchmarks = null;
+  fetch('data/benchmarks-nacionales.json').then(r => r.json()).then(d => {
+    benchmarks = d.benchmarks || {};
+  }).catch(() => { benchmarks = null; });
+
   // ====== Render ficha comunal ======
   function renderFicha(comunaName) {
     const c = comunas.find(x => x.comuna === comunaName);
@@ -227,10 +233,38 @@
       .filter(d => d.valor > 0)
       .sort((a, b) => b.valor - a.valor);
 
+    // Benchmark nacional
+    const bench = benchmarks?.[indicador];
+    const benchInfo = bench ? `<br><small style="color:#C0192B;">📊 Benchmark Chile: ${new Intl.NumberFormat('es-CL').format(bench.valor_chile)} · ${bench.fuente}</small>` : '';
+
     document.getElementById('comparar-titulo').textContent = `${indicador} por comuna`;
-    document.getElementById('comparar-sub').textContent = `Comparativa entre ${data.length} comunas con datos disponibles`;
+    document.getElementById('comparar-sub').innerHTML = `Comparativa entre ${data.length} comunas con datos disponibles${benchInfo}`;
 
     if (chartComparar) chartComparar.destroy();
+
+    const benchValue = bench ? bench.valor_chile : null;
+    // Anotación de línea de benchmark
+    const annotations = benchValue ? {
+      annotations: {
+        benchmark: {
+          type: 'line',
+          xMin: benchValue, xMax: benchValue,
+          borderColor: '#C0192B',
+          borderWidth: 2,
+          borderDash: [6, 4],
+          label: {
+            display: true,
+            content: 'Chile',
+            position: 'start',
+            backgroundColor: '#C0192B',
+            color: 'white',
+            font: { size: 10, weight: 'bold' },
+            padding: 4
+          }
+        }
+      }
+    } : {};
+
     chartComparar = new Chart(document.getElementById('chart-comparar'), {
       type: 'bar',
       data: {
@@ -238,7 +272,13 @@
         datasets: [{
           label: indicador,
           data: data.map(d => d.valor),
-          backgroundColor: data.map((_, i) => `hsl(${215 - i * 4}, ${60 + i * 0.5}%, ${48 + i * 0.8}%)`),
+          backgroundColor: data.map(d => {
+            // Color según comparación con benchmark
+            if (benchValue) {
+              return d.valor >= benchValue ? PALETTE.green : PALETTE.primaryLight;
+            }
+            return PALETTE.primary;
+          }),
           borderRadius: 4
         }]
       },
@@ -248,9 +288,19 @@
           legend: { display: false },
           tooltip: {
             callbacks: {
-              label: (ctx) => Utils.formatNumber(ctx.raw, ctx.raw < 100 ? 2 : 0)
+              label: (ctx) => {
+                const v = ctx.raw;
+                let s = Utils.formatNumber(v, v < 100 ? 2 : 0);
+                if (benchValue) {
+                  const pct = ((v / benchValue - 1) * 100).toFixed(1);
+                  const sign = pct >= 0 ? '+' : '';
+                  s += ` (${sign}${pct}% vs Chile)`;
+                }
+                return s;
+              }
             }
-          }
+          },
+          annotation: annotations
         },
         scales: {
           x: { grid: { color: '#E5E7EB' }, ticks: { callback: v => Utils.formatNumber(v) } },

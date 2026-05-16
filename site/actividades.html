@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Actividades, Noticias y Recursos — SEREMI Trabajo O'Higgins</title>
+<meta name="description" content="Calendario de eventos, noticias regionales del sector trabajo y recursos descargables para trabajadores y empleadores de la Región de O'Higgins.">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="canonical" href="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/actividades.html">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0F3F8C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Actividades, Noticias y Recursos — SEREMI Trabajo O'Higgins">
+<meta property="og:description" content="Próximos eventos, boletín regional y plantillas oficiales descargables.">
+<meta property="og:image" content="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/img/logo-seremi.png">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%230F3F8C'/%3E%3Ctext x='50' y='65' font-size='50' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EST%3C/text%3E%3C/svg%3E">
+<style>
+.event-card {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  background: var(--bg-card, white);
+  border: 1px solid var(--border, #E5E7EB);
+  border-radius: var(--radius);
+  margin-bottom: 1rem;
+  transition: transform .15s, box-shadow .15s;
+}
+.event-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.event-date {
+  text-align: center;
+  background: linear-gradient(180deg, #0F3F8C, #1E5BB8);
+  color: white;
+  border-radius: 8px;
+  padding: .75rem .5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.event-date .day { font-size: 1.75rem; font-weight: 800; line-height: 1; }
+.event-date .month { font-size: .75rem; text-transform: uppercase; letter-spacing: .05em; opacity: .9; margin-top: .15rem; }
+.event-date .year { font-size: .7rem; opacity: .75; }
+.event-info h3 { margin: 0 0 .35rem; color: var(--gray-900); font-size: 1.05rem; }
+.event-meta { display: flex; gap: .85rem; flex-wrap: wrap; font-size: .82rem; color: var(--gray-600); margin-bottom: .5rem; }
+.event-meta span { display: inline-flex; align-items: center; gap: .25rem; }
+.event-tipo {
+  display: inline-block;
+  font-size: .68rem;
+  padding: .2rem .55rem;
+  border-radius: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  margin-bottom: .35rem;
+}
+.event-tipo.mesa { background: rgba(15,63,140,.12); color: #0F3F8C; }
+.event-tipo.operativo { background: rgba(245,124,0,.12); color: #F57C00; }
+.event-tipo.feria { background: rgba(46,125,50,.12); color: #2E7D32; }
+.event-tipo.capacitacion { background: rgba(123,31,162,.12); color: #7B1FA2; }
+.event-tipo.fiscalizacion { background: rgba(192,25,43,.12); color: #C0192B; }
+.event-tipo.dialogo { background: rgba(255,210,0,.18); color: #B89400; }
+
+.news-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 1.5rem; }
+.news-card {
+  background: var(--bg-card, white);
+  border: 1px solid var(--border, #E5E7EB);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform .15s, box-shadow .15s;
+}
+.news-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+.news-header {
+  padding: .75rem 1.25rem;
+  background: linear-gradient(135deg, rgba(15,63,140,.06), rgba(255,210,0,.08));
+  border-bottom: 1px solid var(--gray-200);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news-cat {
+  background: var(--blue);
+  color: white;
+  padding: .15rem .65rem;
+  border-radius: 100px;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+.news-body { padding: 1.25rem; flex: 1; display: flex; flex-direction: column; }
+.news-title { font-size: 1.05rem; line-height: 1.35; margin: 0 0 .5rem; color: var(--gray-900); }
+.news-summary { font-size: .9rem; color: var(--gray-700); line-height: 1.6; margin: 0 0 1rem; flex: 1; }
+.news-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: .85rem;
+  border-top: 1px solid var(--gray-200);
+}
+.news-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.7);
+  z-index: 9999;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1rem;
+  overflow-y: auto;
+  backdrop-filter: blur(4px);
+}
+.news-modal.open { display: flex; }
+.news-modal-content {
+  background: white;
+  max-width: 760px;
+  width: 100%;
+  border-radius: 14px;
+  padding: 2.5rem;
+  position: relative;
+  color: #1A2332;
+}
+.news-modal-content h2 { color: #0A2D6B; margin-top: 0; }
+.news-modal-content .meta { color: #6B7280; font-size: .9rem; margin-bottom: 1rem; }
+.news-modal-content blockquote {
+  margin: 1.25rem 0;
+  padding: 1rem 1.25rem;
+  background: rgba(15,63,140,.06);
+  border-left: 4px solid #0F3F8C;
+  border-radius: 4px;
+  font-style: italic;
+  color: #495467;
+}
+.news-modal-close {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: #F3F4F6;
+  border: 0;
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.resource-cat { margin-top: 2rem; }
+.resource-cat h3 { color: var(--blue-dark); margin-bottom: 1rem; padding-bottom: .5rem; border-bottom: 2px solid var(--gray-200); }
+.resource-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; }
+.resource-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: var(--bg-card, white);
+  border: 1px solid var(--border, #E5E7EB);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  transition: all .15s;
+}
+.resource-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--blue);
+  box-shadow: var(--shadow-md);
+}
+.resource-icon { font-size: 2.2rem; flex-shrink: 0; }
+.resource-card h4 { margin: 0 0 .35rem; color: var(--gray-900); font-size: 1rem; }
+.resource-card p { margin: 0; font-size: .83rem; color: var(--gray-600); line-height: 1.5; }
+.resource-card .resource-tipo {
+  display: inline-block;
+  margin-top: .5rem;
+  font-size: .68rem;
+  background: rgba(15,63,140,.08);
+  color: var(--blue);
+  padding: .15rem .5rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <picture>
+          <source srcset="img/logo-seremi.webp" type="image/webp">
+          <img src="img/logo-seremi.png" alt="SEREMI del Trabajo y Previsión Social - Región del Libertador Bernardo O'Higgins" class="brand-logo" width="500" height="200">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores</a>
+        <a href="lineas-accion.html" class="nav-link">Líneas Acción</a>
+        <a href="galeria.html" class="nav-link">📷 Galería</a>
+        <a href="actividades.html" class="nav-link active">📅 Actividades</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
+        <a href="recursos.html" class="nav-link">Glosario</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+<section class="page-header">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inicio</a> · Actividades</nav>
+    <span class="eyebrow">📅 Calendario · Noticias · Recursos</span>
+    <h1>Actividades, Noticias y Recursos</h1>
+    <p class="lead">Calendario de eventos próximos, boletín regional con notas extendidas, y plantillas/guías descargables para trabajadores y empleadores.</p>
+  </div>
+</section>
+
+<section class="section section-light">
+  <div class="container">
+
+    <div class="tabs">
+      <button class="tab active" data-tab="calendario">📅 Calendario</button>
+      <button class="tab" data-tab="noticias">📰 Noticias</button>
+      <button class="tab" data-tab="recursos">📂 Recursos</button>
+    </div>
+
+    <!-- CALENDARIO -->
+    <div class="tab-content active" id="tab-calendario">
+      <header class="section-head" style="margin-bottom:1.5rem;">
+        <h2 style="font-size:1.5rem;">Próximos eventos</h2>
+        <p class="section-desc">Mesas regionales, operativos en terreno, capacitaciones y ferias laborales.</p>
+      </header>
+      <div id="eventos-list"></div>
+    </div>
+
+    <!-- NOTICIAS -->
+    <div class="tab-content" id="tab-noticias">
+      <header class="section-head" style="margin-bottom:1.5rem;">
+        <h2 style="font-size:1.5rem;">Boletín regional</h2>
+        <p class="section-desc">Notas extendidas que complementan los posts del Instagram oficial.</p>
+      </header>
+      <div class="news-grid" id="noticias-grid"></div>
+      <div class="news-modal" id="news-modal" role="dialog" aria-modal="true">
+        <div class="news-modal-content">
+          <button class="news-modal-close" id="news-modal-close" aria-label="Cerrar">×</button>
+          <div id="news-modal-body"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECURSOS -->
+    <div class="tab-content" id="tab-recursos">
+      <header class="section-head" style="margin-bottom:1.5rem;">
+        <h2 style="font-size:1.5rem;">Plantillas y guías descargables</h2>
+        <p class="section-desc">Recursos oficiales de la Dirección del Trabajo, SENCE e IPS para trámites y consultas frecuentes.</p>
+      </header>
+      <div id="recursos-list"></div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Análisis</h4>
+      <ul>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="genero.html">Brechas de Género</a></li>
+        <li><a href="proyeccion.html">Proyección Demanda</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Comunidad</h4>
+      <ul>
+        <li><a href="galeria.html">📷 Galería</a></li>
+        <li><a href="actividades.html">📅 Actividades</a></li>
+        <li><a href="directorio.html">Directorio</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Recursos</h4>
+      <ul>
+        <li><a href="recursos.html">Glosario y FAQ</a></li>
+        <li><a href="changelog.html">Cambios</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© 2026 Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span>Sitio institucional · Datos abiertos</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v12"></script>
+<script src="js/actividades.js?v12"></script>
+<script src="js/global-search.js?v12"></script>
+<script src="js/chatbot.js?v12"></script>
+</body>
+</html>

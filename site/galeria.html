@@ -142,6 +142,144 @@
   backdrop-filter: blur(4px);
   box-shadow: 0 4px 20px rgba(0,0,0,.3);
 }
+
+/* ========== LIGHTBOX ========== */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.92);
+  z-index: 99998;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  backdrop-filter: blur(8px);
+}
+.lightbox.open {
+  display: flex;
+  animation: lbFade .25s ease;
+}
+@keyframes lbFade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.lightbox-content {
+  position: relative;
+  max-width: 1100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 2rem;
+  max-height: 90vh;
+}
+@media (max-width: 900px) {
+  .lightbox-content {
+    grid-template-columns: 1fr;
+    overflow-y: auto;
+  }
+}
+.lightbox-image-pane {
+  background: #000;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+}
+.lightbox-image {
+  max-width: 100%;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+}
+.lightbox-info {
+  background: white;
+  border-radius: 12px;
+  padding: 1.75rem;
+  color: #1A2332;
+  overflow-y: auto;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.lightbox-info h3 {
+  margin: 0 0 .75rem;
+  color: #0A2D6B;
+  font-size: 1.25rem;
+}
+.lightbox-meta {
+  display: flex;
+  gap: .5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+.lightbox-desc {
+  font-size: .92rem;
+  line-height: 1.65;
+  color: #495467;
+  margin-bottom: 1rem;
+}
+.lightbox-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .35rem;
+  margin-bottom: 1.5rem;
+}
+.lightbox-link {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  background: linear-gradient(135deg, #F09433, #DC2743, #BC1888);
+  color: white;
+  padding: .75rem 1.25rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+}
+.lightbox-link:hover {
+  color: white;
+  filter: brightness(1.05);
+}
+.lightbox-close, .lightbox-prev, .lightbox-next {
+  position: absolute;
+  background: rgba(255,255,255,.15);
+  border: 0;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(8px);
+  transition: background .15s, transform .15s;
+}
+.lightbox-close { top: -3.25rem; right: 0; }
+.lightbox-prev { top: 50%; left: -3.5rem; transform: translateY(-50%); }
+.lightbox-next { top: 50%; right: calc(360px + 0.5rem); transform: translateY(-50%); }
+@media (max-width: 900px) {
+  .lightbox-close { top: .5rem; right: .5rem; background: rgba(0,0,0,.6); }
+  .lightbox-prev, .lightbox-next { display: none; }
+}
+.lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover {
+  background: rgba(255,255,255,.3);
+}
+.lightbox-counter {
+  position: absolute;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,.8);
+  font-size: .85rem;
+  font-variant-numeric: tabular-nums;
+}
 .gallery-body {
   padding: 1.25rem;
   display: flex;
@@ -293,6 +431,7 @@
         <a href="inversion.html" class="nav-link">Inversión</a>
         <a href="lineas-accion.html" class="nav-link">Líneas Acción</a>
         <a href="galeria.html" class="nav-link active">📷 Galería</a>
+        <a href="actividades.html" class="nav-link">📅 Actividades</a>
         <a href="directorio.html" class="nav-link">Directorio</a>
         <a href="recursos.html" class="nav-link">Recursos</a>
       </nav>
