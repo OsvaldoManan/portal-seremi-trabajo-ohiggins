@@ -17,8 +17,8 @@
 <style>
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 1.75rem;
   margin: 2rem 0;
 }
 .gallery-card {
@@ -35,58 +35,53 @@
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
 }
-.gallery-embed {
-  position: relative;
-  width: 100%;
-  background: linear-gradient(135deg, #0F3F8C 0%, #1E5BB8 50%, #FFD200 100%);
-  aspect-ratio: 1 / 1;
+.gallery-header {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  justify-content: space-between;
+  padding: .75rem 1rem;
+  background: linear-gradient(135deg, rgba(240,148,51,.08), rgba(188,24,136,.08));
+  border-bottom: 1px solid var(--gray-200);
 }
-.gallery-embed::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.55));
-  pointer-events: none;
-}
-.gallery-icon {
-  position: relative;
-  z-index: 1;
-  font-size: 4.5rem;
-  filter: drop-shadow(0 4px 12px rgba(0,0,0,.4));
-}
-.gallery-badge {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  z-index: 2;
-  background: rgba(255,255,255,.95);
-  color: var(--blue-dark);
-  padding: .35rem .75rem;
-  border-radius: 100px;
-  font-size: .75rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: .35rem;
-  backdrop-filter: blur(4px);
-}
-.gallery-type-badge {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  z-index: 2;
-  background: linear-gradient(135deg, #F09433, #E6683C 25%, #DC2743 50%, #CC2366 75%, #BC1888);
+.gallery-type-pill {
+  background: linear-gradient(135deg, #F09433, #DC2743, #BC1888);
   color: white;
-  padding: .35rem .75rem;
+  padding: .25rem .65rem;
   border-radius: 100px;
-  font-size: .72rem;
+  font-size: .7rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .04em;
+}
+.gallery-date-pill {
+  background: var(--gray-100);
+  color: var(--gray-700);
+  padding: .25rem .65rem;
+  border-radius: 100px;
+  font-size: .72rem;
+  font-weight: 600;
+  border: 1px solid var(--gray-200);
+}
+.gallery-embed-wrap {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  background: #FAFAFA;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.gallery-embed-wrap blockquote.instagram-media {
+  width: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+}
+.gallery-embed-wrap iframe {
+  border-radius: 0 !important;
+  max-width: 100% !important;
 }
 .gallery-body {
   padding: 1.25rem;
