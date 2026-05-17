@@ -183,13 +183,20 @@ h4 { font-size: 1rem; }
 .brand-logo {
   height: 56px;
   width: auto;
+  max-width: 100%;
   display: block;
+  flex-shrink: 0;
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
   -ms-interpolation-mode: bicubic;
   transition: opacity .2s;
+  aspect-ratio: 2.5 / 1;
 }
-.brand picture { display: block; line-height: 0; }
+.brand picture {
+  display: block;
+  line-height: 0;
+  flex-shrink: 0;
+}
 @media (max-width: 600px) {
   .brand-logo { height: 44px; }
 }
