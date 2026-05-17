@@ -10,15 +10,27 @@
   "lang": "es-CL",
   "icons": [
     {
+      "src": "img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
       "src": "img/logo-seremi.png",
-      "sizes": "500x200",
+      "sizes": "500x199",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "img/logo-seremi.webp",
-      "sizes": "500x200",
-      "type": "image/webp",
+      "src": "img/logo-seremi@2x.png",
+      "sizes": "1000x399",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/logo-seremi@3x.png",
+      "sizes": "1500x599",
+      "type": "image/png",
       "purpose": "any"
     }
   ],
