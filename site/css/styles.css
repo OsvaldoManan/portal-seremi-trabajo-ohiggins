@@ -171,14 +171,34 @@ h4 { font-size: 1rem; }
   display: flex;
   align-items: center;
   color: var(--gray-900);
+  transition: transform .25s ease, filter .25s ease;
+}
+.brand:hover {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 4px 12px rgba(15,63,140,.18));
+}
+.brand:active {
+  transform: translateY(0);
 }
 .brand-logo {
   height: 56px;
   width: auto;
   display: block;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: bicubic;
+  transition: opacity .2s;
 }
+.brand picture { display: block; line-height: 0; }
 @media (max-width: 600px) {
   .brand-logo { height: 44px; }
+}
+/* En modo oscuro: añadir un sutil glow para mejorar contraste */
+[data-theme="dark"] .brand-logo {
+  filter: brightness(1.05) drop-shadow(0 0 12px rgba(255,210,0,.15));
+}
+[data-theme="dark"] .brand:hover .brand-logo {
+  filter: brightness(1.1) drop-shadow(0 0 16px rgba(255,210,0,.25));
 }
 
 .main-nav {

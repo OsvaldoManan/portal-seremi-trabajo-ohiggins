@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="SEREMI Trabajo y Previsión Social">
+  <!-- Fondo redondeado azul institucional -->
+  <rect width="64" height="64" rx="10" ry="10" fill="#0F3F8C"/>
+
+  <!-- Banda roja inferior -->
+  <rect x="0" y="42" width="64" height="22" rx="0" fill="#C0192B"/>
+  <path d="M0 42 L64 42 L64 52 Q32 47 0 52 Z" fill="#C0192B" opacity="0"/>
+
+  <!-- Esquina blanco con estrella amarilla (estilo bandera Chile) -->
+  <rect x="0" y="0" width="22" height="22" fill="#FFFFFF"/>
+
+  <!-- Estrella amarilla institucional -->
+  <polygon points="11,5.5 13.1,11.4 19.3,11.4 14.3,14.9 16.4,20.8 11,17.3 5.6,20.8 7.7,14.9 2.7,11.4 8.9,11.4"
+           fill="#FFD200" stroke="#0F3F8C" stroke-width="0.4"/>
+
+  <!-- Texto "ST" -->
+  <text x="40" y="32" font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="900"
+        text-anchor="middle" fill="#FFFFFF" letter-spacing="-0.5">ST</text>
+
+  <!-- Texto pequeño "O'H" en la banda roja -->
+  <text x="32" y="58" font-family="'Segoe UI', Arial, sans-serif" font-size="9" font-weight="700"
+        text-anchor="middle" fill="#FFFFFF" letter-spacing="0.5">O'HIGGINS</text>
+</svg>
