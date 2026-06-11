@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trabajo Infantil e Informalidad Laboral — SEREMI Trabajo O'Higgins</title>
+<meta name="description" content="Diagnóstico regional sobre trabajo infantil e informalidad laboral en la Región de O'Higgins. Marco normativo, causas estructurales, consecuencias, costos, comparativo regional, brechas de género y compromisos 2026-2030.">
+<link rel="stylesheet" href="css/styles.css?v15">
+<link rel="canonical" href="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/trabajo-infantil-informalidad.html">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0F3F8C">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Trabajo Infantil e Informalidad Laboral — O'Higgins">
+<meta property="og:description" content="Diagnóstico regional de trabajo infantil e informalidad laboral. Marco normativo, causas, consecuencias y líneas de acción 2026-2030.">
+<meta property="og:image" content="https://osvaldomanan.github.io/portal-seremi-trabajo-ohiggins/img/logo-seremi.png">
+<link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="shortcut icon" href="img/favicon.ico">
+<style>
+.ti-hero-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+.ti-hero-stat {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+}
+.ti-hero-stat .num {
+  font-size: clamp(1.6rem, 2.6vw, 2rem);
+  font-weight: 800;
+  color: #FFD200;
+  display: block;
+  line-height: 1;
+  letter-spacing: -.025em;
+  font-variant-numeric: tabular-nums;
+}
+.ti-hero-stat .label {
+  font-size: .82rem;
+  margin-top: .55rem;
+  display: block;
+  opacity: .9;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 500;
+}
+
+.razon-card, .causa-card, .consec-card, .sector-card,
+.inst-card, .accion-card, .ods-card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm, var(--elev-1));
+  overflow: hidden;
+  position: relative;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+.razon-card:hover, .causa-card:hover, .consec-card:hover,
+.sector-card:hover, .inst-card:hover, .accion-card:hover, .ods-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md, var(--elev-3));
+}
+
+.razon-card { padding-top: 0; }
+.razon-card .head {
+  background: var(--blue);
+  color: white;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.razon-card .head .num {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #FFD200;
+  font-variant-numeric: tabular-nums;
+}
+.razon-card .head .kicker {
+  font-size: .72rem;
+  font-weight: 700;
+  color: #FFD200;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+}
+.razon-card.danger .head { background: var(--red); }
+.razon-card.alt .head { background: var(--blue-dark); }
+.razon-card .body {
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+.razon-card .body h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+.razon-card .body p {
+  font-size: .92rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.def-banner {
+  background: var(--blue-dark);
+  color: white;
+  border-radius: var(--radius);
+  padding: 1.5rem 1.75rem;
+  border-left: 6px solid #FFD200;
+  margin-bottom: 2rem;
+}
+.def-banner .eyebrow { color: #FFD200; }
+.def-banner p {
+  font-size: 1.1rem;
+  margin: .6rem 0 0;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.bignum-card {
+  background: var(--blue-dark);
+  color: white;
+  border-radius: var(--radius);
+  padding: 2rem;
+  border-top: 4px solid #FFD200;
+}
+.bignum-card .label {
+  color: #FFD200;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.bignum-card .num {
+  display: block;
+  font-size: clamp(3.5rem, 7vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-top: .8rem;
+  letter-spacing: -.04em;
+  color: #FFD200;
+  font-variant-numeric: tabular-nums;
+}
+.bignum-card .num.white { color: white; }
+.bignum-card .sub {
+  display: block;
+  font-style: italic;
+  margin-top: 1rem;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+.bignum-card .foot {
+  display: block;
+  font-size: .9rem;
+  margin-top: 1rem;
+  color: rgba(255,255,255,.85);
+}
+
+.causa-card { padding: 1.5rem; border-top: 4px solid var(--blue); }
+.causa-card.danger { border-top-color: var(--red); }
+.causa-card .eyebrow {
+  font-size: .72rem;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  font-weight: 700;
+}
+.causa-card .num {
+  display: block;
+  margin-top: .6rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1;
+  letter-spacing: -.025em;
+  font-variant-numeric: tabular-nums;
+}
+.causa-card.danger .num { color: var(--red); }
+.causa-card p {
+  margin: .8rem 0 0;
+  font-size: .9rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.consec-card {
+  background: var(--blue-dark);
+  color: white;
+  padding: 1.5rem;
+  border-top: 4px solid #FFD200;
+}
+.consec-card.danger { background: var(--red); }
+.consec-card.danger-dark { background: #8B0F1E; }
+.consec-card .eyebrow {
+  color: #FFD200;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-weight: 700;
+}
+.consec-card .num {
+  display: block;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-top: .5rem;
+  color: white;
+  line-height: 1;
+  letter-spacing: -.025em;
+  font-variant-numeric: tabular-nums;
+}
+.consec-card .sub {
+  display: block;
+  margin-top: .6rem;
+  font-style: italic;
+  color: #FFE066;
+}
+.consec-card p {
+  margin: .85rem 0 0;
+  font-size: .9rem;
+  color: rgba(255,255,255,.92);
+  line-height: 1.5;
+}
+
+.sector-card { padding-top: 0; }
+.sector-card .head {
+  background: var(--red);
+  color: white;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+}
+.sector-card.alt .head { background: var(--blue); }
+.sector-card .head .num { color: #FFD200; font-weight: 800; }
+.sector-card .body { padding: 1.25rem 1.5rem 1.5rem; }
+.sector-card .body h3 { margin: 0 0 .5rem; font-size: 1.05rem; }
+.sector-card .body .sub { font-style: italic; color: var(--text-tertiary); margin-bottom: .8rem; font-size: .88rem; }
+.sector-card .body ul { padding-left: 1.1rem; margin: 0; }
+.sector-card .body li { margin-bottom: .4rem; color: var(--text-secondary); font-size: .88rem; line-height: 1.45; }
+
+.inst-card { padding: 1.25rem 1.5rem; border-left: 4px solid var(--blue); }
+.inst-card.alt { border-left-color: var(--red); }
+.inst-card.green { border-left-color: var(--green); }
+.inst-card h4 { margin: 0; color: var(--blue); font-size: 1.05rem; }
+.inst-card.alt h4 { color: var(--red); }
+.inst-card.green h4 { color: var(--green); }
+.inst-card .sub { color: var(--text-tertiary); font-style: italic; font-size: .85rem; margin: .35rem 0 .8rem; }
+.inst-card p { margin: 0; color: var(--text-secondary); font-size: .9rem; line-height: 1.5; }
+
+.compare-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+@media (max-width: 768px) { .compare-row { grid-template-columns: 1fr; } }
+.gender-card {
+  border-radius: var(--radius);
+  padding: 2rem;
+  color: white;
+  border-top: 4px solid #FFD200;
+}
+.gender-card.women { background: var(--red); }
+.gender-card.men { background: var(--blue-dark); }
+.gender-card .eyebrow { color: #FFD200; }
+.gender-card .num {
+  display: block;
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-top: .7rem;
+  letter-spacing: -.03em;
+  font-variant-numeric: tabular-nums;
+}
+.gender-card .sub { display: block; margin-top: .7rem; font-style: italic; }
+.gender-card ul { margin: 1rem 0 0; padding-left: 1.15rem; }
+.gender-card li { margin-bottom: .4rem; font-size: .9rem; color: rgba(255,255,255,.92); }
+
+.gap-ribbon {
+  background: #FFD200;
+  color: var(--blue-dark);
+  padding: 1rem 1.5rem;
+  border-radius: var(--radius);
+  margin-top: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .75rem;
+}
+.gap-ribbon .delta { color: var(--red); font-size: 1.15rem; }
+
+.accion-card { padding: 1.5rem; }
+.accion-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--blue), #FFD200);
+}
+.accion-card .num {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--blue);
+  font-variant-numeric: tabular-nums;
+}
+.accion-card h4 { margin: .25rem 0 .25rem; font-size: 1rem; color: var(--text-primary); }
+.accion-card .sub { color: var(--blue); font-style: italic; font-size: .85rem; }
+.accion-card p { margin: .8rem 0 0; color: var(--text-secondary); font-size: .9rem; line-height: 1.5; }
+
+.ods-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+.ods-card {
+  padding: 1.5rem;
+  color: white;
+  border-top: 4px solid #FFD200;
+  text-align: center;
+}
+.ods-card.red { background: var(--red); }
+.ods-card.red-dark { background: #8B0F1E; }
+.ods-card.navy { background: var(--blue); }
+.ods-card.navy-dark { background: var(--blue-dark); }
+.ods-card.green { background: var(--green); }
+.ods-card .kicker { color: #FFD200; font-size: .72rem; font-weight: 700; letter-spacing: .15em; text-transform: uppercase; }
+.ods-card .meta {
+  display: block;
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  margin: .4rem 0 .4rem;
+  line-height: 1;
+  letter-spacing: -.025em;
+  font-variant-numeric: tabular-nums;
+}
+.ods-card h4 { color: #FFE066; margin: 0 0 .5rem; font-size: 1rem; }
+.ods-card p { margin: 0; font-size: .85rem; color: rgba(255,255,255,.92); line-height: 1.45; }
+
+.timeline-rail {
+  position: relative;
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+.timeline-rail::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0; right: 0;
+  height: 3px;
+  background: var(--gray-300);
+  transform: translateY(-50%);
+}
+.timeline-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  position: relative;
+}
+@media (max-width: 900px) { .timeline-items { grid-template-columns: repeat(2, 1fr); } .timeline-rail::before { display: none; } }
+.timeline-item { text-align: center; position: relative; }
+.timeline-item .node {
+  width: 36px; height: 36px;
+  background: var(--blue);
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 4px solid var(--bg-card);
+  box-shadow: var(--elev-1);
+}
+.timeline-item.gold .node { background: #FFD200; }
+.timeline-item .year {
+  display: block;
+  font-weight: 800;
+  margin-top: .75rem;
+  color: var(--blue);
+  font-size: 1.05rem;
+  font-variant-numeric: tabular-nums;
+}
+.timeline-item.gold .year { color: #FFD200; }
+.timeline-item .card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+  border-top: 3px solid var(--blue);
+}
+.timeline-item.gold .card { border-top-color: #FFD200; }
+.timeline-item .card h4 { margin: 0 0 .5rem; font-size: .95rem; color: var(--text-primary); }
+.timeline-item .card p { margin: 0; font-size: .82rem; color: var(--text-secondary); line-height: 1.45; }
+
+.ribbon-note {
+  background: #FFD200;
+  color: var(--blue-dark);
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0 0;
+  font-weight: 700;
+  text-align: center;
+}
+.ribbon-note.danger { background: var(--red); color: white; }
+.ribbon-note.dark { background: var(--blue-dark); color: white; }
+</style>
+</head>
+<body>
+<a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="container header-top-inner">
+      <span class="gov-label">Gobierno de Chile · Ministerio del Trabajo y Previsión Social</span>
+      <span class="region-label">Región del Libertador General Bernardo O'Higgins</span>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="container header-main-inner">
+      <a href="index.html" class="brand">
+        <picture>
+          <source type="image/webp" srcset="img/logo-seremi.webp 1x, img/logo-seremi@2x.webp 2x, img/logo-seremi@3x.webp 3x">
+          <source type="image/png" srcset="img/logo-seremi.png 1x, img/logo-seremi@2x.png 2x, img/logo-seremi@3x.png 3x">
+          <img src="img/logo-seremi.png" srcset="img/logo-seremi.png 1x, img/logo-seremi@2x.png 2x, img/logo-seremi@3x.png 3x" alt="SEREMI del Trabajo y Previsión Social — Región de O'Higgins" class="brand-logo" width="500" height="199" fetchpriority="high" decoding="sync">
+        </picture>
+      </a>
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="comunas.html" class="nav-link">Indicadores</a>
+        <a href="censo-2024.html" class="nav-link">Censo 2024</a>
+        <a href="trabajo-infantil-informalidad.html" class="nav-link active">TI · Informalidad</a>
+        <a href="lineas-accion.html" class="nav-link">Líneas Acción</a>
+        <a href="actividades.html" class="nav-link">Actividades</a>
+        <a href="galeria.html" class="nav-link">Galería</a>
+        <a href="directorio.html" class="nav-link">Directorio</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" tabindex="-1">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-text">
+      <nav class="breadcrumb" style="color:rgba(255,255,255,.7);font-size:.85rem;margin-bottom:1rem;">
+        <a href="index.html" style="color:#FFD200;">Inicio</a> · Trabajo Infantil e Informalidad Laboral
+      </nav>
+      <span class="eyebrow">Diagnóstico regional · Mayo 2026</span>
+      <h1>Trabajo Infantil e Informalidad Laboral</h1>
+      <p class="lead">Marco normativo, causas estructurales, costos y líneas de acción regionales para una Región del Libertador General Bernardo O'Higgins más justa y formal.</p>
+      <div class="hero-actions">
+        <a href="#por-que-ahora" class="btn btn-primary">Por qué importa ahora</a>
+        <a href="#lineas-accion" class="btn btn-secondary">Líneas de acción</a>
+      </div>
+    </div>
+    <div class="hero-stats" style="grid-template-columns:1fr;">
+      <div class="ti-hero-stats">
+        <div class="ti-hero-stat"><span class="num">27,8 %</span><span class="label">Tasa informalidad O'Higgins</span></div>
+        <div class="ti-hero-stat"><span class="num">~ 2,3 K</span><span class="label">NNA en trabajo infantil (est.)</span></div>
+        <div class="ti-hero-stat"><span class="num">+ 4,1 pp</span><span class="label">Brecha de género</span></div>
+        <div class="ti-hero-stat"><span class="num">115 K</span><span class="label">Ocupados informales regionales</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POR QUÉ IMPORTA AHORA -->
+<section class="section section-light" id="por-que-ahora">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Coyuntura</span>
+      <h2>Por qué este informe importa ahora</h2>
+      <p class="section-desc">Tres razones que demandan acción coordinada en O'Higgins.</p>
+    </header>
+    <div class="info-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.25rem;">
+      <article class="razon-card">
+        <div class="head"><span class="num">01</span><span class="kicker">Compromiso internacional</span></div>
+        <div class="body">
+          <h3>Alianza 8.7 — meta vencida</h3>
+          <p>Chile firmó la Alianza 8.7 OIT comprometiéndose a erradicar el trabajo infantil al año 2025. La meta venció sin alcanzarse: persisten formas agrícolas, domésticas y comerciales.</p>
+        </div>
+      </article>
+      <article class="razon-card alt">
+        <div class="head"><span class="num">02</span><span class="kicker">Contexto laboral</span></div>
+        <div class="body">
+          <h3>Recuperación post-COVID heterogénea</h3>
+          <p>La informalidad regional cayó solo 2,4 pp desde el peak 2021. La recuperación del empleo cambió la composición sectorial: más servicios, menos manufactura formal.</p>
+        </div>
+      </article>
+      <article class="razon-card danger">
+        <div class="head"><span class="num">03</span><span class="kicker">Reforma previsional</span></div>
+        <div class="body">
+          <h3>Cotización ampliada y PGU</h3>
+          <p>La reforma 2025 amplía la cotización obligatoria y consolida la PGU. Formalizar a 115 mil trabajadores informales regionales es prioridad fiscal y social.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- MARCO NORMATIVO + INSTITUCIONAL -->
+<section class="section section-dark" id="marco">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Marco normativo e institucional</span>
+      <h2>El piso normativo que protege derechos</h2>
+      <p class="section-desc">Chile ratificó los principales convenios internacionales y robusteció su marco interno.</p>
+    </header>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-bottom:3rem;">
+      <article class="inst-card"><h4>Convenio OIT 138</h4><div class="sub">Edad mínima de admisión al empleo</div><p>Ratificado por Chile (1999). Establece 15 años como edad mínima general.</p></article>
+      <article class="inst-card"><h4>Convenio OIT 182</h4><div class="sub">Peores formas de trabajo infantil</div><p>Ratificado en 2000. Prohíbe esclavitud, trata, explotación sexual y trabajos peligrosos.</p></article>
+      <article class="inst-card alt"><h4>Ley 21.271 / 2020</h4><div class="sub">Reforma al Código del Trabajo</div><p>Eleva la edad mínima, define trabajos peligrosos y refuerza sanciones.</p></article>
+      <article class="inst-card alt"><h4>Código del Trabajo</h4><div class="sub">Art. 13–18</div><p>Regula el trabajo adolescente (15–17): autorización, jornada y prohibiciones.</p></article>
+    </div>
+
+    <header class="section-head section-head-dark" style="margin-bottom:2rem;">
+      <span class="eyebrow">Red institucional chilena</span>
+      <h2 style="margin-top:.5rem;">Una red para proteger a NNA y formalizar el empleo</h2>
+      <p class="section-desc">Seis instituciones convergen en la prevención del trabajo infantil y la formalización laboral.</p>
+    </header>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;">
+      <article class="inst-card"><h4>CONATI</h4><div class="sub">Comité Nacional · Trabajo Infantil</div><p>Articulación intersectorial MDSF, OIT, sindicatos y empleadores. Coordina política nacional desde 1996.</p></article>
+      <article class="inst-card"><h4>Mejor Niñez</h4><div class="sub">Ley 21.302 / 2021</div><p>Subsistema de protección integral para NNA vulnerados. Coordinación con tribunales y municipios.</p></article>
+      <article class="inst-card"><h4>Crece Contigo</h4><div class="sub">Sistema de Protección Integral</div><p>Primera infancia (0–9 años). Detección temprana de riesgos y acompañamiento a familias.</p></article>
+      <article class="inst-card alt"><h4>Dirección del Trabajo</h4><div class="sub">Fiscalización + sanciones</div><p>Inspecciones, mediación laboral, registro de denuncias. Línea atención 600 450 4000.</p></article>
+      <article class="inst-card alt"><h4>ChileValora</h4><div class="sub">Certificación de competencias</div><p>Reconoce experiencia previa como puente al empleo formal. Clave para trabajadores con trayectoria informal.</p></article>
+      <article class="inst-card green"><h4>OIT Chile</h4><div class="sub">Asistencia técnica regional</div><p>Acompaña diagnósticos y capacitación alineados a convenios internacionales.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- TRABAJO INFANTIL: CIFRAS + CAUSAS + CONSECUENCIAS -->
+<section class="section section-light" id="trabajo-infantil">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Trabajo infantil</span>
+      <h2>La magnitud del trabajo infantil en Chile</h2>
+      <p class="section-desc">Las estimaciones disponibles más recientes provienen de EANNA 2012 y ENV 2022 / OIT.</p>
+    </header>
+
+    <div style="display:grid;grid-template-columns:1.1fr 1fr;gap:2rem;align-items:start;">
+      <div class="bignum-card">
+        <span class="label">Estimación nacional</span>
+        <span class="num white">229 mil</span>
+        <span class="sub">niñas, niños y adolescentes en trabajo infantil</span>
+        <span class="foot">Equivalente al 6,6 % de la población 5–17 años (EANNA 2012). Cerca de dos tercios realiza trabajos peligrosos.</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div class="causa-card"><div class="eyebrow">Tasa nacional 5–17</div><span class="num">6,6 %</span><p>EANNA 2012 (MDS / OIT).</p></div>
+        <div class="causa-card"><div class="eyebrow">Rango 15–17 años</div><span class="num">4,4 %</span><p>Más probable trabajar.</p></div>
+        <div class="causa-card danger"><div class="eyebrow">Trabajos peligrosos</div><span class="num">50–60 %</span><p>Del total detectado.</p></div>
+        <div class="causa-card danger"><div class="eyebrow">Estimación O'Higgins</div><span class="num">2.3–3.1 K</span><p>Proyección demográfica propia.</p></div>
+      </div>
+    </div>
+
+    <div class="ribbon-note danger" style="margin-top:2rem;">
+      Subregistro alto: muchas formas de trabajo doméstico y agrícola familiar no son captadas por las encuestas.
+    </div>
+  </div>
+</section>
+
+<!-- CAUSAS ESTRUCTURALES -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Causas estructurales del TI</span>
+      <h2>El trabajo infantil no es casual: responde a patrones</h2>
+      <p class="section-desc">Cinco factores estructurales aumentan el riesgo de NNA en trabajo infantil en O'Higgins.</p>
+    </header>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;">
+      <article class="causa-card"><div class="eyebrow">Pobreza por ingresos</div><span class="num">6,5 %</span><p>Tasa regional CASEN 2022. En hogares con NNA sube a ~9 %.</p></article>
+      <article class="causa-card"><div class="eyebrow">Pobreza multidimensional</div><span class="num">14,3 %</span><p>Carencias en educación, salud, vivienda y trabajo.</p></article>
+      <article class="causa-card danger"><div class="eyebrow">Deserción escolar</div><span class="num">≈ 5,8 %</span><p>Enseñanza media TP regional. Niños fuera del sistema son vulnerables al TI.</p></article>
+      <article class="causa-card danger"><div class="eyebrow">Migración temporera</div><span class="num">Nov – Mar</span><p>Familias se desplazan por cosecha. NNA acompañan e ingresan a labores informales.</p></article>
+      <article class="causa-card"><div class="eyebrow">Jefatura femenina</div><span class="num">≈ 31 %</span><p>Hogares monoparentales. Mayor presión económica sobre NNA mayores.</p></article>
+    </div>
+    <div class="ribbon-note" style="margin-top:1.75rem;background:rgba(15,63,140,.08);color:var(--blue-dark);">
+      Atender el TI exige actuar antes: protección social, permanencia escolar y soporte a familias temporeras.
+    </div>
+  </div>
+</section>
+
+<!-- CONSECUENCIAS -->
+<section class="section section-dark">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Consecuencias del trabajo infantil</span>
+      <h2>El costo invisible: trayectorias quebradas</h2>
+      <p class="section-desc">Las consecuencias del trabajo infantil acompañan a las personas toda su vida.</p>
+    </header>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;">
+      <article class="consec-card danger"><div class="eyebrow">Educación</div><span class="num">60 %</span><span class="sub">no termina enseñanza media</span><p>6 de cada 10 NNA en TI no completa su trayectoria escolar (OIT–MINEDUC).</p></article>
+      <article class="consec-card danger-dark"><div class="eyebrow">Salud</div><span class="num">50–60 %</span><span class="sub">en trabajos peligrosos</span><p>Lesiones por maquinaria, exposición a plaguicidas, calor extremo y problemas musculoesqueléticos.</p></article>
+      <article class="consec-card"><div class="eyebrow">Trayectoria laboral</div><span class="num">2 ×</span><span class="sub">más probabilidad de empleo informal</span><p>Quienes trabajaron en la infancia tienen el doble de probabilidad de empleo informal en su vida adulta.</p></article>
+      <article class="consec-card"><div class="eyebrow">Intergeneracional</div><span class="num">+++</span><span class="sub">perpetuación del ciclo</span><p>Bajo capital humano → bajos ingresos → presión sobre NNA. Las generaciones quedan atrapadas.</p></article>
+    </div>
+    <div class="ribbon-note" style="margin-top:1.75rem;">
+      Cada NNA en trabajo infantil hoy se traduce en menores ingresos, peor salud y menor productividad para Chile mañana.
+    </div>
+  </div>
+</section>
+
+<!-- SECTORES DE RIESGO REGIONAL -->
+<section class="section section-light" id="sectores">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Sectores de riesgo · O'Higgins</span>
+      <h2>Dónde es más probable encontrar trabajo infantil</h2>
+      <p class="section-desc">Cuatro escenarios de alta vulnerabilidad detectados por DT, MDSF y OCTI.</p>
+    </header>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;">
+      <article class="sector-card">
+        <div class="head"><span class="num">01</span><h3 style="margin:0;color:white;font-size:1rem;">Agricultura temporera</h3></div>
+        <div class="body">
+          <div class="sub">Cosecha de cerezas, uva, carozos</div>
+          <ul><li>Periodo crítico: noviembre a marzo.</li><li>Niños acompañan labores informales de cosecha y packing.</li><li>Exposición a plaguicidas, calor y jornadas extensas.</li></ul>
+        </div>
+      </article>
+      <article class="sector-card">
+        <div class="head"><span class="num">02</span><h3 style="margin:0;color:white;font-size:1rem;">Comercio informal</h3></div>
+        <div class="body">
+          <div class="sub">Mercados, ferias, vía pública</div>
+          <ul><li>Venta ambulante, locomoción colectiva, lavado de autos.</li><li>Mayor incidencia urbana: Rancagua, Machalí, San Fernando.</li><li>Trabajo no registrado y sin protección.</li></ul>
+        </div>
+      </article>
+      <article class="sector-card alt">
+        <div class="head"><span class="num">03</span><h3 style="margin:0;color:white;font-size:1rem;">Trabajo doméstico</h3></div>
+        <div class="body">
+          <div class="sub">Cuidado de hermanos, tareas del hogar</div>
+          <ul><li>Afecta principalmente a niñas adolescentes.</li><li>Invisibilizado por las estadísticas tradicionales.</li><li>Impacta directamente la trayectoria escolar.</li></ul>
+        </div>
+      </article>
+      <article class="sector-card">
+        <div class="head"><span class="num">04</span><h3 style="margin:0;color:white;font-size:1rem;">Faenas peligrosas</h3></div>
+        <div class="body">
+          <div class="sub">Construcción, talleres, rurales</div>
+          <ul><li>Manipulación de maquinaria, alturas, herramientas.</li><li>Riesgo de accidentes graves.</li><li>Prohibido bajo Ley 21.271 (peores formas).</li></ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- INFORMALIDAD: DEFINICIÓN + INDICADORES + CHART -->
+<section class="section section-light" id="informalidad">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Informalidad laboral</span>
+      <h2>¿Qué entendemos por empleo informal?</h2>
+      <p class="section-desc">El INE adapta los criterios OIT (17ª y 19ª CIET) en su Encuesta Nacional de Empleo.</p>
+    </header>
+
+    <div class="def-banner">
+      <span class="eyebrow">Definición operativa INE</span>
+      <p>Ocupados sin cotización en el sistema previsional ni acceso a derechos laborales mínimos (vacaciones, indemnización, contrato).</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.25rem;margin-bottom:2.5rem;">
+      <article class="causa-card"><div class="eyebrow">01 · Asalariados</div><p style="margin-top:.6rem;">Sin contrato escrito o sin cotización previsional obligatoria del empleador.</p></article>
+      <article class="causa-card"><div class="eyebrow">02 · Cuenta propia</div><p style="margin-top:.6rem;">Trabajadores por su cuenta cuya unidad productiva no es formal (sin RUT empresa).</p></article>
+      <article class="causa-card"><div class="eyebrow">03 · Familiares no remunerados</div><p style="margin-top:.6rem;">Trabajan en negocios familiares sin recibir pago ni cobertura.</p></article>
+    </div>
+
+    <div class="ribbon-note" style="background:#FFD200;color:var(--blue-dark);">
+      Informalidad ≠ ilegalidad: gran parte refleja barreras de acceso, no intención de evadir.
+    </div>
+
+    <header class="section-head" style="margin-top:4rem;">
+      <span class="eyebrow">Informalidad · Indicadores O'Higgins</span>
+      <h2>Un desafío persistente: 27,8 %</h2>
+      <p class="section-desc">La tasa regional se ha movido en una banda del 27 % al 31 % en los últimos años.</p>
+    </header>
+
+    <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:2rem;align-items:start;">
+      <div class="bignum-card">
+        <span class="label">Tasa regional</span>
+        <span class="num">27,8 %</span>
+        <span class="sub">promedio móvil trimestral</span>
+        <span class="foot">≈ 115 mil ocupados informales en la región. Levemente sobre el promedio nacional (26,7 %).</span>
+      </div>
+      <div class="chart-card">
+        <h3>Evolución informalidad O'Higgins</h3>
+        <p class="chart-sub">Trimestres móviles ENE — INE</p>
+        <div class="chart-wrap" style="height:300px;"><canvas id="ch-evolucion"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COSTOS + COMPARATIVO REGIONAL -->
+<section class="section section-light" id="costos">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Costos + comparativo regional</span>
+      <h2>El costo de la informalidad: fiscal, social y de derechos</h2>
+      <p class="section-desc">Tres dimensiones de costo y la comparación regional muestran el tamaño del desafío.</p>
+    </header>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin-bottom:2.5rem;">
+      <article class="causa-card"><div class="eyebrow">Cobertura previsional</div><span class="num">≈ 70 %</span><p>de asalariados regionales cotiza efectivamente. Para cuenta propia cae a ~30 %.</p></article>
+      <article class="causa-card"><div class="eyebrow">Costo fiscal estimado</div><span class="num">0,8 % PIB</span><p>recaudación previsional y tributaria perdida por informalidad (OECD Chile 2023).</p></article>
+      <article class="causa-card danger"><div class="eyebrow">Pensiones futuras</div><span class="num">−40 %</span><p>menor monto promedio esperado en trabajadores con trayectoria informal vs. formal.</p></article>
+    </div>
+
+    <div class="chart-card">
+      <h3>Tasa de informalidad por región</h3>
+      <p class="chart-sub">Trimestre Ene-Mar 2026 — INE (selección de regiones)</p>
+      <div class="chart-wrap" style="height:380px;"><canvas id="ch-regiones"></canvas></div>
+    </div>
+  </div>
+</section>
+
+<!-- BRECHAS DE GÉNERO -->
+<section class="section section-dark" id="genero">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Brechas de género</span>
+      <h2>Las mujeres trabajan más, pero con menos protección</h2>
+      <p class="section-desc">La informalidad regional es más alta en mujeres y se concentra en sectores feminizados.</p>
+    </header>
+
+    <div class="compare-row">
+      <article class="gender-card women">
+        <span class="eyebrow">Mujeres</span>
+        <span class="num">30,2 %</span>
+        <span class="sub">Tasa de informalidad femenina O'Higgins</span>
+        <ul>
+          <li>Servicio doméstico y comercio minorista.</li>
+          <li>Brecha más amplia en jefas de hogar.</li>
+          <li>Subempleo y jornadas parciales involuntarias.</li>
+        </ul>
+      </article>
+      <article class="gender-card men">
+        <span class="eyebrow">Hombres</span>
+        <span class="num">26,1 %</span>
+        <span class="sub">Tasa de informalidad masculina O'Higgins</span>
+        <ul>
+          <li>Construcción, agricultura y transporte.</li>
+          <li>Mayor estacionalidad en faenas temporales.</li>
+          <li>Riesgo accidentabilidad por trabajos no formales.</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="gap-ribbon">
+      <span>Brecha de género en informalidad</span>
+      <span class="delta">+ 4,1 pp en contra de las mujeres</span>
+    </div>
+  </div>
+</section>
+
+<!-- LÍNEAS DE ACCIÓN -->
+<section class="section section-light" id="lineas-accion">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Líneas de acción · SEREMI</span>
+      <h2>Seis líneas de acción regionales</h2>
+      <p class="section-desc">Articulación intersectorial para reducir trabajo infantil e informalidad en O'Higgins.</p>
+    </header>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.25rem;">
+      <article class="accion-card"><span class="num">01</span><h4>Fiscalización DT</h4><div class="sub">Operativos focalizados</div><p>Inspecciones DT en sectores de riesgo (agro temporada, comercio, construcción).</p></article>
+      <article class="accion-card"><span class="num">02</span><h4>OCTI · Observatorio</h4><div class="sub">Datos y trazabilidad</div><p>Sistema de detección temprana en convenio con MDSF y municipios.</p></article>
+      <article class="accion-card"><span class="num">03</span><h4>Mesas comunales</h4><div class="sub">Coordinación territorial</div><p>33 mesas comunales activas de prevención del trabajo infantil.</p></article>
+      <article class="accion-card"><span class="num">04</span><h4>Sensibilización</h4><div class="sub">Comunicación y educación</div><p>Campañas en escuelas, ferias y medios regionales (marzo–agosto).</p></article>
+      <article class="accion-card"><span class="num">05</span><h4>Reinserción escolar</h4><div class="sub">Trayectoria educativa</div><p>Convenios con SLEP y JUNAEB para garantizar permanencia escolar.</p></article>
+      <article class="accion-card"><span class="num">06</span><h4>Formalización pymes</h4><div class="sub">Acompañamiento productivo</div><p>Asesoría laboral y previsional con SERCOTEC y CORFO regional.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- COMPROMISOS 2026-2030 -->
+<section class="section section-light" id="compromisos">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Hoja de ruta 2026 – 2030</span>
+      <h2>Compromisos regionales 2026 – 2030</h2>
+      <p class="section-desc">Cinco metas concretas para una región del trabajo digno.</p>
+    </header>
+    <div class="timeline-rail">
+      <div class="timeline-items">
+        <div class="timeline-item"><div class="node"></div><span class="year">2026</span><div class="card"><h4>Línea base</h4><p>Diagnóstico regional integral y boletín OCTI semestral.</p></div></div>
+        <div class="timeline-item"><div class="node"></div><span class="year">2027</span><div class="card"><h4>Mesas activas</h4><p>Plena operación de 33 mesas comunales y registro único.</p></div></div>
+        <div class="timeline-item"><div class="node"></div><span class="year">2028</span><div class="card"><h4>Formalización</h4><p>+5.000 trabajadores acompañados al sistema previsional.</p></div></div>
+        <div class="timeline-item"><div class="node"></div><span class="year">2029</span><div class="card"><h4>Educación</h4><p>Permanencia escolar ≥ 95 % en NNA en trabajo infantil.</p></div></div>
+        <div class="timeline-item gold"><div class="node"></div><span class="year">2030</span><div class="card"><h4>Meta cierre</h4><p>Informalidad regional &lt; 25 % y eliminación de peores formas TI.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ODS -->
+<section class="section section-dark" id="ods">
+  <div class="container">
+    <header class="section-head section-head-dark">
+      <span class="eyebrow">Compromisos internacionales</span>
+      <h2>Cinco ODS que esta agenda regional hace propios</h2>
+      <p class="section-desc">El trabajo SEREMI O'Higgins se inscribe en la Agenda 2030 de Naciones Unidas.</p>
+    </header>
+    <div class="ods-grid">
+      <article class="ods-card red"><span class="kicker">Meta ODS</span><span class="meta">8.7</span><h4>Trabajo decente</h4><p>Erradicar el trabajo infantil en todas sus formas al 2025.</p></article>
+      <article class="ods-card navy"><span class="kicker">Meta ODS</span><span class="meta">8.3</span><h4>Formalización</h4><p>Promover crecimiento que genere trabajo decente y formalice pymes.</p></article>
+      <article class="ods-card navy-dark"><span class="kicker">Meta ODS</span><span class="meta">1.3</span><h4>Protección social</h4><p>Implementar sistemas de protección social universales para todos.</p></article>
+      <article class="ods-card green"><span class="kicker">Meta ODS</span><span class="meta">4.1</span><h4>Educación</h4><p>Garantizar educación primaria y secundaria gratuita y de calidad.</p></article>
+      <article class="ods-card red-dark"><span class="kicker">Meta ODS</span><span class="meta">5.1</span><h4>Igualdad de género</h4><p>Poner fin a toda forma de discriminación contra mujeres y niñas.</p></article>
+    </div>
+    <div class="ribbon-note dark">
+      Chile es signatario de la Alianza 8.7 OIT y miembro de la Agenda 2030 de Naciones Unidas.
+    </div>
+  </div>
+</section>
+
+<!-- FUENTES -->
+<section class="section section-light">
+  <div class="container">
+    <header class="section-head">
+      <span class="eyebrow">Fuentes</span>
+      <h2>Datos y referencias</h2>
+    </header>
+    <ul style="max-width:900px;margin:0 auto;line-height:1.8;color:var(--text-secondary);font-size:.95rem;">
+      <li><strong>OIT</strong> — Convenios 138 (1973) y 182 (1999); Alianza 8.7; programa IPEC.</li>
+      <li><strong>INE</strong> — Encuesta Nacional de Empleo (ENE), trimestres móviles 2022–2026 desagregada por sexo; Censo 2024.</li>
+      <li><strong>MDSF</strong> — Encuesta Nacional de Actividades de Niños, Niñas y Adolescentes (EANNA 2012); CASEN 2022.</li>
+      <li><strong>MINEDUC</strong> — Indicadores de deserción escolar 2024.</li>
+      <li><strong>OECD</strong> — Chile Economic Survey 2023.</li>
+      <li><strong>Superintendencia de Pensiones</strong> — Cobertura previsional regional.</li>
+      <li><strong>Marco normativo CL</strong> — Ley 21.271 (2020); Código del Trabajo Art. 13–18; Ley 21.302 (Mejor Niñez, 2021).</li>
+      <li><strong>Agenda 2030 ONU</strong> — ODS 1.3, 4.1, 5.1, 8.3, 8.7; Plan Nacional ODS Chile.</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer" id="contacto">
+  <div class="container footer-grid">
+    <div class="footer-col">
+      <div class="footer-brand">
+        <strong>SEREMI del Trabajo y Previsión Social</strong>
+        <span>Región del Libertador General Bernardo O'Higgins</span>
+      </div>
+      <p class="footer-desc">Portal de datos abiertos sobre mercado laboral, inversión y desarrollo productivo regional.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="comunas.html">Indicadores Comunales</a></li>
+        <li><a href="trabajo-infantil-informalidad.html">TI · Informalidad</a></li>
+        <li><a href="censo-2024.html">Censo 2024</a></li>
+        <li><a href="analisis.html">Análisis Estratégico</a></li>
+        <li><a href="lineas-accion.html">Líneas de Acción</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <p>SEREMI del Trabajo<br>Av. Bernardo O'Higgins 717, Rancagua</p>
+      <p><strong>+56 72 220 5400</strong></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 SEREMI del Trabajo y Previsión Social — Región de O'Higgins · Observatorio Laboral Regional</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script>
+(function () {
+  if (typeof Chart === 'undefined') return;
+  Chart.defaults.font.family = "Inter, 'Segoe UI', system-ui, sans-serif";
+  Chart.defaults.color = '#475569';
+
+  // Evolución informalidad O'Higgins
+  var cv1 = document.getElementById('ch-evolucion');
+  if (cv1) {
+    new Chart(cv1.getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['2022', '2023', '2024', '2025 EFM', '2026 EFM'],
+        datasets: [{
+          label: 'Tasa informalidad (%)',
+          data: [30.2, 29.4, 28.6, 28.1, 27.8],
+          backgroundColor: ['#0F3F8C','#0F3F8C','#0F3F8C','#0F3F8C','#FFD200'],
+          borderRadius: 8,
+          maxBarThickness: 56
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return c.parsed.y + ' %'; } } } },
+        scales: {
+          y: { beginAtZero: true, max: 32, ticks: { callback: function (v) { return v + ' %'; } }, grid: { color: 'rgba(15,23,42,.06)' } },
+          x: { grid: { display: false } }
+        }
+      }
+    });
+  }
+
+  // Comparativo regional
+  var cv2 = document.getElementById('ch-regiones');
+  if (cv2) {
+    new Chart(cv2.getContext('2d'), {
+      type: 'bar',
+      data: {
+        labels: ['Coquimbo','Maule','O’Higgins','Nacional','Valparaíso','Biobío','Magallanes'],
+        datasets: [{
+          label: 'Tasa informalidad (%)',
+          data: [30.1, 28.5, 27.8, 26.7, 26.2, 25.3, 16.8],
+          backgroundColor: ['#0A2D6B','#0A2D6B','#FFD200','#0F3F8C','#1E5BB8','#1E5BB8','#3C6BBE'],
+          borderRadius: 6,
+          maxBarThickness: 28
+        }]
+      },
+      options: {
+        indexAxis: 'y',
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false }, tooltip: { callbacks: { label: function (c) { return c.parsed.x + ' %'; } } } },
+        scales: {
+          x: { beginAtZero: true, max: 33, ticks: { callback: function (v) { return v + ' %'; } }, grid: { color: 'rgba(15,23,42,.06)' } },
+          y: { grid: { display: false } }
+        }
+      }
+    });
+  }
+})();
+</script>
+<script src="js/main.js?v15" defer></script>
+<script src="js/global-search.js?v15" defer></script>
+<script src="js/chatbot.js?v15" defer></script>
+<script src="js/reveal.js?v15" defer></script>
+</body>
+</html>
